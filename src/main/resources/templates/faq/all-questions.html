@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}" />
+<body class="background" id="faq">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <p class=" text-center text-white" style="font-size:25px;"><span>All Questions</span></p>
+    <br><br>
+
+    <div class="table-wrapper">
+        <table class="fl-table" style="width: 90%">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>USER</th>
+                <th>DATE</th>
+                <th style="white-space: pre-wrap;" >QUESTION</th>
+                <th style="white-space: pre-wrap;">ANSWER</th>
+                <th>ACTIONS</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <th:block th:each="question, iter : ${questions}" th:object="${question}">
+                <tr>
+                    <td th:text="${iter.index + 1}"></td>
+                    <td th:text="*{user.username}"></td>
+                    <td th:text="*{#temporals.format(finishedOn, 'dd-MM-yyyy HH:mm') }"></td>
+                    <td style="white-space: pre-wrap;" th:text="${question.question}"></td>
+                    <td style="white-space: pre-wrap;" th:text="${question.answer}"></td>
+                    <td >
+                        <div>
+                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                                <a th:href="@{/answer-question/{id}(id=*{id})}" class="btn btn-outline-dark">Answer</a>
+                            </th:block>
+                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                                <a th:href="@{/create-notification-A/{id}(id=*{id})}" class="btn btn-outline-dark">Notification</a>
+                            </th:block>
+                        </div>
+                    </td>
+                </tr>
+            </th:block>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+
+</main>
+<th:block th:include="~{fragments/footer}" />
+</body>
+</html>

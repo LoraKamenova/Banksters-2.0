@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="faq">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <p class=" text-center text-white" style = "font-size:25px;" ><span>Frequently Asked Questions(FAQ)</span></p>
+    <br><br>
+
+    <div class="text-center">
+        <a class="btn btn-danger text-center mr-3" th:href="@{/ask-question}">Ask a question</a>
+    </div>
+
+    <ol id="faq2" class="gradient-list">
+    <th:block th:each="faq : ${faqs}">
+        <li><span style="font-weight:bold; font-style: italic;" th:text="${faq.question}"></span><br>
+            <br><span th:text="${faq.answer}"></span>
+        </li>
+    </th:block>
+    </ol>
+
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}" />
+<body class="background" id="analysis">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}" />
+
+    <p class=" text-center text-white"  style = "font-size:25px;" ><span>Delete Analysis</span></p>
+    <br>
+    <br>
+    <form id="analysisForm" th:method="post" th:action="@{/analysis/delete/{id}(id=${model.id})}">
+        <div class="row">
+                <div class="col-md-12 text-white">
+                    <label for="AName">Company</label>
+                    <input type="text" name="company" id="AName" th:value="${model.company}" readonly/>
+                </div>
+                <div class="col-md-12 text-white">
+                    <label for="ATicker">Ticker</label>
+                    <input type="text" name="ticker" id="ATicker"  th:value="${model.ticker}" readonly/>
+                </div>
+                <div class="col-md-12 text-white">
+                    <label for="AProfile">Company Profile</label>
+                    <textarea class="text-white" name="profile" id="AProfile" maxlength="1500" rows="6" cols="5" th:text="${model.profile}" readonly></textarea>
+                </div>
+                <div class="col-md-12 text-white">
+                    <label for="AStrengths">Strengths</label>
+                    <textarea class="text-white" name="strengths" id="AStrengths" maxlength="1500" rows="6" cols="5" th:text="${model.strengths}" readonly></textarea>
+                </div>
+                <div class="col-md-12 text-white">
+                    <label for="AWeaknesses">Weaknesses</label>
+                    <textarea class="text-white" name="weaknesses" id="AWeaknesses" maxlength="1500" rows="6" cols="5" th:text="${model.weaknesses}" readonly></textarea>
+                </div>
+                <div class="col-md-12 text-white">
+                    <label for="AOpportunities">Opportunities</label>
+                    <textarea class="text-white" name="opportunities" id="AOpportunities" maxlength="1500" rows="6" cols="5" th:text="${model.opportunities}" readonly></textarea>
+                </div>
+                <div class="col-md-12 text-white">
+                    <label for="AThreats">Threads</label>
+                    <textarea class="text-white" name="threats" id="AThreats" maxlength="1500" rows="6" cols="5" th:text="${model.threats}" readonly></textarea>
+                </div>
+        </div>
+
+        <input id="ADeleteButton" type="submit" value="Delete">
+    </form>
+
+</main>
+<th:block th:include="~{fragments/footer}" />
+</body>
+</html>

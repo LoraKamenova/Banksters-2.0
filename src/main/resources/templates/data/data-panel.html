@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="data">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <p class=" text-center text-white" style = "font-size:25px;" ><span>Data Panel</span></p>
+    <br><br>
+
+    <div class="grid-containerDP">
+        <div class="grid-itemDP"><a class="btn btn-outline-info font-weight-bold text-center mr-3" id="DPitem1"
+                                                 th:href="@{/admin-all-stock-exchange}">Stock Exchange</a></div>
+        <div class="grid-itemDP"><a class="btn btn-outline-warning font-weight-bold text-center mr-3" id="DPitem2"
+                                                 th:href="@{/admin-all-company}">Company</a></div>
+        <div class="grid-itemDP"><a class="btn btn-outline-success font-weight-bold text-center mr-3" id="DPitem3"
+                                                 th:href="@{/create-faq}">Add Q & A</a></div>
+        <div class="grid-itemDP"><a class="btn btn-outline-danger font-weight-bold text-center mr-3" id="DPitem4"
+                                                 th:href="@{/all-orders}">All Orders</a></div>
+        <div class="grid-itemDP"><a class="btn btn-outline-primary font-weight-bold text-center mr-3" id="DPitem7"
+                                     th:href="@{/users/all}">All Users</a></div>
+
+        <div class="grid-itemDP"><a class="btn btn-outline-info font-weight-bold text-center mr-3" id="DPitem5"
+                                                 th:href="@{/admin-all-index}">Market Index</a></div>
+        <div class="grid-itemDP"><a class="btn btn-outline-warning font-weight-bold text-center mr-3" id="DPitem6"
+                                                 th:href="@{/admin-all-stock}">Stock</a></div>
+        <div class="grid-itemDP"><a class="btn btn-outline-success font-weight-bold text-center mr-3" id="DPitem8"
+                                     th:href="@{/all-questions}">All Questions</a></div>
+        <div class="grid-itemDP"><a class="btn btn-outline-danger font-weight-bold text-center mr-3" id="DPitem9"
+                                     th:href="@{/all-contracts}">All contracts</a></div>
+        <div class="grid-itemDP"><a class="btn btn-outline-primary font-weight-bold text-center mr-3" id="DPitem10"
+                                     th:href="@{/all-analysis}">All Analysis</a></div>
+    </div>
+    <br>
+
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>
+
+
+

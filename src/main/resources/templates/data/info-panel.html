@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="data">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <div class="text-white text-center">
+        <span>Sofia: <span class="clock" data-timezone="Europe/Sofia"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>Berlin: <span class="clock" data-timezone="Europe/Berlin"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>London: <span class="clock" data-timezone="Europe/London"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>New York: <span class="clock" data-timezone="America/New_York"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>Shanghai: <span class="clock" data-timezone="Asia/Shanghai"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>Tokyo: <span class="clock" data-timezone="Asia/Tokyo"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+    </div>
+    <br><br>
+
+    <div class="container text-white">
+        <div class="timeline">
+            <div class="timeline-month text-white" >
+               Today`s SWOT ANALYSIS:&nbsp;&nbsp;
+            </div>
+            <div class="timeline-section">
+                <div class="timeline-date" th:text="${model.company} + ' (' + ${model.ticker} + ')'">
+                </div>
+                <div class="row text-white">
+                    <div class="col-sm-4">
+                        <div class="timeline-box">
+                            <div class="box-title">
+                                <i class="fa fa-tag text-warning" aria-hidden="true"></i> Company Profile
+                            </div>
+                            <div class="box-content">
+                                <div class="box-item" th:text="${model.profile}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="timeline-box">
+                            <div class="box-title">
+                                <i class="fa fa-list text-success" aria-hidden="true"></i> Strengths
+                            </div>
+                            <div class="box-content">
+                                <div class="box-item" th:text="${model.strengths}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="timeline-box">
+                            <div class="box-title">
+                                <i class="fa fa-list text-danger" aria-hidden="true"></i> Weaknesses
+                            </div>
+                            <div class="box-content">
+                                <div class="box-item" th:text="${model.weaknesses}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="row text-white">
+                    <div class="col-sm-4">
+                        <div class="timeline-box">
+                            <div class="box-title">
+                                <i class="fa fa-line-chart fa-list text-info " aria-hidden="true"></i> Opportunities
+                            </div>
+                            <div class="box-content">
+                                <div class="box-item" th:text="${model.opportunities}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="timeline-box">
+                            <div class="box-title">
+                                <i class="fa fa-exclamation-triangle text-warning" aria-hidden="true"></i> Threats
+                            </div>
+                            <div class="box-content">
+                                <div class="box-item" th:text="${model.threats}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br><br><br><br><br><br><br>
+
+    <div class="ticker-wrap" id="ticker-wrap1">
+        <div class="ticker">
+            <div class="ticker__item" id="dateDiv"></div>
+            <th:block th:each="stock : ${stocks}">
+                <div class="ticker__item"
+                     th:text="${stock.companyName} + ' (' + ${stock.tickerCode} + ') - ' + ${stock.previousDayClosingPrice} + ' ' + ${stock.currency}"></div>
+            </th:block>
+        </div>
+    </div>
+
+    <div class="ticker-wrap" id="ticker-wrap2">
+        <div class="ticker">
+            <div class="ticker__item" id="dateDiv2"></div>
+            <th:block th:each="marketIndex : ${marketIndexes}">
+                <div class="ticker__item" th:text="${marketIndex.name} + ' - ' + ${marketIndex.closingValue}"></div>
+            </th:block>
+        </div>
+    </div>
+
+    <script src="/js/clocks.js"></script>
+    <script src="/js/ticker.js"></script>
+
+</main>
+</body>
+</html>
+
+
+

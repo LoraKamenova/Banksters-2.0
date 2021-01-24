@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="stock">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <div class="grid-container">
+        <div class="grid-item" id="SEitem1"><div class="text-center"><a id="BuyStockButton" class="btn text-center mr-3" th:href="@{/order-this-stock/{id}(id=${model.id})}">Transaction</a></div></div>
+        <div class="grid-item" id="SEitem2"></div>
+        <div class="grid-item" id="SEitem3"></div>
+        <div class="grid-item" id="SEitem4"><div class="text-center"><a id="showGraphics" class="btn text-center mr-3" th:href="@{/graphics/stock/{id}(id=${model.id})}">Graphics</a></div></div>
+        <div class="grid-item" id="SEitem5"><img class="img2" th:src="${model.logoURL}" alt="logo"></div>
+        <div class="grid-item" id="SEitem6"><p class=" text-center text-white" style="font-size:23px;" th:text="${model.companyName}"></p><br>
+            <p class=" text-justify text-white" style="font-size:17px; text-align: center;" th:text="${model.description}"></p></div>
+        <div class="grid-item" id="SEitem7">
+            <table class="stock-table" id="stockTable">
+                <tr>
+                    <td class="td text-white" colspan="2">Overview</td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Stock Ticker</td>
+                    <td class="td text-white" th:text="${model.tickerCode}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Stock Exchange</td>
+                    <td class="td text-white" th:text="${model.exchange}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Included in Index</td>
+                    <td class="td text-white" th:text="${model.includedInIndex}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Minimal Traded Qty</td>
+                    <td class="td text-white" th:text="${model.minTradedQty}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Ex-Dividend Date</td>
+                    <td class="td text-white" th:text="${model.exDividendDate}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white" id="forwardDividend">Forward Dividend & Yield</td>
+                    <td class="td text-white" th:text="${model.forwardDividendAndYield}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Currency</td>
+                    <td class="td text-white" th:text="${model.currency}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white" id="closingPrice">Previous Day Closing Price</td>
+                    <td class="td text-white" th:text="${model.previousDayClosingPrice}"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>

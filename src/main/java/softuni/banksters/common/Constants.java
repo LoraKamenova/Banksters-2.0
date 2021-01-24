@@ -1,0 +1,123 @@
+package softuni.banksters.common;
+
+import java.util.List;
+
+public class Constants {
+    public static final String TOO_LONG_INFORMATION = "Information must be maximum 1000 characters long.";
+    public static final String TOO_LONG_INFORMATION_1200 = "Information must be maximum 1200 characters long.";
+    public static final String EMPTY_FIELD = "Field cannot be empty.";
+    public static final String POSITIVE_INPUT = "The number must be positive";
+
+    public static final String COMPANY_NOT_FOUND = "Company with this id not found";
+    public static final String ANALYSIS_NOT_FOUND = "Analysis with this id not found";
+    public static final String CONTRACT_NOT_FOUND = "Contract with this id not found";
+    public static final String MARKET_INDEX_NOT_FOUND = "Market Index with this id not found";
+    public static final String ORDER_NOT_FOUND = "Order with this id not found";
+    public static final String QUESTION_NOT_FOUND = "Question with this id not found";
+    public static final String STOCK_NOT_FOUND = "Stock with this id not found";
+    public static final String STOCK_EXCHANGE_NOT_FOUND = "Stock Exchange with this id not found";
+
+    public static final List<String> DAILY_TIPS = List.of(
+            "ACER got its name from Latin word for \"sharp, acute, able and facile\"",
+            "ASICS is an acronym for Anima Sana In Corpore Sano, which, translated from Latin, means \"Healthy soul in a healthy body\"",
+            "ASUS is named after Pegasus, the winged horse of Greek mythology. The first three letters of the word were dropped to get a high position in alphabetical listings",
+            "CANON got its name from the name of the company's first camera, the Kwanon, in turn named after the Japanese name of the Buddhist goddess of mercy",
+            "CATERPILLAR got its name when a company photographer exclaimed aloud of a company`s tractor that the tracks' movement resembled a caterpillar moving along the ground",
+            "FANTA got it`s name from the German word Fantasie, meaning \"imagination\"",
+            "HESBURGER comes from Hese, the nickname of the company's founder Heikki Salmela, and hamburger",
+            "IKEA is composite of the first letters in the Swedish founder Ingvar Kamprad's name in addition to the first letters of the names of the property and the village in which he grew up: Ingvar Kamprad Elmtaryd Agunnaryd",
+            "NVIDIA comes from \"invidia\" in Roman mythology - the Latin word for \"envy\"",
+            "PEPSI is named from the digestive enzyme pepsin", "Pez comes from the first, middle and last letters of the German language word \"Pfefferminz\" meaning \"peppermint\"",
+            "PIXAR name comes from pixel and the co-founder's name, Alvy Ray Smith",
+            "SUBARU comes from the Japanese name for the constellation known to Westerners as Pleiades or the Seven Sisters",
+            "TESLA is named after Serbian electrical engineer and physicist, Nikola Tesla",
+            "TEXACO stands for The Texas Company",
+            "VOLVO comes from the Latin word \"volvo\", which means \"I roll\"",
+            "XEROX is named after xerography, a word derived from the Greek xeros (dry) and graphos (writing)",
+            "MCDONALDS’s is the largest supplier of toys in the world, remember the toys that you get with every happy meal!",
+            "NINTENDO started as a card-game company that offered hand-made cards across Japan in the 1890s",
+            "FEDEX`s founder Frederick Wallace Smith wrote its concept as a term paper when he was an undergrad at Yale University",
+            "COSTCO hasn’t changed the price of its $1.50 quarter-pound 100% beef hot dog and 590 ml drink in 34 years",
+            "WALT DISNEY’s first original character was a rabbit named Oswald",
+            "FORD is the second largest family-owned company in the world",
+            "NETFLIX was originally called Kibble",
+            "GOOGLE was originally named BackRub",
+            "STARBUCKS has There are 87 000 possible drink combinations at Starbucks",
+            "NIKE swoosh logo is inspired by the Greek goddess of victory, Nike. The swoosh represents motion and speed",
+            "When AMAZON was started, a bell used to ring at the office after every purchase. Soon enough, this bell had to be shut down because of the high volumes of sales.",
+            "The siren of the famous STARBUCKS logo is intended to represent the seductive power of coffee, as an inspiration from the sea stories.",
+            "When Napoleon assumed the title of Emperor of the French in 1852, his wife Josephine hired the designer Louis Vuitton as her personal box-maker and packer.",
+            "To create the Street View of a dessert, Google hired a camel.",
+            "FACEBOOK is primarily blue because Mark Zuckerberg suffers red-green color blindness.",
+            "PEPSI was originally launched in 1898 to offer a cure for stomach aches.",
+            "TWITTER`s bird is called Larry.",
+            "COCA-COLA has a product portfolio of more than 3500 beverages and 500 brands.",
+            "BEN & JERRY`s was originally planned to be a bagel company.",
+            "RED BULL created the energy drink product category.",
+            "AMAZON CEO Jeff Bezos spends two days every two years working at the customer service desk.",
+            "FEDEX founder Frederick Smith saved the company by taking its last 5000$ and turning it into 32000$ in a Vegas casino.",
+            "PLAY-DOH was supposed to be a spot cleaner for walls.",
+            "WALMART averages a profit of $1.8 million every hour.",
+            "YAHOO is an acronym for \"Yet Another Hierarchical Officious Oracle\".",
+            "STARBUCKS' round tables were created specifically so customers would feel less alone.",
+            "The red and white COCA-COLA logo is recognized by 94% of the world's population.",
+            "SAMSUNG accounts for 20% of Korea's gross domestic product.",
+            "WARNER MUSIC owns the copyrights to \"Happy Birthday\" so it's technically owed royalties every time you sing it to someone on their big day.",
+            "MCDONALD's first menu items were hot dogs, not hamburgers.",
+            "Each week nearly one-third of the U.S. population visits a WALMART.",
+            "In iPhone ads, the time is always 9:42 a.m. or 9:41 a.m., because APPLE events start at 9 a.m. and big product reveals generally happen 40 minutes into the presentation.",
+            "The Rubik's cube is the best-selling product of all time. The iPhone is second.",
+            "For more than a century, the world’s most recognized mobile phone manufacturer, NOKIA, was just a conventional groundwood pulp mill.",
+            "AVON, the fifth-largest beauty company in the world, didn’t originally sell cosmetics. It started as a door-to-door bookselling company.",
+            "The world’s most popular chewing-gum-making company, WRIGLEY, initially sold soap and baking powder.",
+            "AMERICAN EXPRESS, the world’s most elite credit card company, started as a postal service.",
+            "The word LEGO is formed from the Danish word \"Leg Godt\" which means \"play well\" in English. In Latin, it means \"putting together\".",
+            "The name VOLKSWAGEN means ‘Peoples car’ in German.",
+            "MERCEDES is the named after Mercedes Jellinek, the daughter of businessman Emil Jellinek who bought Daimler vehicles, the parent company of Mercedes.",
+            "MCDONALD’s feeds more than 68 million people every day, which is more than the entire UK population.",
+            "The name ADOBE came from the river Adobe Creek that ran behind the house of Adobe Systems Inc's co-founder John Warnock.",
+            "Levi Strauss was an aristocrat. He didn’t wear his own brand of denim pants because they were meant for the labor class.",
+            "SMIRNOFF once branded itself as \"white whiskey\"",
+            "The bite in APPLE's logo was added so it wouldn't be confused with a cherry.",
+            "STELLA ARTOIS has been using the same logo since 1366 – making it the world’s oldest logo.",
+            "There is a hidden bear in the TOBLERONE logo.",
+            "UNILEVER has 24 mini logos all combined in its logo.",
+            "The MCDONALD's logo is based on the shape of the stores and not the word McDonald's. The original store's architecture had golden arches on either side.",
+            "UPS saves millions by eliminating most left turns.",
+            "Over 8000 glasses of COCA-COLA are consumed every second.",
+            "The arrow in the AMAZON logo points from A to Z, highlighting the retailer`s wide rainge of products.",
+            "The original concept for the name was Sky-Peer-to-Peer, which morphed into Skyper, then SKYPE.",
+            "MITSUBISHI`s name consists of two parts: mitsu means three and hishi (which is pronounced bishi when at the end of a word) means diamond (the shape). Hence, the three diamond logo.",
+            "ADIDAS name was taken from its founder Adolf Dassler whose first name was shortened to the nickname “Adi.” Together with the first three letters of his surname it formed ADIDAS",
+            "BIC was named after one of its founders, Marcel Bich. He dropped the H to avoid a potentially inappropriate English pronunciation of the name, but yet chose to keep a creepy cartoon person with a bowling ball head as the mascot.",
+            "SAMSUNG means \"three stars\" in Korean.",
+            "LG`s name doesn`t come from \"Life’s good\" but from the combination of two popular Korean brands, Lucky and Goldstar.",
+            "BLACKBERRY`s name was coined in 1991 because the keys on the BlackBerry resembled the drupelets on the fruit.",
+            "COCA-COLA is derived from the coca leaves and kola nuts used as flavoring. Coca-Cola creator John S. Pemberton changed the K of kola to C to make the name look better.",
+            "SAMSONITE is named from the Biblical character Samson, renowned for his strength.",
+            "REEBOK is an alternate spelling of rhebok, an African antelope.",
+            "CISCO is named after its headquarters’ location in San Francisco. While its namesake doesn’t have a hidden meaning, the blue stripes above the logotype not only represent an electromagnet but also, the Golden Gate Bridge.",
+            "SONY`s name is derived from \"sonus\", the Latin word for sound and a slang expression \"sonny boy\" which in 1950s Japan described \"smart, presentable young men\"",
+            "YAHOO is both an acronym for \"Yet Another Hierarchical Officious Oracle\" and an imaginary species described as rude, noisy and violet in Jonathan Swift`s \"Gulliver`s Travels\".",
+            "GOOGLE takes its name from \"googol\", the mathematical term for the numeral 1 followed by 100 zeros.",
+            "ORACLE`s name started as the code for a project that cofounders Larry Ellison and Bob Oats worked on for the CIA. It was a database that was supposed to be able to answer any question about anything.",
+            "7-ELEVEN changed from U-Tote`m in 1946 when new 7 am until 11 pm hours went into effect.",
+            "AT&T stands for American Telephone and Telegraph Company.",
+            "SHARP is named after the company`s first product - the ever sharp pencil.",
+            "VERIZON is combination of the Latin word veritas, which means truth and the word horizon.",
+            "VODAFON is short for Voice, Data, Telephone.",
+            "NUTTELA was created as a cheaper alternative to chocolate which due to WWII was in short supply. It was made by combining hazelnut, which were easily available locally, and a little cocoa.",
+            "NUTTELA name came about as a result of combining the English word \"nut\" and the Latin suffix for sweet - \"ella\"",
+            "Philadelphia brand cream cheese has nothing to do with Philadelphia. They just named it that because at the time, the city Philadelphia had a reputation for high-quality food products, especially dairy",
+            "The Ikea store layouts are designed like mazes so that customers who walk in, get lost and land up getting more time in the stores.",
+            "The Sony Playstation was originally going to be the Nintendo Playstation, but the companies has a falling out and Sony decided to recoup their investment by launching the machine on their own.",
+            "The Marriott corporation started as a root beer stand",
+            "In 2002, Fujitsu made a device called the “iPad,” and Apple had to pay $4 million to Fujitsu to buy the trademark rights",
+            "The first product developed by the tech giant SONY was an electric rice-cooker made of aluminum electrodes and a wooden bucket",
+            "Samsung originally sold dry fish, vegetables, and noodles. It wasn’t until 1970 that they started selling electronics",
+            "Hilton was the first international hotel chain",
+            "Nivea: Derived from the Latin word 'Niveus', which means snow white.",
+            "Gap refers to the generation gap between adults and kids.",
+            "3M actually means Minnesota Mining and Manufacturing Company."
+    );
+}

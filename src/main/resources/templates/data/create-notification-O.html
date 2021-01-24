@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="data">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <p class=" text-center text-white" style = "font-size:25px;" ><span>Add new order notification</span></p>
+    <br><br>
+
+    <form id="notificationForm" th:method="post" th:action="@{/create-notification-A/{id}(id=${model.id})}"
+          enctype="multipart/form-data">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+        <div class="row">
+            <div class="col-md-12 text-white">
+                <label for="NType">Notification Type</label>
+                <input list="notifications" type="text" name="type" id="NType" required/>
+                <datalist id="notifications">
+                    <option value="Your order has been processed. Check your email for further information.">
+                    <option value="Your order could not be executed. Check your email for further information.">
+                    <option value="Your order has been declined. Check your email for further information.">
+                </datalist>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="NUser">User</label>
+                <input type="text" name="user" id="NUser" th:value="${model.user.username}"/>
+            </div>
+        </div>
+        <br>
+
+        <input id="NButton" type="submit" value="Send">
+    </form>
+
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>

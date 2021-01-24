@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="company">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <div class="grid-container">
+        <div class="grid-item" id="SEitem1"></div>
+        <div class="grid-item" id="SEitem2"><img class="img2" th:src="${model.logoURL}" alt="logo"></div>
+        <div class="grid-item" id="SEitem3"><span class=" text-center text-white" style="font-size:23px;" th:text="${model.name}"></span>
+        </div>
+        <div class="grid-item" id="SEitem4"></div>
+        <div class="grid-item" id="SEitem5"><img class="img1" th:src="${model.brandsURL}" alt="brands"></div>
+        <div class="grid-item" id="SEitem6"><p class=" text-justify text-white"
+                                               style="font-size:17px; text-align: center;" th:text="${model.description}"></p></div>
+        <div class="grid-item" id="SEitem7">
+            <table class="stock-table">
+                <tr>
+                    <td class="td text-white" colspan="2">Overview</td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Industry</td>
+                    <td class="td text-white" th:text="${model.industry}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Founded</td>
+                    <td class="td text-white" th:text="${model.founded}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Headquarters</td>
+                    <td class="td text-white" th:text="${model.headquarters}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Revenues</td>
+                    <td class="td text-white" th:text="${model.revenues}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Employees</td>
+                    <td class="td text-white" th:text="${model.employees}"></td>
+                </tr>
+                <tr>
+                    <td class="td text-white">Website</td>
+                    <td class="td text-white" th:text="${model.website}"></td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>

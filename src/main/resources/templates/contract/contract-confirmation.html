@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}" />
+<body class="background" id="profile">
+<main class="main">
+
+    <th:block th:include="~{fragments/navbar-user}" />
+    <br>
+
+    <div class="toWrap">
+        <div class="sketchy">Your <br> contract <br>request<br>was submitted <br>successfully.</div>
+    </div>
+    <br><br>
+
+    <p class="text-center text-white">Redirecting..</p>
+    <br>
+
+    <div class="loading">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <br>
+
+    <script>
+        window.setTimeout(function () {
+            window.location.href = '/my-profile';
+        }, 4000);
+    </script>
+</main>
+<th:block th:include="~{fragments/footer}" />
+</body>
+</html>

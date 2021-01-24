@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}" />
+<body class="background" id="contact">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}" />
+
+    <div class="container1">
+        <div class="card1">
+            <div class="card__image-container1">
+                <img class="card__image1" src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1592738813/Java%20Project/contact_us_texckt.jpg" alt="">
+            </div>
+
+            <svg class="card__svg1" viewBox="0 0 800 500">
+                <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                <path class="card__line1" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+            </svg>
+
+            <div class="card__content1">
+                <p>Address: &nbsp;&nbsp;1, Vitosha blvd., Sofia</p>
+                <p>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;banksters@banksters.bg</p><br>
+                <p>Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 02/ 0000 000</p>
+                <p>Mobile: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0888 000 000</p><br>
+                <p>Facebook: Banksters</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+<th:block th:include="~{fragments/footer}" />
+</body>
+</html>

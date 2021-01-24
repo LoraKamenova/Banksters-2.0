@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="data">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <p class=" text-center text-white" style = "font-size:25px;" ><span>Add new answer notification</span></p>
+    <br><br>
+
+    <form id="notificationForm" th:method="post" th:action="@{/create-notification-A/{id}(id=${model.id})}" enctype="multipart/form-data">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+        <div class="row">
+            <div class="col-md-12 text-white">
+                <label for="NType">Notification Type</label>
+                <input list="notifications" type="text" name="type" id="NType" required/>
+                <datalist id="notifications">
+                    <option value="You have 1 new answer.">
+                    <option value="We have sent additional materials to your email in order to answer to your question more thoroughly.">
+                    <option value="Your question was included in section FAQ.">
+                </datalist>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="NUser">User</label>
+                <input type="text" name="user" id="NUser" th:value="${model.user.username}"/>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="NQuestion">Question</label>
+                <textarea class="text-white" name="question" id="NQuestion" maxlength="3000" rows="5" cols="5"
+                          th:text="${model.question}" readonly></textarea>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="NDate">Date</label>
+                <input type="text" name="date" id="NDate" th:value="*{#temporals.format(model.finishedOn, 'dd-MM-yyyy HH:mm')}" readonly/>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="NAnswer">Answer</label>
+                <textarea class="text-white" name="answer" id="NAnswer" maxlength="3000" rows="5" cols="5"
+                          placeholder="Type answer here..." th:text="${model.answer}" readonly></textarea>
+            </div>
+        </div>
+        <br>
+
+        <input id="NButton" type="submit" value="Send">
+    </form>
+
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>

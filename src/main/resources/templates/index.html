@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}" />
+<body class="background" id = "index">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-guest}" />
+
+    <div class="container-fluid">
+        <br>
+        <h1 class="text-center text-white ">Welcome to Banksters!</h1>
+        <br><br><br>
+
+        <div class="text-center">
+            <img class="img" src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1593212503/Java%20Project/stocks-thinkstock_gdthbm.jpg" alt="Stock" width="460"
+                 height="250">
+        </div>
+        <hr style="width: 50%"/>
+        <br>
+        <h2 class="text-center text-white " style="font-size: 25px">
+            <a th:href="@{/register}" >Register</a> if you are above 18yo and want to trade with stocks.
+        </h2>
+        <br>
+        <h2 class="text-center text-white " style="font-size: 25px">
+            <a th:href="@{/login}">Login</a> if you already have registration.
+        </h2>
+        <br>
+    </div>
+</main>
+<th:block th:include="~{fragments/footer}" />
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}" />
+<body class="background" id="profile">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+    <p class=" text-center text-white" style="font-size:25px;"><span>Portfolio</span></p>
+    <br><br>
+
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>TICKER</th>
+                <th>COMPANY NAME</th>
+                <th>QUANTITY</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <th:block th:each="portfolio, iter : ${portfolios}" th:object="${portfolios}">
+                <tr>
+                    <td th:text="${iter.index + 1}"></td>
+                    <td th:text="${portfolio.ticker}"></td>
+                    <td th:text="${portfolio.company}"></td>
+                    <td th:text="${portfolio.quantity}"></td>
+                </tr>
+            </th:block>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+
+</main>
+<th:block th:include="~{fragments/footer}" />
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="order">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <p class=" text-center text-white" style="font-size:25px;"><span>My History</span></p>
+    <br><br>
+
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>DATE</th>
+                <th>TICKER</th>
+                <th>COMPANY NAME</th>
+                <th>QUANTITY</th>
+                <th>TYPE</th>
+                <th>STATUS</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <th:block th:each="order, iter : ${orders}" th:object="${order}">
+                <tr>
+                    <td th:text="${iter.index + 1}"></td>
+                    <td th:text="*{#temporals.format(finishedOn, 'dd-MM-yyyy HH:mm') }"></td>
+                    <td th:text="${order.ticker}"></td>
+                    <td th:text="${order.company}"></td>
+                    <td th:text="${order.quantity}"></td>
+                    <td th:text="${order.type}"></td>
+                    <td th:text="${order.status}"></td>
+                </tr>
+            </th:block>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>

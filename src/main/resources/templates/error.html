@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{fragments/head}"/>
+</head>
+<body class="background" id="error">
+<div class="container-fluid">
+    <header>
+        <th:block th:include="~{fragments/navbar-error}"/>
+    </header>
+    <main>
+        <br>
+        <div class="bg-image-quote-create">
+            <div class="text-center">
+                <img class="img" src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1594069883/Java%20Project/yvg61tginqrxrxp0nxgb.png" alt="Error" width="560"
+                     height="350">
+            </div>
+            <br>
+            <br>
+            <div class="text-center">
+                <h3  th:utext="${message}" style="font-size: 25px; color: red;"></h3>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </main>
+    <footer>
+        <th:block th:include="~{fragments/footer}"/>
+    </footer>
+</div>
+</body>
+</html>

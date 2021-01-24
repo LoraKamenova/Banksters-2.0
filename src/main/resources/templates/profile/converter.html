@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="profile">
+<main class="main">
+
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <div class="containerCurr">
+        <div class="header">
+            <h1>Currency Converter</h1>
+        </div>
+        <div class="date"></div>
+        <ul class="currencies"></ul>
+        <button class="add-currency-btn"><i class="fa fa-arrow-left"></i>Add Currency</button>
+        <ul class="add-currency-list"></ul>
+    </div>
+
+    <script src="/js/converter.js"></script>
+
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>

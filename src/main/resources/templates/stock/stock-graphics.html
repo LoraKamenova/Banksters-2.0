@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="stock">
+<main class="main">
+
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <p class=" text-center text-white" style="font-size:25px;" th:text="'Average monthly stock prices of ' + ${model.companyName} + ' (' +${model.currency} + ')'"><span></span></p>
+    <br><br>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <div id="wrap">
+        <canvas id="speedChart" width="500" height="180"></canvas>
+    </div>
+
+    <script th:inline="javascript"> var speedCanvas = document.getElementById("speedChart");
+    var arr = [];
+    var name = [[${model.companyName}]];
+    var year = [[${model.year}]];
+    var ticker = [[${model.tickerCode}]];
+    var currency = [[${model.currency}]];
+    var partialYear = year.slice(-2);
+
+    var january = [[${model.january}]];
+    var february = [[${model.february}]];
+    var march = [[${model.march}]];
+    var april = [[${model.april}]];
+    var mai = [[${model.may}]];
+    var june = [[${model.june}]];
+    var july = [[${model.july}]];
+    var august = [[${model.august}]];
+    var september = [[${model.september}]];
+    var october = [[${model.october}]];
+    var november = [[${model.november}]];
+    var december = [[${model.december}]];
+
+    if(january > 0) {
+        arr.push(january);
+    }
+    if(february > 0) {
+        arr.push(february);
+    }
+    if(march > 0) {
+        arr.push(march);
+    }
+    if(april > 0) {
+        arr.push(april);
+    }
+    if(mai > 0) {
+        arr.push(mai);
+    }
+    if(june > 0) {
+        arr.push(june);
+    }
+    if(july > 0) {
+        arr.push(july);
+    }
+    if(august > 0) {
+        arr.push(august);
+    }
+    if(september > 0) {
+        arr.push(september);
+    }
+    if(october > 0) {
+        arr.push(october);
+    }
+    if(november > 0) {
+        arr.push(november);
+    }
+    if(december > 0) {
+        arr.push(december);
+    }
+
+    Chart.defaults.global.defaultFontFamily = "Lato";
+    Chart.defaults.global.defaultFontSize = 18;
+
+    var dataFirst = {
+        label: ticker,
+        data: arr,
+        lineTension: 0,
+        fill: false,
+        borderColor: 'purple'
+    };
+
+    var timeLine = {
+        labels: [`Jan '${partialYear}`, `Feb '${partialYear}`, `Mar '${partialYear}`, `Apr '${partialYear}`, `May '${partialYear}`, `Jun '${partialYear}`,
+            `Jul '${partialYear}`, `Aug '${partialYear}`, `Sep '${partialYear}`, `Oct '${partialYear}`, `Nov '${partialYear}`, `Dec '${partialYear}`],
+        datasets: [dataFirst]
+    };
+
+    var chartOptions = {
+        legend: {
+            display: true,
+            position: 'top',
+            labels: {
+                boxWidth: 80,
+                fontColor: 'black'
+            }
+        }
+    };
+
+    var lineChart = new Chart(speedCanvas, {
+        type: 'line',
+        data: timeLine,
+        options: chartOptions
+    });
+    </script>
+    <br><br>
+
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>

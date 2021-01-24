@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="stock-exchange">
+<main class="main">
+
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    <div class="text-center">
+        <a class="btn btn-danger text-center mr-3" th:href="@{/create-stock-exchange}">Add Stock Exchange</a>
+    </div>
+    <br><br>
+
+    <div class="containerAll">
+        <th:block th:each="se : ${ses}">
+            <div class="cardAllD">
+                <br>
+                <img th:src="${se.logoURL}" class="card__imageAll">
+                <br>
+                <br>
+                <p class="card__nameAll" th:text="${se.name}"></p>
+                <br>
+                <div class="grid-containerAll">
+                </div>
+                <a class="btnAll draw-border mb-3" th:href="@{/stock-exchange/details/{id}(id=${se.id})}">Details</a>
+                <a class="btnAll draw-border mb-3" th:href="@{/stock-exchange/edit/{id}(id=${se.id})}">Edit</a>
+                <a class="btnAll draw-border mb-3" th:href="@{/stock-exchange/delete/{id}(id=${se.id})}">Delete</a>
+            </div>
+        </th:block>
+    </div>
+    <br>
+
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>

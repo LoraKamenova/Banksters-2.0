@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="login">
+<main class="main">
+
+    <th:block th:include="~{fragments/navbar-guest}"/>
+    <br>
+    <p  class=" text-center text-white"  style = "font-size:25px;" ><span>Login</span>
+
+    <div class="main-agileinfo">
+        <form id="loginForm" th:method="post" th:action="@{/login}">
+            <br>
+            <input class="text" type="text" name="username" placeholder="Username" required=""> <br>
+            <input class="text" type="password" name="password" placeholder="Password" required=""><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <th:block th:if="${param.error}">
+        <div class="text-center text-danger" style="color: white" th:text="${session.SPRING_SECURITY_LAST_EXCEPTION.message}">
+        </div>
+    </th:block>
+<br>
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>
+

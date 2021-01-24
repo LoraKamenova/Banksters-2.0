@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}" />
+<body class="background" id="stock-exchange">
+<main class="main">
+
+    <th:block th:include="~{fragments/navbar-user}" />
+
+    <p class=" text-center text-white" style="font-size:25px;"><span>Delete Stock Exchange</span></p>
+    <br><br>
+
+    <form id="stockExchangeForm" th:method="post" th:action="@{/stock-exchange/delete/{id}(id=${model.id})}">
+        <div class="row">
+                <div class="col-md-12 text-white">
+                    <label for="SEName">Name</label>
+                    <input type="text" name="name" id="SEName" th:value="${model.name}" readonly/>
+                </div>
+            <div class="col-md-12 text-white">
+                <label for="SEDescription">Description</label>
+                <textarea class= "text-white" name="description" id="SEDescription" maxlength="1001" rows="6" cols="5" th:text="${model.description}" readonly></textarea>
+            </div>
+                <div class="col-md-12 text-white">
+                    <label for="SERegion">Region</label>
+                    <input type="text" name="region" id="SERegion" th:value="${model.region}" readonly/>
+                </div>
+                <div class="col-md-12 text-white">
+                    <label for="SEMarketPlace">Market Place</label>
+                    <input type="text" name="marketPlace" id="SEMarketPlace" th:value="${model.marketPlace}" readonly/>
+                </div>
+            <div class="col-md-12 text-white">
+                <label for="SETimeZone">Time Zone</label>
+                <input type="text" name="timeZone" id="SETimeZone" th:value="${model.timeZone}" readonly/>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="SECurrency">Currency</label>
+                <input type="text" name="currency" id="SECurrency" th:value="${model.currency}" readonly/>
+            </div>
+                <div class="col-md-12 text-white">
+                    <label for="SEMarketCap">Market Capitalisation</label>
+                    <input type="text" name="marketCap" id="SEMarketCap" th:value="${model.marketCap}" readonly/>
+                </div>
+            <div class="col-md-12 text-white">
+                <label for="SELogoURL">Logo URL</label>
+                <input type="text" name="logoURL" id="SELogoURL" th:value="${model.logoURL}" readonly/>
+            </div>
+                <div class="col-md-12 text-white">
+                    <label for="SEPictureURL">Picture URL</label>
+                    <input type="text" name="pictureURL" id="SEPictureURL" th:value="${model.pictureURL}" readonly/>
+                </div>
+                <div class="col-md-12 text-white">
+                    <label for="SEWebsite">Website</label>
+                    <input type="text" name="website" id="SEWebsite" th:value="${model.website}" readonly/>
+                </div>
+            </div>
+
+        <input id="SEDeleteButton" type="submit" value="Delete">
+    </form>
+
+</main>
+<th:block th:include="~{fragments/footer}" />
+</body>
+</html>

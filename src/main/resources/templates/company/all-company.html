@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
+<body class="background" id="company">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+
+    < <p class=" text-center text-white"  style = "font-size:25px;" ><span>Top Companies</span></p>
+    <br><br>
+
+    <div class="containerAll">
+        <th:block th:each="company : ${companies}">
+            <div class="cardAll">
+                <br>
+                <img th:src="${company.logoURL}" class="card__imageAll">
+                <br>
+                <br>
+                <p class="card__nameAll" th:text="${company.name}"></p>
+                <br>
+                <br>
+                <div class="grid-containerAll">
+                </div>
+                <a class="btnAll draw-border mb-3" th:href="@{/company/details/{id}(id=${company.id})}">Details</a>
+            </div>
+        </th:block>
+    </div><br>
+
+</main>
+<th:block th:include="~{fragments/footer}"/>
+</body>
+</html>

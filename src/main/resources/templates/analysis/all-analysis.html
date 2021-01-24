@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}" />
+<body class="background" id="analysis">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}"/>
+    <p class=" text-center text-white" style="font-size:25px;"><span>All Analyses</span></p>
+    <br><br>
+    <div class="text-center">
+        <a class="btn btn-danger text-center mr-3" th:href="@{/create-analysis}">Add Analysis</a>
+    </div>
+    <br><br>
+
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>COMPANY</th>
+                <th>TICKER</th>
+                <th>ACTIONS</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <th:block th:each="analysis, iter : ${analyses}" th:object="${analysis}">
+                <tr>
+                    <td th:text="${iter.index + 1}"></td>
+                    <td th:text="${analysis.company}"></td>
+                    <td th:text="${analysis.ticker}"></td>
+                    <td >
+                        <div>
+                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                                <a th:href="@{/analysis/edit/{id}(id=${analysis.id})}" class="btn btn-outline-dark">Edit</a>
+                            </th:block>
+                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                                <a th:href="@{/analysis/delete/{id}(id=*{id})}" class="btn btn-outline-dark">Delete</a>
+                            </th:block>
+                        </div>
+                    </td>
+                </tr>
+            </th:block>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+</main>
+<th:block th:include="~{fragments/footer}" />
+</body>
+</html>

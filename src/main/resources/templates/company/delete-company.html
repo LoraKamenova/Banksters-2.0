@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}" />
+<body class="background" id="company">
+<main class="main">
+    <th:block th:include="~{fragments/navbar-user}" />
+
+    <p class=" text-center text-white"  style = "font-size:25px;" ><span>Delete Company</span></p>
+    <br><br>
+
+    <form id="companyForm" th:method="post" th:action="@{/company/delete/{id}(id=${model.id})}">
+        <div class="row">
+            <div class="col-md-12 text-white">
+                <label for="CName">Name</label>
+                <input type="text" name="name" id="CName" th:value="${model.name}" disabled/>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="CDescription">Description</label>
+                <textarea class= "text-white" name="description" id="CDescription" maxlength="1500" rows="6" cols="5" th:text="${model.description}" readonly></textarea>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="CIndustry">Industry</label>
+                <input type="text" name="industry" id="CIndustry" th:value="${model.industry}" readonly/>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="CFounded">Founded</label>
+                <input type="text" name="founded" id="CFounded" th:value="${model.founded}" readonly/>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="CHeadquarters">Headquarters</label>
+                <input type="text" name="headquarters" id="CHeadquarters" th:value="${model.headquarters}" readonly/>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="CRevenues">Revenues&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="revenues" id="CRevenues" th:value="${model.revenues}" readonly/>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="CEmployees">Employees&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="employees" id="CEmployees" th:value="${model.employees}" readonly/>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="CWebsite">Website</label>
+                <input type="text" name="website" id="CWebsite" th:value="${model.website}" readonly/>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="CLogoURL">Logo URL </label>
+                <input type="text" name="logoURL" id="CLogoURL" th:value="${model.logoURL}" readonly/>
+            </div>
+            <div class="col-md-12 text-white">
+                <label for="CBrands">Brands URL </label>
+                <input type="text" name="brandsURL" id="CBrands" th:value="${model.brandsURL}" readonly/>
+            </div>
+        </div>
+
+        <input id="CDeleteButton" type="submit" value="Delete">
+    </form>
+
+</main>
+<th:block th:include="~{fragments/footer}" />
+</body>
+</html>
