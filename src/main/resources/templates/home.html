@@ -10,12 +10,12 @@
 
 <nav class="upper-breadcrumb-navigation">
     <ul class="breadcrumb-list">
-        <li class="first-breadcrumb-li-item"><a th:href="@{/home}">HOME</a></li>
-        <li class="breadcrumb-li-item"><a th:href="@{/all-stock-exchange}">STOCK EXCHANGES</a></li>
-        <li class="breadcrumb-li-item"><a th:href="@{/all-index}">MARKET INDEXES</a></li>
-        <li class="breadcrumb-li-item"><a th:href="@{/all-company}">COMPANIES</a></li>
-        <li class="breadcrumb-li-item"><a th:href="@{/all-stock}">STOCKS</a></li>
-        <li class="breadcrumb-li-item"><a th:href="@{/info-panel}">EXPERTS`S CORNER</a></li>
+        <li class="first-breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/home}">HOME</a></li>
+        <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-stock-exchange}">STOCK EXCHANGES</a></li>
+        <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-index}">MARKET INDEXES</a></li>
+        <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-company}">COMPANIES</a></li>
+        <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-stock}">STOCKS</a></li>
+        <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/info-panel}">EXPERTS`S CORNER</a></li>
     </ul>
 </nav>
 
@@ -43,7 +43,9 @@
         <button class="modal-button" id="myBtn"><img src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1611605738/Java%20Project/download-removebg-preview_nxsli2.png"></button>
         <div class="modal" id="myModal" >
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <div class="close-container">
+                    <span class="close">&times;</span>
+                </div>
                 <p class="modal-paragraph">We may use cookies or similar technologies to optimize your user experience.
                     If you continue to use this site, you consent to our use of cookies and similar technologies.
                     You can check our Cookie and GDPR policies <a th:href="@{/GDPR}">here</a></p>
@@ -55,13 +57,13 @@
 
     <nav class="lower-breadcrumb-navigation">
         <ul class="breadcrumb-list">
-            <li class="first-breadcrumb-li-item"><a th:href="@{/about-us}">ABOUT US</a></li>
-            <li class="breadcrumb-li-item"><a th:href="@{/walkthrough}">WALKTHROUGH</a></li>
-            <li class="breadcrumb-li-item"><a th:href="@{/dictionary}">DICTIONARY</a></li>
-            <li class="breadcrumb-li-item"><a th:href="@{/faq}">FAQ</a></li>
-            <li class="breadcrumb-li-item"><a th:href="@{/GDPR}">COOKIES & GDPR POLICY</a></li>
-            <li class="breadcrumb-li-item"><a th:href="@{/general-terms}">TERMS & CONDITIONS</a></li>
-            <li class="breadcrumb-li-item"><a th:href="@{/contact-us}">CONTACT US</a></li>
+            <li class="first-breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/about-us}">ABOUT US</a></li>
+            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/walkthrough}">WALKTHROUGH</a></li>
+            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/dictionary}">DICTIONARY</a></li>
+            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/faq}">FAQ</a></li>
+            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/GDPR}">COOKIES & GDPR POLICY</a></li>
+            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/general-terms}">TERMS & CONDITIONS</a></li>
+            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/contact-us}">CONTACT US</a></li>
         </ul>
     </nav>
 
