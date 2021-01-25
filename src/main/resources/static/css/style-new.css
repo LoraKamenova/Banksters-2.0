@@ -8,6 +8,7 @@
     background-size: cover;
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1611588737/Java%20Project/share-market-update-omcs-trade-with-gains-bpcl-igl-ongc-climb-up-to-2_jh9pe2.jpg');
 }
+
 /*background- obscure*/
 .background:after {
     content: '';
@@ -20,6 +21,7 @@
     left: 0;
     z-index: -1;
 }
+
 /*--------------------------------------------------------------------------------*/
 /*user-navigation*/
 .user-navigation {
@@ -47,7 +49,7 @@
     background: transparent;
 }
 
-a.user-button{
+a.user-button {
     text-decoration: none;
 }
 
@@ -67,6 +69,7 @@ a.user-button{
     font-size: 30px;
     color: #1c7430;
 }
+
 /*----------------------------------------------------------*/
 /*home*/
 .home-section {
@@ -76,6 +79,7 @@ a.user-button{
     margin: 0 auto;
 }
 
+/*bread navigations*/
 .upper-breadcrumb-navigation, .lower-breadcrumb-navigation {
     display: flex;
     justify-content: center;
@@ -112,18 +116,13 @@ a.user-button{
     height: 65vh;
 }
 
+/*facts*/
 .facts-container, .cookie-container {
     width: 30%;
 }
 
 .facts-container {
     margin-top: 2%;
-}
-
-.introduction-container {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
 }
 
 .fact-wrapper {
@@ -151,3 +150,34 @@ a.user-button{
     text-align: center;
     margin: 20px 0;
 }
+
+/*stock*/
+.introduction-container {
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+
+.stock-container {
+    background-image: url("https://res.cloudinary.com/dyhmxus4n/image/upload/v1611601262/Java%20Project/depositphotos_5045535-stock-photo-certificate_n3eehh.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+.stock-heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.stock-paragraph {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
