@@ -1,15 +1,13 @@
 <th:block th:fragment xmlns:th="http://www.w3.org/1999/xhtml">
-    <div class="user-navigation">
-        <div class="left-buttons-container">
-            <a class="user-button" th:href="@{/home}">Go Home</a>
-            <a class="user-button" th:href="@{/my-profile}">My Profile</a>
-        </div>
-
+    <nav class="user-navigation">
         <div class="greeting-container">
             <span class="greeting" th:text="${greeting}"></span>
         </div>
 
-        <div class="right-buttons-container">
+        <div class="buttons-container">
+            <a class="user-button" th:href="@{/home}">Go Home</a>
+            <a class="user-button" th:href="@{/my-profile}">My Profile</a>
+
             <form th:action="@{/logout}" th:method="post">
                 <button class="user-button">Logout</button>
             </form>
@@ -18,35 +16,5 @@
                 <a class="user-button" th:href="@{/data-panel}">Data Panel</a>
             </th:block>
         </div>
-    </div>
+    </nav>
 </th:block>
-
-
-<!--<th:block th:fragment xmlns:th="http://www.w3.org/1999/xhtml">-->
-<!--    <nav class="navbar navbar-expand-lg navbar-background: rgba(0, 0, 0, 0.1)">-->
-<!--        <div class="collapse navbar-collapse d-flex">-->
-<!--            <div class="text-left" id="greeting">-->
-<!--                <span style="font-family: fantasy;" th:text="${greeting}"></span>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="collapse navbar-collapse d-flex justify-content-end">-->
-<!--            <th:block sec:authorize="hasRole('ROLE_ADMIN') || hasRole('ROLE_MODERATOR')">-->
-<!--                <a class="userButtons nav-link text-white active font-weight-bold mr-0" id="userButton1" th:href="@{/data-panel}">Data Panel</a>-->
-<!--            </th:block>-->
-<!--            <a class="userButtons nav-link text-white active font-weight-bold mr-0" id="userButton2" th:href="@{/home}">Go Home</a>-->
-<!--            <a class="userButtons nav-link text-white active font-weight-bold mr-0" id="userButton3" th:href="@{/my-profile}">My Profile</a>-->
-<!--            <form th:action="@{/logout}" th:method="post">-->
-<!--                <button class="btn userButtons nav-link text-white active font-weight-bold mr-0" id="userButton4">Logout</button>-->
-<!--            </form>-->
-<!--        </div>-->
-<!--    </nav>-->
-
-<!--    <div class="container-fluid">-->
-<!--        <div class="row">-->
-<!--            <div class="col-xl-12">-->
-<!--                <hr size="5px" color="red" noshade style="margin-top: 5px; margin-bottom: 15px"/>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</th:block>-->

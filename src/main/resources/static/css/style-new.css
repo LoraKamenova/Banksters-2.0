@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
-/*!* home and index background*!*/
-/*.background {*/
-/*    background-position: center center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-attachment: fixed;*/
-/*    background-size: cover;*/
-/*    background-color: #464646;*/
-/*}*/
-/*!*main background- obscure*!*/
-/*.background:after {*/
-/*    content: '';*/
-/*    display: block;*/
-/*    background-color: rgba(0, 0, 0, 0.8);*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    z-index: -1;*/
-/*}*/
 
+/*background*/
+.background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1611588737/Java%20Project/share-market-update-omcs-trade-with-gains-bpcl-igl-ongc-climb-up-to-2_jh9pe2.jpg');
+}
+/*background- obscure*/
+.background:after {
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/*--------------------------------------------------------------------------------*/
+/*user-navigation*/
 .user-navigation {
     width: 96%;
     margin: 0 auto;
@@ -31,7 +33,7 @@
     padding: 10px 0;
 }
 
-.left-buttons-container, .right-buttons-container {
+.buttons-container {
     display: flex;
 }
 
@@ -64,4 +66,88 @@ a.user-button{
     font-family: 'Yusei Magic', sans-serif;
     font-size: 30px;
     color: #1c7430;
+}
+/*----------------------------------------------------------*/
+/*home*/
+.home-section {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.upper-breadcrumb-navigation, .lower-breadcrumb-navigation {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.upper-breadcrumb-navigation {
+    align-self: start;
+}
+
+.lower-breadcrumb-navigation {
+    align-self: end;
+}
+
+.breadcrumb-list {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.breadcrumb-li-item {
+    padding: 0 10px;
+    border-left: 1px solid white;
+}
+
+.first-breadcrumb-li-item {
+    padding: 0 10px;
+}
+
+.home-content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 65vh;
+}
+
+.facts-container, .cookie-container {
+    width: 30%;
+}
+
+.facts-container {
+    margin-top: 2%;
+}
+
+.introduction-container {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.fact-wrapper {
+    width: 70%;
+    border-top: 5px dotted white;
+    border-bottom: 5px dotted white;
+    color: white;
+}
+
+.fact-header {
+    margin: 10px 0 20px 5px;
+}
+
+.far.fa-lightbulb {
+    font-size: 50px;
+    color: yellow;
+}
+
+.fact-question {
+    font-size: 25px;
+}
+
+.fact-content {
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
 }

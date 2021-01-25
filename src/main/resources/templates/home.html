@@ -3,85 +3,72 @@
       xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="~{fragments/head}"/>
 
-<body class="background" id="home">
-<main class="main">
+<body class="background">
+<main >
     <th:block th:include="~{fragments/navbar-user}"/>
+    <section class="home-section">
 
-    <div class="container-fluid">
-        <div class="text-center">
-            <ul class="breadcrumb">
-                <li><a th:href="@{/home}">HOME</a></li>
-                <li><a th:href="@{/all-stock-exchange}">STOCK EXCHANGES</a></li>
-                <li><a th:href="@{/all-index}">MARKET INDEXES</a></li>
-                <li><a th:href="@{/all-company}">COMPANIES</a></li>
-                <li><a th:href="@{/all-stock}">STOCKS</a></li>
-                <li><a th:href="@{/info-panel}">EXPERTS`S CORNER</a></li>
-            </ul>
-        </div>
-    </div>
+<nav class="upper-breadcrumb-navigation">
+    <ul class="breadcrumb-list">
+        <li class="first-breadcrumb-li-item"><a th:href="@{/home}">HOME</a></li>
+        <li class="breadcrumb-li-item"><a th:href="@{/all-stock-exchange}">STOCK EXCHANGES</a></li>
+        <li class="breadcrumb-li-item"><a th:href="@{/all-index}">MARKET INDEXES</a></li>
+        <li class="breadcrumb-li-item"><a th:href="@{/all-company}">COMPANIES</a></li>
+        <li class="breadcrumb-li-item"><a th:href="@{/all-stock}">STOCKS</a></li>
+        <li class="breadcrumb-li-item"><a th:href="@{/info-panel}">EXPERTS`S CORNER</a></li>
+    </ul>
+</nav>
 
-    <div class="grid-containerHome">
-        <div class="grid-itemHome">
-            <button id="myBtn"></button>
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>We may use cookies or similar technologies to optimize your user experience.
-                        If you continue to use this site, you consent to our use of cookies and similar technologies.
-                        You can check our Cookie and GDPR policies <a th:href="@{/GDPR}">here</a></p>
-                </div>
+<section class="home-content-container">
+
+    <article class="facts-container">
+        <div class="fact-wrapper">
+                <div class="fact-header"><i class="far fa-lightbulb"></i> <span class="fact-question">Did you know that ... </span></div>
+                <p class="fact-content" th:text="${fact.factText}"></p>
             </div>
         </div>
+    </article>
 
-        <div class="grid-itemHome">
-            <div class="blockquote-wrapper">
-                <div class="blockquote">
-                    <h3><i class="fa fa-lightbulb-o text-warning" style="font-size:48px;" aria-hidden="true"></i> Did
-                        you know that ....
+    <article class="introduction-container">
+        <div class="content">
+            <p style="font-size:35px; font-style: italic">BANK$TER$</p>
+            <br>
+            <p style="font-size:19px">is a licensed investment broker working with individual investors
+                who want to trade with stocks of Bulgarian and international companies.</p>
+            <br>
+            <br>
+            <p style="font-size:19px">We are experienced financial consultant who will explain thoroughly
+                and professionally your investment options.</p>
+        </div>
+    </article>
 
-                    </h3>
-                    <h4 th:text="${fact.factText}"></h4>
-                </div>
+    <article class="cookie-container">
+        <button id="myBtn"></button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>We may use cookies or similar technologies to optimize your user experience.
+                    If you continue to use this site, you consent to our use of cookies and similar technologies.
+                    You can check our Cookie and GDPR policies <a th:href="@{/GDPR}">here</a></p>
             </div>
         </div>
-    </div>
+    </article>
+</section>
 
-    <section>
-        <div class="containerH">
-            <div id="background-img">
-                <div class="box">
-                    <span></span><span></span><span></span><span></span>
-                    <div class="content">
-                        <p style="font-size:35px; font-style: italic">BANK$TER$</p>
-                        <br>
-                        <p style="font-size:19px">is a licensed investment broker working with individual investors
-                            who want to trade with stocks of Bulgarian and international companies.</p>
-                        <br>
-                        <br>
-                        <p style="font-size:19px">We are experienced financial consultant who will explain thoroughly
-                            and professionally your investment options.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <nav class="lower-breadcrumb-navigation">
+        <ul class="breadcrumb-list">
+            <li class="first-breadcrumb-li-item"><a th:href="@{/about-us}">ABOUT US</a></li>
+            <li class="breadcrumb-li-item"><a th:href="@{/walkthrough}">WALKTHROUGH</a></li>
+            <li class="breadcrumb-li-item"><a th:href="@{/dictionary}">DICTIONARY</a></li>
+            <li class="breadcrumb-li-item"><a th:href="@{/faq}">FAQ</a></li>
+            <li class="breadcrumb-li-item"><a th:href="@{/GDPR}">COOKIES & GDPR POLICY</a></li>
+            <li class="breadcrumb-li-item"><a th:href="@{/general-terms}">TERMS & CONDITIONS</a></li>
+            <li class="breadcrumb-li-item"><a th:href="@{/contact-us}">CONTACT US</a></li>
+        </ul>
+    </nav>
+
     </section>
-
-    <div class="container-fluid">
-        <div id="secondLine" class="text-center">
-            <ul class="breadcrumb">
-                <li><a th:href="@{/about-us}">ABOUT US</a></li>
-                <li><a th:href="@{/walkthrough}">WALKTHROUGH</a></li>
-                <li><a th:href="@{/dictionary}">DICTIONARY</a></li>
-                <li><a th:href="@{/faq}">FAQ</a></li>
-                <li><a th:href="@{/GDPR}">COOKIES & GDPR POLICY</a></li>
-                <li><a th:href="@{/general-terms}">TERMS & CONDITIONS</a></li>
-                <li><a th:href="@{/contact-us}">CONTACT US</a></li>
-            </ul>
-        </div>
-    </div>
-
     <script src="/js/modal.js"></script>
-
 </main>
 <th:block th:include="~{fragments/footer-home-page}"/>
 </body>
