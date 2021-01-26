@@ -7,7 +7,7 @@
     <th:block th:include="~{fragments/navbar-guest}"/>
 
     <section class="register-page">
-        <h2 class="register-form-heading">Register page</h2>
+        <h2 class="register-form-heading">Register Page</h2>
             <form class="register-form" th:method="post" th:action="@{/register}" th:object="${model}">
                 <div class="form-group">
                     <input class="register-form-field" type="text" th:value="*{username}" name="username"

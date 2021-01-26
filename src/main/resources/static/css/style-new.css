@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
 /*background image*/
-.background, .introduction-container {
+.background, .index {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,9 +29,8 @@
 }
 
 .index {
-    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1611689600/Java%20Project/istockphoto-1126630769-612x612_qesjqu.jpg');
+    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1592737998/Java%20Project/index_pwzxm5.webp');
 }
-
 /*--------------------------------------------------------------------------------*/
 /*navigation*/
 .user-navigation, .guest-navigation, .error-navigation {
@@ -39,7 +41,6 @@
     flex-wrap: nowrap;
     border-bottom: 1px darkred solid;
     padding: 10px 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 .user-navigation {
@@ -92,6 +93,7 @@ footer {
     position:relative;
     bottom:3px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 /*------------------------------------------------------------------------------------------------------------*/
 /*index page*/
@@ -118,7 +120,7 @@ footer {
 .index-image {
     width: 460px;
     height: 250px;
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 .index-paragraph-container {
@@ -425,23 +427,22 @@ footer {
     text-decoration: solid;
 }
 /*------------------------------------------------------------------------------------------------*/
-/*register page*/
+/*register and register page*/
 
-.register-page {
+.register-page, .login-page {
     width: 40%;
     margin: 3% auto;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
 }
 
-.register-form-heading {
+.register-form-heading, .login-form-heading {
     color: white;
     text-align: center;
     margin: 20px;
     font-size: 25px;
 }
 
-.register-form {
+.register-form, .login-form {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -465,7 +466,17 @@ footer {
     border: 1px solid gray;
 }
 
-.register-form-button {
+.login-form-field {
+    width: 95%;
+    margin-top: 5px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.register-form-button, .login-form-button {
     width: 95%;
     margin: 5px;
     padding: 10px;
@@ -476,7 +487,7 @@ footer {
     font-weight: bold;
 }
 
-.register-form-button:hover {
+.register-form-button:hover, .login-form-button:hover {
     cursor: pointer;
     background-color: darkgreen;
 }
