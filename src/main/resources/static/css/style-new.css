@@ -114,7 +114,7 @@ a.user-button {
     color: darkslategray;
 }
 
-.breadcrumb-a:hover{
+.breadcrumb-a:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -166,14 +166,14 @@ a.user-button {
     margin: 20px 0;
 }
 
-/*introduction*/
-.introduction-container {
+/*center container with introduction*/
+.center-container {
     display: flex;
     width: 35%;
     margin: 4% 0;
 }
 
-.stock-container {
+.introduction-container {
     background-image: url("https://res.cloudinary.com/dyhmxus4n/image/upload/v1611611909/Java%20Project/7c80df139d3f6221db5ec22276d65595_q7vcex.jpg");
     background-repeat: no-repeat;
     display: flex;
@@ -182,15 +182,16 @@ a.user-button {
     padding: 30px;
     text-align: center;
     color: white;
+    border-radius: 15px;
 }
 
-.stock-heading {
+.introduction-heading {
     font-size: 35px;
     font-weight: bold;
     margin: 15px 0;
 }
 
-.stock-paragraph {
+.introduction-paragraph {
     font-size: 18px;
     margin: 15px 0;
 }
@@ -202,7 +203,7 @@ a.user-button {
     align-items: flex-end;
 }
 
-.modal-container {
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -212,16 +213,16 @@ a.user-button {
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(255, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
-    background-color: honeydew;
+    background-color: #fefefe;
     margin: 15% auto;
-    padding: 40px;
+    padding: 20px;
     border: 1px solid #888;
-    width: 50%;
-    text-align: justify;
+    width: 30%;
+    text-align: center;
 }
 
 .close-container {
@@ -230,20 +231,20 @@ a.user-button {
 }
 
 .close {
-    display: flex;
     color: #aaa;
+    float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: darkred;
+    color: red;
     text-decoration: none;
     cursor: pointer;
 }
 
-.modal-button {
+#myBtn {
     max-height: 200px;
     cursor: pointer;
     background: transparent;
@@ -251,7 +252,7 @@ a.user-button {
     border: none;
 }
 
-.modal-button:focus {
+#myBtn:focus {
     outline: none;
     border: none;
 }

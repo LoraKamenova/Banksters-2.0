@@ -4,69 +4,70 @@
 <th:block th:include="~{fragments/head}"/>
 
 <body class="background">
-<main >
+<main>
     <th:block th:include="~{fragments/navbar-user}"/>
     <section class="home-section">
 
-<nav class="upper-breadcrumb-navigation">
-    <ul class="breadcrumb-list">
-        <li class="first-breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/home}">HOME</a></li>
-        <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-stock-exchange}">STOCK EXCHANGES</a></li>
-        <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-index}">MARKET INDEXES</a></li>
-        <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-company}">COMPANIES</a></li>
-        <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-stock}">STOCKS</a></li>
-        <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/info-panel}">EXPERTS`S CORNER</a></li>
-    </ul>
-</nav>
+        <nav class="upper-breadcrumb-navigation">
+            <ul class="breadcrumb-list">
+                <li class="first-breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/home}">HOME</a></li>
+                <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-stock-exchange}">STOCK EXCHANGES</a></li>
+                <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-index}">MARKET INDEXES</a></li>
+                <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-company}">COMPANIES</a></li>
+                <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/all-stock}">STOCKS</a></li>
+                <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/info-panel}">EXPERTS`S CORNER</a>
+                </li>
+            </ul>
+        </nav>
 
-<section class="home-content-container">
+        <section class="home-content-container">
 
-    <article class="facts-container">
-        <div class="fact-wrapper">
-                <div class="fact-header"><i class="far fa-lightbulb"></i> <span class="fact-question">Did you know that ... </span></div>
-                <p class="fact-content" th:text="${fact.factText}"></p>
-            </div>
-        </div>
-    </article>
-
-    <article class="introduction-container">
-        <div class="stock-container">
-            <h2 class="stock-heading">BANK$TER$</h2>
-            <p class="stock-paragraph">is a licensed investment broker working with individual investors
-                who want to trade with stocks of Bulgarian and international companies.</p>
-            <p class="stock-paragraph">We are experienced financial consultant who will explain thoroughly
-                and professionally your investment options.</p>
-        </div>
-    </article>
-
-    <article class="cookie-container">
-        <button class="modal-button" id="myBtn"><img src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1611605738/Java%20Project/download-removebg-preview_nxsli2.png"></button>
-        <div class="modal" id="myModal" >
-            <div class="modal-content">
-                <div class="close-container">
-                    <span class="close">&times;</span>
+            <article class="facts-container">
+                <div class="fact-wrapper">
+                    <div class="fact-header"><i class="far fa-lightbulb"></i> <span class="fact-question">Did you know that ... </span></div>
+                    <p class="fact-content" th:text="${fact.factText}"></p>
                 </div>
-                <p class="modal-paragraph">We may use cookies or similar technologies to optimize your user experience.
-                    If you continue to use this site, you consent to our use of cookies and similar technologies.
-                    You can check our Cookie and GDPR policies <a th:href="@{/GDPR}">here</a></p>
-            </div>
-        </div>
-    </article>
+            </article>
 
-</section>
+            <article class="center-container">
+                <div class="introduction-container">
+                    <h2 class="introduction-heading">BANK$TER$</h2>
+                    <p class="introduction-paragraph">is a licensed investment broker working with individual investors
+                        who want to trade with stocks of Bulgarian and international companies.</p>
+                    <p class="introduction-paragraph">We are experienced financial consultant who will explain
+                        thoroughly and professionally your investment options.</p>
+                </div>
+            </article>
 
-    <nav class="lower-breadcrumb-navigation">
-        <ul class="breadcrumb-list">
-            <li class="first-breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/about-us}">ABOUT US</a></li>
-            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/walkthrough}">WALKTHROUGH</a></li>
-            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/dictionary}">DICTIONARY</a></li>
-            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/faq}">FAQ</a></li>
-            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/GDPR}">COOKIES & GDPR POLICY</a></li>
-            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/general-terms}">TERMS & CONDITIONS</a></li>
-            <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/contact-us}">CONTACT US</a></li>
-        </ul>
-    </nav>
+            <article class="cookie-container">
+                <button id="myBtn">
+                    <img src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1611605738/Java%20Project/download-removebg-preview_nxsli2.png">
+                </button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="close-container">
+                            <span class="close">&times;</span>
+                        </div>
+                        <p>We may use cookies or similar technologies to optimize your user experience.
+                            If you continue to use this site, you consent to our use of cookies and similar
+                            technologies. You can check our Cookie and GDPR policies <a th:href="@{/GDPR}">here</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
 
+        <nav class="lower-breadcrumb-navigation">
+            <ul class="breadcrumb-list">
+                <li class="first-breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/about-us}">ABOUT US</a></li>
+                <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/walkthrough}">WALKTHROUGH</a></li>
+                <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/dictionary}">DICTIONARY</a></li>
+                <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/faq}">FAQ</a></li>
+                <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/GDPR}">COOKIES & GDPR POLICY</a></li>
+                <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/general-terms}">TERMS & CONDITIONS</a></li>
+                <li class="breadcrumb-li-item"><a class="breadcrumb-a" th:href="@{/contact-us}">CONTACT US</a></li>
+            </ul>
+        </nav>
     </section>
     <script src="/js/modal.js"></script>
 </main>
