@@ -24,15 +24,22 @@
 
 /*--------------------------------------------------------------------------------*/
 /*user-navigation*/
-.user-navigation {
+.user-navigation, .error-navigation {
     width: 96%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
     border-bottom: 1px darkred solid;
     padding: 10px 0;
+}
+
+.user-navigation {
+    justify-content: space-between;
+}
+
+.error-navigation {
+    justify-content: flex-end;
 }
 
 .buttons-container {
@@ -40,10 +47,9 @@
 }
 
 .user-button {
-    color: darkslategray;
-    padding: 10px;
-    border-radius: 15px;
-    border: 1px darkslategray solid;
+    color: #004225;
+    padding: 13px;
+    border: 1px #004225 solid;
     margin: 5px;
     text-transform: uppercase;
     background: transparent;
@@ -55,7 +61,7 @@ a.user-button {
 
 .user-button:hover {
     color: white;
-    background: darkslategray;
+    background: #004225;
     cursor: pointer;
     font-weight: bold;
 }
@@ -68,7 +74,7 @@ a.user-button {
 .greeting {
     font-family: 'Yusei Magic', sans-serif;
     font-size: 30px;
-    color: #1c7430;
+    color: #004225;
 }
 
 /*----------------------------------------------------------*/
@@ -137,7 +143,8 @@ a.user-button {
 }
 
 .facts-container {
-    margin-top: 5%;
+    display: flex;
+    align-items: center;
 }
 
 .fact-wrapper {
@@ -185,7 +192,6 @@ a.user-button {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    /*border: 2px solid white;*/
     backdrop-filter: blur(15px);
 }
 
@@ -259,4 +265,103 @@ a.user-button {
 #myBtn:focus {
     outline: none;
     border: none;
+}
+/*---------------------------------------------------------------------------------------*/
+/*error*/
+.error-section, .diagram-container, .first-layer,  .second-layer, .third-layer, .real-error-container {
+    display: flex;
+    justify-content: center;
+}
+.error-section {
+    width: 90%;
+    flex-direction: column;
+    margin: 1% auto;
+}
+
+.diagram-container {
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.first-layer {
+    align-self: center;
+    width: 30%;
+    padding: 30px 50px;
+    border: 1px solid white;
+    color: white;
+    backdrop-filter: blur(15px);
+}
+
+.first-block-of-second-layer, .second-block-of-second-layer {
+    width: 15%;
+    height: 50px;
+}
+
+.first-block-of-second-layer {
+    border-right: 1px solid white;
+}
+
+.third-layer {
+    align-self: center;
+    height: 50px;
+    width: 50%;
+    padding: 30px 50px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.fourth-layer {
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.empty-block-of-fourth-layer {
+    width: 50%;
+}
+.content-block-of-fourth-layer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+    backdrop-filter: blur(15px);
+}
+
+.error-line {
+    padding: 3px;
+}
+
+.error-content {
+    padding: 5px;
+}
+
+.fas.fa-times {
+    color:red;
+    margin-right: 3px;
+}
+
+.fas.fa-check {
+    color:green;
+}
+
+.real-error-container {
+    margin: 3% auto;
+}
+
+.error-details {
+    padding: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: red;
+    border: 2px solid red;
+    backdrop-filter: blur(15px);
+}
+
+.error-title {
+    text-decoration: solid;
 }

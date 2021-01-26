@@ -4,33 +4,56 @@
 <head>
     <th:block th:include="~{fragments/head}"/>
 </head>
-<body class="background" id="error">
-<div class="container-fluid">
-    <header>
-        <th:block th:include="~{fragments/navbar-error}"/>
-    </header>
-    <main>
-        <br>
-        <div class="bg-image-quote-create">
-            <div class="text-center">
-                <img class="img" src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1594069883/Java%20Project/yvg61tginqrxrxp0nxgb.png" alt="Error" width="560"
-                     height="350">
+<body class="background">
+<main>
+    <th:block th:include="~{fragments/navbar-error}"/>
+    <div class="error-section">
+        <div class="diagram-container">>
+            <div class="first-layer"><span>ERROR PAGE</span></div>
+            <div class="second-layer">
+                <div class="first-block-of-second-layer"></div>
+                <div class="second-block-of-second-layer"></div>
             </div>
-            <br>
-            <br>
-            <div class="text-center">
-                <h3  th:utext="${message}" style="font-size: 25px; color: red;"></h3>
+            <div class="third-layer"></div>
+            <div class="fourth-layer">
+                <div class="content-block-of-fourth-layer">
+                    <div class="error-content">
+                        <i class="fas fa-times"></i>
+                        <span class="error-line">Problem:</span>
+                        <span class="error-line">System error</span>
+                    </div>
+                    <div class="error-content">
+                        <i class="fas fa-check"></i>
+                        <span class="error-line">Solution:</span>
+                        <span class="error-line">Replace the programmer</span>
+                    </div>
+                </div>
+                <div class="empty-block-of-fourth-layer"></div>
+                <div class="content-block-of-fourth-layer">
+                    <div class="error-content">
+                        <i class="fas fa-times"></i>
+                        <span class="error-line">Problem:</span>
+                        <span class="error-line">User error</span>
+                    </div>
+                    <div class="error-content">
+                        <i class="fas fa-check"></i>
+                        <span class="error-line">Solution:</span>
+                        <span class="error-line">Replace the user</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
+    </div>
 
-    </main>
-    <footer>
-        <th:block th:include="~{fragments/footer}"/>
-    </footer>
-</div>
+    <div class="real-error-container">
+        <div class="error-details">
+            <span class="error-title">Exact problem: </span><span th:utext="${message}"></span>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <th:block th:include="~{fragments/footer}"/>
+</footer>
 </body>
 </html>

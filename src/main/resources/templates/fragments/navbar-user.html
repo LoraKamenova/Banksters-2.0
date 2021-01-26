@@ -5,15 +5,15 @@
         </div>
 
         <div class="buttons-container">
-            <a class="user-button" th:href="@{/home}">Go Home</a>
-            <a class="user-button" th:href="@{/my-profile}">My Profile</a>
+            <a class="user-button" th:href="@{/home}">Home</a>
+            <a class="user-button" th:href="@{/my-profile}">Profile</a>
 
             <form th:action="@{/logout}" th:method="post">
                 <button class="user-button">Logout</button>
             </form>
 
             <th:block sec:authorize="hasRole('ROLE_ADMIN') || hasRole('ROLE_MODERATOR')">
-                <a class="user-button" th:href="@{/data-panel}">Data Panel</a>
+                <a class="user-button" th:href="@{/data-panel}">Data</a>
             </th:block>
         </div>
     </nav>
