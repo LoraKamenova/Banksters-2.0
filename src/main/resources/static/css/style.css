@@ -22,17 +22,17 @@
 /*    z-index: -1;*/
 /*}*/
 
-#index {
-    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1592737998/Java%20Project/index_pwzxm5.webp');
-}
-#home, #analysis, #company, #contract, #data, #faq, #general, #market-index, #order, #profile, #stock, #stock-exchange {
-    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1592738462/Java%20Project/home_background_sgp35w.jpg');
-}
+/*#index {*/
+/*    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1592737998/Java%20Project/index_pwzxm5.webp');*/
+/*}*/
+/*#home, #analysis, #company, #contract, #data, #faq, #general, #market-index, #order, #profile, #stock, #stock-exchange {*/
+/*    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1592738462/Java%20Project/home_background_sgp35w.jpg');*/
+/*}*/
 
-#error {
-    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1593691102/Java%20Project/keyboard_05_hd_picture_171003_opr1hf.jpg');
-    background-size: 100% 100%;
-}
+/*#error {*/
+/*    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1593691102/Java%20Project/keyboard_05_hd_picture_171003_opr1hf.jpg');*/
+/*    background-size: 100% 100%;*/
+/*}*/
 /*--------------------------------------------------------------------------------------------------------------*/
 /*Navbar greeting*/
 /*#greeting{*/
@@ -42,28 +42,28 @@
 /*    margin-left: 3%;*/
 /*}*/
 /*--------------------------------------------------------------------------------------------------------------*/
-/* guest-navbar - buttons */
-.guestButtons {
-    display: block;
-    width: 90px;
-    height: 45px;
-    padding: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-}
+/*!* guest-navbar - buttons *!*/
+/*.guestButtons {*/
+/*    display: block;*/
+/*    width: 90px;*/
+/*    height: 45px;*/
+/*    padding: 15px;*/
+/*    margin-top: 5px;*/
+/*    margin-bottom: 5px;*/
+/*    text-align: center;*/
+/*    border-radius: 5px;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*}*/
 
-#guestButton1, #guestButton2 {
-    background: #58427C;
-    width: 110px;
-}
+/*#guestButton1, #guestButton2 {*/
+/*    background: #58427C;*/
+/*    width: 110px;*/
+/*}*/
 
-#guestButton1:hover, #guestButton2:hover {
-    background-color: mediumpurple;
-}
+/*#guestButton1:hover, #guestButton2:hover {*/
+/*    background-color: mediumpurple;*/
+/*}*/
 /*--------------------------------------------------------------------------------------------------------------*/
 /* user-navbar - buttons */
 /*.userButtons {*/
