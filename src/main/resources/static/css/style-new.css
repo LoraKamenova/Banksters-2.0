@@ -503,3 +503,24 @@ footer {
     cursor: pointer;
     background-color: darkgreen;
 }
+
+/*-----------------------------------------------------------------------*/
+/*Terms and conditions*/
+
+.general-conditions-wrapper {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 3% auto;
+    background-image: url("https://www.meme-arsenal.com/memes/6c50ae8b8ba69d49682c57a1baba7073.jpg");
+}
+
+.general-conditions-main-heading {
+    text-align: center;
+    font-size: 18px;
+}
+
+.general-conditions-section {
+    margin: 10px;
+}

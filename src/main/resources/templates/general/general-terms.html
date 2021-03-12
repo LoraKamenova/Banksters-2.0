@@ -2,69 +2,80 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="~{fragments/head}"/>
-<body class="background" id="general">
-<main class="main">
+<body class="background">
+
+<main>
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <p class=" text-center text-white" style="font-size:25px;"><span>Terms & Conditions</span></p>
-
-    <div class="letter" id="letter">
-        <p>I. DEFINITIONS</p>
-        <p>CLIENT is a natural or legal person who uses the investment or additional services offered by Banksters Ltd.
-            in its capacity of investment intermediary, including when concluding transactions with securities for the own
-            cashAccount of the intermediary.</p>
-        <p>INVESTMENT INTERMEDIARY is a local or foreign person who has the right according to its national legislation
-            to provide professionally one or more investment services.</p>
-        <p>SECURITIES, as defined in the present rules, are
-            transferable rights registered under accounts with a depository institution (dematerialised securities) or
-            documents, which materialise transferable rights (available securities), which can be offered and traded at a
-            capital market</p>
-        <br>
-        <p>II. RESTRICTIONS IN THE ACTIVITY OF THE INVESTMENT INTERMEDIARY</p>
-        <p>(1) The Investment Intermediary shall not: 1. Perform transactions at the expense of clients in size or with
-            a frequency, at prices or with a particular counterparty, for which, depending on the circumstances, it can be
-            assumed that they are performed exclusively in the interest of the investment intermediary; 2. Purchase on own
-            cashAccount financial instruments, for which any of its clients has submitted a purchase order and shall not sell
-            them to clients at a price, higher than the price, at which it purchased them; 3. Perform transactions with money
-            and financial instruments of the client, for which it has not been authorised by the client; 4. Sell on own or on
-            another person's cashAccount financial instruments, which the investment intermediary or its client do not possess,
-            except under the conditions and pursuant to Chapter 18 of the present General Terms and Conditions; 5. Participate,
-            including as a registration agent, in concealed purchases or sales of financial instruments; 6. Receive the whole
-            benefit, or part of it, if the investment intermediary has concluded and executed the transaction under conditions,
-            which are more favourable than those the client has established; 7. Perform other activities in a way that threatens
-            the interests of its clients or the stability of the financial instruments market.</p>
-        <br>
-        <p>III. PROVIDING INFORMATION TO CLIENTS</p>
-        <p>(1) The information that the investment intermediary provides to its clients,
-            including in its advertising materials and public statements by the members of the managing
-            and controlling bodies of the intermediary and of the persons employed by it under a contract,
-            shall be intelligible, correct, clear and not misleading. (2) The investment intermediary shall
-            ensure that the information as per para. 1, which it provides to non-professional clients or disseminates
-            so that it reaches such clients, meets the following conditions: 1. It states the name of the investment
-            intermediary; 2. It is accurate and does not emphasize potential benefits from a given investment service
-            or financial instruments without stating at the same time the respective risks clearly and visibly. 3. It is
-            sufficient and is presented in an intelligible way for the usual members of the group, to which it is addressed
-            or is likely to reach; 4. It does not conceal, omit or depreciate important messages, statements or warnings.
-            (3) Where the information under para. 2 contains comparisons between investment or additional services, financial
-            instruments or persons providing investment or additional services, it shall meet the following conditions: 1.
-            The comparison must be instructive and presented in an objective and balanced way; 2. It must state the sources
-            of information used for the comparison; </p>
-        <br>
-        <p>IV. RIGHTS AND OBLIGATIONS OF THE PARTIES TO THE CONTRACT FOR PROVISION OF INVESTMENT SERVICES</p>
-        <p> The client shall have the following rights and obligations: 1. The right to require accurate execution of
-            the contractual obligations by the investment intermediary; 2. The right to receive from the investment
-            intermediary the whole required information as per the present General Terms and Conditions and the current
-            legislation; 3. The right to receive execution of a submitted order and portfolio management in accordance
-            with the investment intermediary's Policy for executing orders; 4. The right to receive the relevant reports
-            and notices for the services performed at its expense; 5. The right to receive the financial instruments
-            purchased in its name and at its expense; 6. The obligation to provide valid documents for ownership of the
-            financial instruments; 7. The obligation to provide to the investment intermediary, along with the submission
-            of an order for purchasing financial instruments, the money needed for the payment on the transaction, to
-            which the order refers, unless the client certifies that he/she will perform its payment obligation, as well
-            as in other cases as stated in an Ordinance of the Financial Supervision Commission and in Chapter 18 of
-            the present General Terms and Conditions.</p>
-    </div>
-    <br>
+    <section class="general-conditions-wrapper">
+        <h1 class="general-conditions-main-heading">Terms & Conditions</h1>
+        <article class="general-conditions-section">
+            <h3 class="general-conditions-heading">I. DEFINITIONS</h3>
+            <p class="general-conditions-paragraph">CLIENT is a natural or legal person who uses the investment or
+                additional services offered by Banksters Ltd. in its capacity of investment intermediary, including when
+                concluding transactions with securities for the own cashAccount of the intermediary.</p>
+            <p class="general-conditions-paragraph">INVESTMENT INTERMEDIARY is a local or foreign person who has the
+                right according to its national
+                legislation to provide professionally one or more investment services.</p>
+            <p class="general-conditions-paragraph">SECURITIES, as defined in the present rules, are transferable rights
+                registered under accounts with a
+                depositor institution (dematerialised securities) or documents, which materialise transferable rights
+                (available securities), which can be offered and traded at a capital market</p>
+        </article>
+        <article class="general-conditions-section">
+            <h3 class="general-conditions-heading">II. RESTRICTIONS IN THE ACTIVITY OF THE INVESTMENT INTERMEDIARY</h3>
+            <p class="general-conditions-paragraph">(1) The Investment Intermediary shall not: 1. Perform transactions
+                at the expense of clients in size or
+                with a frequency, at prices or with a particular counterparty, for which, depending on the
+                circumstances, it can be assumed that they are performed exclusively in the interest of the investment
+                intermediary; 2. Purchase on own Account financial instruments, for which any of its clients has
+                submitted a purchase order and shall not sell them to clients at a price, higher than the price, at
+                which it purchased them; 3. Perform transactions with money and financial instruments of the client, for
+                which it has not been authorised by the client; 4. Sell on own or on another person's cashAccount
+                financial instruments, which the investment intermediary or its client do not possess, except under the
+                conditions and pursuant to Chapter 18 of the present General Terms and Conditions; 5. Participate,
+                including as a registration agent, in concealed purchases or sales of financial instruments; 6. Receive
+                the whole benefit, or part of it, if the investment intermediary has concluded and executed the
+                transaction under conditions, which are more favourable than those the client has established; 7.
+                Perform other activities in a way that threatens the interests of its clients or the stability of the
+                financial instruments market.</p>
+        </article>
+        <article class="general-conditions-section">
+            <h3 class="general-conditions-heading">III. PROVIDING INFORMATION TO CLIENTS</h3>
+            <p class="general-conditions-paragraph">(1) The information that the investment intermediary provides to its
+                clients, including in its
+                advertising materials and public statements by the members of the managing and controlling bodies of the
+                intermediary and of the persons employed by it under a contract, shall be intelligible, correct, clear
+                and not misleading. (2) The investment intermediary shall ensure that the information as per para. 1,
+                which it provides to non-professional clients or disseminates so that it reaches such clients, meets the
+                following conditions: 1. It states the name of the investment intermediary; 2. It is accurate and does
+                not emphasize potential benefits from a given investment service or financial instruments without
+                stating at the same time the respective risks clearly and visibly. 3. It is sufficient and is presented
+                in an intelligible way for the usual members of the group, to which it is addressed or is likely to
+                reach; 4. It does not conceal, omit or depreciate important messages, statements or warnings. (3) Where
+                the information under para. 2 contains comparisons between investment or additional services, financial
+                instruments or persons providing investment or additional services, it shall meet the following
+                conditions: 1. The comparison must be instructive and presented in an objective and balanced way; 2. It
+                must state the sources of information used for the comparison; </p>
+        </article>
+        <article class="general-conditions-section">
+            <h3 class="general-conditions-heading">IV. RIGHTS AND OBLIGATIONS OF THE PARTIES TO THE CONTRACT FOR
+                PROVISION OF INVESTMENT SERVICES</h3>
+            <p class="general-conditions-paragraph"> The client shall have the following rights and obligations: 1. The
+                right to require accurate execution
+                of the contractual obligations by the investment intermediary; 2. The right to receive from the
+                investment intermediary the whole required information as per the present General Terms and Conditions
+                and the current legislation; 3. The right to receive execution of a submitted order and portfolio
+                management in accordance with the investment intermediary's Policy for executing orders; 4. The right to
+                receive the relevant reports and notices for the services performed at its expense; 5. The right to
+                receive the financial instruments purchased in its name and at its expense; 6. The obligation to provide
+                valid documents for ownership of the financial instruments; 7. The obligation to provide to the
+                investment intermediary, along with the submission of an order for purchasing financial instruments, the
+                money needed for the payment on the transaction, to which the order refers, unless the client certifies
+                that he/she will perform its payment obligation, as well as in other cases as stated in an Ordinance of
+                the Financial Supervision Commission and in Chapter 18 of the present General Terms and Conditions.</p>
+        </article>
+    </section>
 
 </main>
 <th:block th:include="~{fragments/footer}"/>
