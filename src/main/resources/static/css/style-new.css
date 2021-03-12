@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -508,19 +509,34 @@ footer {
 /*Terms and conditions*/
 
 .general-conditions-wrapper {
-    width: 50%;
+    width: 60%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: 3% auto;
     background-image: url("https://www.meme-arsenal.com/memes/6c50ae8b8ba69d49682c57a1baba7073.jpg");
+    font-family: 'Special Elite', cursive;
+    line-height: 1.6;
+    padding: 60px;
 }
 
 .general-conditions-main-heading {
     text-align: center;
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: bold;
+    /*margin-top: 30px;*/
 }
 
 .general-conditions-section {
-    margin: 10px;
+    margin: 30px 0;
 }
+
+.general-conditions-heading {
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.general-conditions-paragraph {
+    padding: 5px 0;
+}
+
