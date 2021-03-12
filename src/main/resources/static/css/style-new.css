@@ -3,6 +3,7 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
 /*background image*/
 .background, .index {
     background-position: center center;
@@ -31,6 +32,7 @@
 .index {
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1592737998/Java%20Project/index_pwzxm5.webp');
 }
+
 /*--------------------------------------------------------------------------------*/
 /*navigation*/
 .user-navigation, .guest-navigation, .error-navigation {
@@ -56,9 +58,9 @@
 }
 
 .user-button {
-    color: #004225;
+    color: #006B3C;
     padding: 13px;
-    border: 1px #004225 solid;
+    border: 1px #006B3C solid;
     margin: 5px;
     text-transform: uppercase;
     background: transparent;
@@ -83,18 +85,20 @@ a.user-button {
 .greeting {
     font-family: 'Yusei Magic', sans-serif;
     font-size: 30px;
-    color: #004225;
+    color: #006B3C;
 }
+
 /*--------------------------------------------------------------------------------------------------------------*/
 footer {
     font-size: 12px;
     color: darkslategrey;
     width: 100%;
-    position:relative;
-    bottom:3px;
+    position: relative;
+    bottom: 3px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+
 /*------------------------------------------------------------------------------------------------------------*/
 /*index page*/
 .index-container {
@@ -135,6 +139,7 @@ footer {
     font-size: 18px;
     padding: 5px;
 }
+
 /*------------------------------------------------------------------------------------------------------*/
 /*home page*/
 .home-section {
@@ -281,7 +286,7 @@ footer {
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
@@ -346,11 +351,17 @@ footer {
 
 .first-layer {
     align-self: center;
+    flex-direction: column;
+    align-items: center;
     width: 30%;
-    padding: 30px 50px;
+    padding: 20px 50px;
     border: 1px solid white;
     color: white;
     backdrop-filter: blur(15px);
+}
+
+.block-of-first-layer {
+    margin: 5px;
 }
 
 .first-block-of-second-layer, .second-block-of-second-layer {
@@ -426,6 +437,7 @@ footer {
 .error-title {
     text-decoration: solid;
 }
+
 /*------------------------------------------------------------------------------------------------*/
 /*register and register page*/
 
