@@ -27,7 +27,7 @@
 }
 
 .background {
-    background-image: url('https://www.teahub.io/photos/full/298-2987846_stock-market-wall.jpg');
+    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1618514803/Java%20Project/298-2987846_stock-market-wall_dfox8c.jpg');
 }
 
 .index {
@@ -273,7 +273,7 @@ footer {
 /*cookies*/
 .cookie-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
 }
 
