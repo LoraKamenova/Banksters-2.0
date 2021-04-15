@@ -59,12 +59,15 @@
 }
 
 .user-button {
-    color: #006B3C;
+    color: white;
+    background: #004225;
     padding: 13px;
+    border-radius: 15px;
     border: 1px #006B3C solid;
     margin: 5px;
     text-transform: uppercase;
-    background: transparent;
+    min-width: 100px;
+    text-align: center;
 }
 
 a.user-button {
@@ -73,7 +76,7 @@ a.user-button {
 
 .user-button:hover {
     color: white;
-    background: #004225;
+    background: #006B3C;
     cursor: pointer;
     font-weight: bold;
 }
@@ -92,7 +95,7 @@ a.user-button {
 /*--------------------------------------------------------------------------------------------------------------*/
 footer {
     font-size: 12px;
-    color: darkslategrey;
+    color: white;
     width: 100%;
     position: relative;
     bottom: 3px;
@@ -173,7 +176,7 @@ footer {
 
 .breadcrumb-li-item {
     padding: 0 10px;
-    border-left: 1px solid darkslategray;
+    border-left: 1px solid white;
 }
 
 .first-breadcrumb-li-item {
@@ -181,7 +184,7 @@ footer {
 }
 
 .breadcrumb-a {
-    color: darkslategray;
+    color: white;
 }
 
 .breadcrumb-a:hover {
@@ -189,7 +192,6 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 16px;
 }
 
 /*home main content*/
