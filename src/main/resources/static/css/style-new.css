@@ -17,7 +17,7 @@
 .background:after, .index:after {
     content: '';
     display: block;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.75);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -27,7 +27,7 @@
 }
 
 .background {
-    background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1611588737/Java%20Project/share-market-update-omcs-trade-with-gains-bpcl-igl-ongc-climb-up-to-2_jh9pe2.jpg');
+    background-image: url('https://www.teahub.io/photos/full/298-2987846_stock-market-wall.jpg');
 }
 
 .index {
