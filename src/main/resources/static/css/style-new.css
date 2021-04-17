@@ -185,13 +185,12 @@ footer {
 
 .breadcrumb-a {
     color: white;
+    text-transform: uppercase;
 }
 
 .breadcrumb-a:hover {
-    color: white;
+    color: yellowgreen;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
 /*home main content*/
