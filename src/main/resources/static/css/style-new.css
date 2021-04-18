@@ -60,10 +60,12 @@
 
 .user-button {
     color: white;
-    background: #004225;
+    background: #004D2B;
     padding: 13px;
-    border-radius: 7px;
-    border: 1px #006B3C solid;
+    border-radius: 3px;
+    /*border: 1px #006B3C solid;*/
+    border: none;
+    outline: none;
     margin: 5px;
     text-transform: uppercase;
     min-width: 100px;
@@ -78,7 +80,6 @@ a.user-button {
     color: white;
     background: #006B3C;
     cursor: pointer;
-    font-weight: bold;
 }
 
 .greeting-container {
@@ -189,7 +190,7 @@ footer {
 }
 
 .breadcrumb-a:hover {
-    color: yellowgreen;
+    color: #006B3C;
     text-decoration: none;
     font-weight: bold;
 }
