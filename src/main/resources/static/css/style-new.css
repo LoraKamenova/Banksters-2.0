@@ -63,12 +63,10 @@
     background: #004D2B;
     padding: 13px;
     border-radius: 3px;
-    /*border: 1px #006B3C solid;*/
     border: none;
     outline: none;
     margin: 5px;
-    text-transform: uppercase;
-    min-width: 100px;
+    min-width: 90px;
     text-align: center;
 }
 
