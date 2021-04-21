@@ -543,26 +543,23 @@ footer {
 
 /*------------------------------------------------------------------------*/
 /*dreamland page*/
-
-/*#dreamland {*/
-/*    margin: 0;*/
-/*    min-height: 100vh;*/
-/*    font-family: sans-serif;*/
-/*    display: block;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
+.dreamland-heading-wrapper {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    padding: 5px 0;
+}
 .dreamland-heading {
-    color: white;
     text-align: center;
     font-size: 30px;
+    color: #BF1889;
+    /*background: rgba(255, 30, 173, 0.75);*/
 }
 .dreamland-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5vmin;
+    margin: 3vmin 5vmin;
     overflow: hidden;
     transform: skew(5deg);
 }
