@@ -37,13 +37,13 @@
 /*--------------------------------------------------------------------------------*/
 /*navigation*/
 .user-navigation, .guest-navigation, .error-navigation {
-    width: 96%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     border-bottom: 1px darkred solid;
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 .user-navigation {
