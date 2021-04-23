@@ -636,8 +636,8 @@ footer {
     flex-direction: column;
     background: white;
     width: 90%;
-    margin: 1% auto;
-    padding: 30px 70px 50px 70px;
+    margin: 2% auto;
+    padding: 30px 70px 40px 70px;
 }
 
 .about-us-heading-container {
@@ -689,15 +689,24 @@ footer {
     display: flex;
 }
 
+.about-us-list {
+    margin: 15px 20px 15px 30px;
+}
+
+.about-us-li {
+    list-style-type: disc;
+}
+
 .dreamland-button-container {
     display: flex;
     justify-content: flex-end;
+    margin-top: 10px;
 }
 .dreamland-button {
     background: #C82333;
     text-align: center;
     color: white;
-    padding: 10px 16px 16px 16px;
+    padding: 9px 15px 15px 15px;
     border-radius: 5px;
     outline: none;
     font-family: 'Yusei Magic', sans-serif;
@@ -706,7 +715,7 @@ footer {
 .dreamland-button:hover {
     text-decoration: none;
     color: white;
-    background: #A11C29;
+    background: #ED293C;
 }
 
 .fas.fa-angle-double-right {
