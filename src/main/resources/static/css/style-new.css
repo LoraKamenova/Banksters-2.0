@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -634,7 +636,7 @@ footer {
     flex-direction: column;
     background: white;
     width: 90%;
-    margin: 2% auto;
+    margin: 1% auto;
     padding: 30px 70px 50px 70px;
 }
 
@@ -649,7 +651,7 @@ footer {
     flex-direction: row;
     font-family: 'Yusei Magic', sans-serif;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .about-us-heading:before, .about-us-heading:after {
@@ -669,7 +671,11 @@ footer {
 
 .about-us-article {
     width: 25%;
-    margin: 5px;
+    text-align: justify;
+}
+
+.about-us-article:not(:first-child) {
+    margin-left: 30px;
 }
 
 .about-us-subheading {
@@ -683,11 +689,27 @@ footer {
     display: flex;
 }
 
+.dreamland-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
 .dreamland-button {
     background: #C82333;
+    text-align: center;
     color: white;
-    padding: 10px;
+    padding: 10px 16px 16px 16px;
     border-radius: 5px;
     outline: none;
-    width: 200px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.dreamland-button:hover {
+    text-decoration: none;
+    color: white;
+    background: #A11C29;
+}
+
+.fas.fa-angle-double-right {
+    margin-left: 10px;
+    font-size: 25px;
 }
