@@ -84,7 +84,7 @@ a.user-button {
 
 .user-button:hover {
     color: white;
-
+    text-transform: uppercase;
     background: #006B3C;
     cursor: pointer;
     border-radius: 5px;
@@ -558,13 +558,13 @@ footer {
     margin-top: 10px;
     justify-content: center;
     padding: 5px 0;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 15%, rgba(255,255,255,0.4514180672268907) 27%, rgba(255,255,255,0.7455357142857143) 40%, rgba(255,255,255,0.7483368347338936) 60%, rgba(255,255,255,0.4514180672268907) 73%, rgba(255,255,255,0) 85%);
 }
 
 .dreamland-heading {
     text-align: center;
     font-size: 30px;
     color: #BF1889;
-    /*background: rgba(255, 30, 173, 0.75);*/
 }
 
 .dreamland-container {
