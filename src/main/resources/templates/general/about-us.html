@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org" >
-<th:block th:include="~{fragments/head}" />
+      xmlns:th="http://www.thymeleaf.org">
+<th:block th:include="~{fragments/head}"/>
 <body class="background">
 <main class="main">
-    <th:block th:include="~{fragments/navbar-user}" />
+    <th:block th:include="~{fragments/navbar-user}"/>
 
     <div class="about-us-wrapper">
-        <h1 class="about-us-heading">About Us</h1>
-        <section class="about-us-content-wrapper">
+        <div class="about-us-heading-container">
+            <h1 class="about-us-heading">About Us</h1>
+        </div>
+        <section class="about-us-content-container">
             <article class="about-us-article">
                 <h3 class="about-us-subheading">Introduction</h3>
                 <p class="about-us-paragraph">
-                    BANK$TER$ is a licensed investment broker working with individual investors who want to trade with stocks of any public Bulgarian and international companies and who have long-term orientation using strategy "Buy & Hold". This strategy gives opportunity for receiving regular dividend income if the company-issuer of the stocks pays dividends regularly. The investors can score additional profit from the increase of the stock prices in case they decide to sell them.
+                    BANK$TER$ is a licensed investment broker working with individual investors who want to trade with
+                    stocks of any public Bulgarian and international companies and who have long-term orientation using
+                    strategy "Buy & Hold". This strategy gives opportunity for receiving regular dividend income if the
+                    company-issuer of the stocks pays dividends regularly. The investors can score additional profit
+                    from the increase of the stock prices in case they decide to sell them.
                 </p>
             </article>
 
             <article class="about-us-article">
                 <h2 class="about-us-subheading">Transactions</h2>
-                <p class="about-us-paragraph">BANK$TER$ provides assistance for buying of any public Bulgarian and international companies. You can pick some of the top stocks presented on our site or you can order any other stocks by giving us the company name, stock ticker and number of stocks you want to buy. We as well assist our clients with the the stocks they want to sell. In addition we offer a competitive exchange rate for exchanging currency when international stocks are bought.</p>
+                <p class="about-us-paragraph">BANK$TER$ provides assistance for buying of any public Bulgarian and
+                    international companies. You can pick some of the top stocks presented on our site or you can order
+                    any other stocks by giving us the company name, stock ticker and number of stocks you want to buy.
+                    We as well assist our clients with the the stocks they want to sell. In addition we offer a
+                    competitive exchange rate for exchanging currency when international stocks are bought.</p>
             </article>
 
             <article class="about-us-article">
                 <h2 class="about-us-subheading">Consultancy</h2>
                 <p class="about-us-paragraph">
-                    BANK$TER$ is a professional consultant who offers financial researches and advices for your overall investment strategy. We will discuss with you the most profitable stocks available for buying or the pros and cons of selling a certain stock. We also provide consultation about the taxation of the dividend income of our clients.
+                    BANK$TER$ is a professional consultant who offers financial researches and advices for your overall
+                    investment strategy. We will discuss with you the most profitable stocks available for buying or the
+                    pros and cons of selling a certain stock. We also provide consultation about the taxation of the
+                    dividend income of our clients.
                 </p>
             </article>
 
@@ -33,14 +46,14 @@
                 <p class="about-us-paragraph">
                     We offer brokerage account with: no monthly fee;
                     no inactivity fee; no requirement for minimal balance; no requirement for minimal initial payment;
-                    There are no hidden fees  - you pay only a Trade commission in the amount of $0.01 per traded share
+                    There are no hidden fees - you pay only a Trade commission in the amount of $0.01 per traded share
                 </p>
             </article>
         </section>
-        <a class="btn btn-danger text-center mr-3" th:href="@{/dreamland}">Shortcut to Dreamland</a>
+        <a class="dreamland-button" th:href="@{/dreamland}">Shortcut to Dreamland</a>
     </div>
 
 </main>
-<th:block th:include="~{fragments/footer}" />
+<th:block th:include="~{fragments/footer}"/>
 </body>
 </html>

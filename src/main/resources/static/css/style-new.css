@@ -613,23 +613,42 @@ footer {
 /*about us*/
 
 .about-us-wrapper {
+    display: flex;
+    flex-direction: column;
     background: white;
-    height: 100px;
-    width: 100%;
+    width: 80%;
 }
-h1 {
+
+.about-us-heading-container {
+    width: 50%;
+}
+
+.about-us-heading {
     display: flex;
     flex-direction: row;
 }
-h1:before, h1:after{
+.about-us-heading:before, .about-us-heading:after{
     content: "";
     flex: 1 1;
     border-bottom: 1px solid;
     margin: auto;
 }
-h1:before {
+.about-us-heading:before {
     margin-right: 10px
 }
-h1:after {
+.about-us-heading:after {
     margin-left: 10px
+}
+
+.about-us-content-container {
+    display: flex;
+}
+
+.dreamland-button {
+    background: #C82333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
 }
