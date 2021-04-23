@@ -633,16 +633,23 @@ footer {
     display: flex;
     flex-direction: column;
     background: white;
-    width: 80%;
+    width: 90%;
+    margin: 2% auto;
+    padding: 30px 70px 50px 70px;
 }
 
 .about-us-heading-container {
-    width: 50%;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .about-us-heading {
     display: flex;
     flex-direction: row;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .about-us-heading:before, .about-us-heading:after {
@@ -658,6 +665,18 @@ footer {
 
 .about-us-heading:after {
     margin-left: 10px
+}
+
+.about-us-article {
+    width: 25%;
+    margin: 5px;
+}
+
+.about-us-subheading {
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .about-us-content-container {
