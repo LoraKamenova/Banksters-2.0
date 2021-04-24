@@ -4,6 +4,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -45,7 +48,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     border-bottom: 1px darkred solid;
-    padding: 10px 20px;
+    padding: 5px 0 5px 20px;
 }
 
 .user-navigation {
@@ -66,7 +69,7 @@
     border: none;
     outline: none;
     margin: 5px;
-    padding: 5px 0 10px 0;
+    padding: 3px 0 5px 0;
     min-width: 120px;
     text-align: center;
     font-family: 'Yusei Magic', sans-serif;
@@ -184,6 +187,7 @@ footer {
 }
 
 .breadcrumb-li-item {
+    list-style-type: none;
     padding: 0 10px;
     border-left: 1px solid white;
 }
@@ -194,6 +198,7 @@ footer {
 
 .breadcrumb-a {
     color: white;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -558,7 +563,7 @@ footer {
     margin-top: 10px;
     justify-content: center;
     padding: 5px 0;
-    background: linear-gradient(90deg, rgba(255,255,255,0) 15%, rgba(255,255,255,0.4514180672268907) 27%, rgba(255,255,255,0.7455357142857143) 40%, rgba(255,255,255,0.7483368347338936) 60%, rgba(255,255,255,0.4514180672268907) 73%, rgba(255,255,255,0) 85%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.4514180672268907) 27%, rgba(255, 255, 255, 0.7455357142857143) 40%, rgba(255, 255, 255, 0.7483368347338936) 60%, rgba(255, 255, 255, 0.4514180672268907) 73%, rgba(255, 255, 255, 0) 85%);
 }
 
 .dreamland-heading {
@@ -702,6 +707,7 @@ footer {
     justify-content: flex-end;
     margin-top: 10px;
 }
+
 .dreamland-button {
     background: #C82333;
     text-align: center;
@@ -721,4 +727,72 @@ footer {
 .fas.fa-angle-double-right {
     margin-left: 10px;
     font-size: 25px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*Walkthrough*/
+
+.walkthrough-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1% auto;
+    color: white;
+    align-items: center;
+}
+
+.walkthrough-heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.walkthrough-container {
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.walkthrough-article {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: white;
+}
+
+.walkthrough-article:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 0;
+}
+
+.walkthrough-article:nth-child(odd):before {
+    left: 100%;
+    margin-left: -20px;
+}
+
+.walkthrough-article:nth-child(even) {
+    border-left: 3px solid;
+    padding-right: 0;
+}
+
+.walkthrough-article:nth-child(even):before {
+    right: 100%;
+    margin-right: -20px;
+}
+
+.walkthrough-article:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.walkthrough-article:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
