@@ -758,6 +758,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .walkthrough-container {
@@ -797,12 +798,6 @@ footer {
     right: 100%;
     margin-right: -20px;
 }
-
-/*.walkthrough-article:first-child {*/
-/*    border-top: 0;*/
-/*    border-top-right-radius: 0;*/
-/*    border-top-left-radius: 0;*/
-/*}*/
 
 .walkthrough-article:last-child {
     border-bottom-right-radius: 0;
