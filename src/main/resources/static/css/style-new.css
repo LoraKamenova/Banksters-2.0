@@ -70,7 +70,7 @@
     outline: none;
     margin: 5px;
     padding: 3px 0 5px 0;
-    min-width: 120px;
+    min-width: 115px;
     text-align: center;
     font-family: 'Yusei Magic', sans-serif;
 }
@@ -156,6 +156,15 @@ footer {
     padding: 5px;
 }
 
+.index-link {
+    text-decoration: none;
+    color: #006B3C;
+}
+
+.index-link:hover {
+    text-decoration: underline;
+}
+
 /*------------------------------------------------------------------------------------------------------*/
 /*home page*/
 .home-section {
@@ -224,7 +233,8 @@ footer {
 
 .facts-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 5%;
 }
 
 .fact-wrapper {
@@ -456,7 +466,7 @@ footer {
 }
 
 /*------------------------------------------------------------------------------------------------*/
-/*register and register page*/
+/*register and login page*/
 
 .register-page, .login-page {
     width: 40%;
@@ -526,12 +536,10 @@ footer {
 
 .general-conditions-wrapper {
     width: 60%;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: 3% auto;
     background-image: url("https://www.meme-arsenal.com/memes/6c50ae8b8ba69d49682c57a1baba7073.jpg");
-    font-family: 'Special Elite', cursive;
     line-height: 1.6;
     padding: 60px;
 }
@@ -540,7 +548,7 @@ footer {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    /*margin-top: 30px;*/
+    font-family: 'Special Elite', cursive;
 }
 
 .general-conditions-section {
@@ -550,17 +558,20 @@ footer {
 .general-conditions-heading {
     padding-bottom: 5px;
     font-weight: bold;
+    font-family: 'Special Elite', cursive;
 }
 
 .general-conditions-paragraph {
     padding: 5px 0;
+    font-family: 'Special Elite', cursive;
 }
 
 /*------------------------------------------------------------------------*/
 /*dreamland page*/
 .dreamland-heading-wrapper {
     display: flex;
-    margin-top: 10px;
+    width: 70%;
+    margin: 10px auto;
     justify-content: center;
     padding: 5px 0;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.4514180672268907) 27%, rgba(255, 255, 255, 0.7455357142857143) 40%, rgba(255, 255, 255, 0.7483368347338936) 60%, rgba(255, 255, 255, 0.4514180672268907) 73%, rgba(255, 255, 255, 0) 85%);
@@ -641,8 +652,8 @@ footer {
     flex-direction: column;
     background: white;
     width: 90%;
-    margin: 2% auto;
-    padding: 30px 70px 40px 70px;
+    margin: 1% auto;
+    padding: 20px 70px 30px 70px;
 }
 
 .about-us-heading-container {
@@ -710,6 +721,7 @@ footer {
 
 .dreamland-button {
     background: #C82333;
+    text-decoration: none;
     text-align: center;
     color: white;
     padding: 9px 15px 15px 15px;
@@ -734,6 +746,7 @@ footer {
 
 .walkthrough-wrapper {
     display: flex;
+    width: 50%;
     flex-direction: column;
     margin: 1% auto;
     color: white;
@@ -744,12 +757,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .walkthrough-container {
-    min-width: 300px;
-    max-width: 600px;
-    margin: auto;
+    margin: 2% auto;
 }
 
 .walkthrough-article {
@@ -795,4 +807,17 @@ footer {
 .walkthrough-article:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+.walkthroigh-article-heading {
+    margin-bottom: 20px;
+}
+
+.walkthrough-link {
+    text-decoration: none;
+    color: #d53a9d;
+}
+
+.walkthrough-link:hover {
+    text-decoration: underline;
 }
