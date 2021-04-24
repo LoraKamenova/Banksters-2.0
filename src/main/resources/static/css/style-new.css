@@ -66,8 +66,8 @@
     border: none;
     outline: none;
     margin: 5px;
-    padding: 5px 10px 10px 10px;
-    min-width: 90px;
+    padding: 5px 0 10px 0;
+    min-width: 120px;
     text-align: center;
     font-family: 'Yusei Magic', sans-serif;
 }
