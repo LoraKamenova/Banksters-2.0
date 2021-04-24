@@ -798,15 +798,16 @@ footer {
     margin-right: -20px;
 }
 
-.walkthrough-article:first-child {
-    border-top: 0;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-}
+/*.walkthrough-article:first-child {*/
+/*    border-top: 0;*/
+/*    border-top-right-radius: 0;*/
+/*    border-top-left-radius: 0;*/
+/*}*/
 
 .walkthrough-article:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    border-bottom: 3px solid;
 }
 
 .walkthroigh-article-heading {
