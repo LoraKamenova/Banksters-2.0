@@ -843,6 +843,10 @@ footer {
     width: 25%;
 }
 
+.dictionary-image-wrapper {
+    margin: 20px 0;
+}
+
 .dictionary-image-left, .dictionary-image-right {
     height: 150px;
     width: 200px;
