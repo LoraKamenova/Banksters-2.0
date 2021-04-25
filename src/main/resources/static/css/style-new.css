@@ -834,8 +834,19 @@ footer {
     display: flex;
     flex-direction: column;
     background: white;
+    width: 80%;
+    margin: 1% auto;
 }
 
 .dictionary-entry {
     display: flex;
+}
+
+.dictionary-entry-image-container {
+    width: 30%;
+}
+
+.dictionary-entry-image {
+    height: 300px;
+    width: 600px;
 }
