@@ -823,6 +823,8 @@ footer {
 .dictionary-wrapper {
     display: flex;
     flex-direction: column;
+    width: 99%;
+    margin: 2% auto;
 }
 
 .dictionary-heading {
@@ -830,23 +832,48 @@ footer {
     text-align: center;
 }
 
+.dictionary-container {
+    display: flex;
+}
+
+.dictionary-images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.dictionary-image-left, .dictionary-image-right {
+    height: 150px;
+    width: 200px;
+}
+
+.dictionary-image-left:nth-child(odd) {
+    transform: rotate(20deg);
+}
+
+.dictionary-image-left:nth-child(even) {
+    transform: rotate(-20deg);
+}
+
+.dictionary-image-right:nth-child(odd) {
+    transform: rotate(-20deg);
+}
+
+.dictionary-image-right:nth-child(even) {
+    transform: rotate(20deg);
+}
+
 .dictionary-entries-container {
     display: flex;
     flex-direction: column;
     background: white;
-    width: 80%;
+    width: 50%;
     margin: 1% auto;
 }
 
-.dictionary-entry {
-    display: flex;
-}
 
-.dictionary-entry-image-container {
-    width: 30%;
-}
 
-.dictionary-entry-image {
-    height: 300px;
-    width: 600px;
-}
+
+
+

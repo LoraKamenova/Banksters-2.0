@@ -259,9 +259,9 @@ ol.gradient-list > li + li {
     background-image: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1592738464/Java%20Project/contact_us_background_j4vwp4.jpg');
     background-size: 100% 100%;
 }
-img {
-    max-width: 100%;
-}
+/*img {*/
+/*    max-width: 100%;*/
+/*}*/
 .container1 {
     display: flex;
     align-items: center;
