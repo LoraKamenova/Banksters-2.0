@@ -817,3 +817,25 @@ footer {
 .walkthrough-link:hover {
     text-decoration: underline;
 }
+/*----------------------------------------------------------------------------------------------*/
+/*dictionary*/
+
+.dictionary-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.dictionary-heading {
+    color: white;
+    text-align: center;
+}
+
+.dictionary-entries-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.dictionary-entry {
+    display: flex;
+}
