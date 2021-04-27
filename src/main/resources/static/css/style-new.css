@@ -841,7 +841,18 @@ footer {
 
 .dictionary-entry {
     width: 28%;
-    border: 2px dashed black;
     margin: 20px 10px;
     padding: 10px;
+}
+
+.dictionary-entry:nth-child(even) {
+    border: 5px dashed black;
+}
+
+.dictionary-entry:nth-child(odd) {
+    border: 5px dotted black;
+}
+
+.dictionary-entry-heading {
+    margin: 10px 0;
 }
