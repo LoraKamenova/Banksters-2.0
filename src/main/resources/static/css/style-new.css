@@ -823,7 +823,7 @@ footer {
 .dictionary-wrapper {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 85%;
     margin: 2% auto;
     background: snow;
 }
@@ -835,11 +835,15 @@ footer {
 .dictionary-entries-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+.dictionary-entry {
+    width: 25%;
+    border: 2px dashed black;
+    margin: 20px 0;
+}
 
-
-
-
-
-
+.dictionary-entry:nth-child(even) {
+    margin: 0 20px;
+}
