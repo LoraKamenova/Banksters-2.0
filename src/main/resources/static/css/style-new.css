@@ -836,13 +836,14 @@ footer {
 .dictionary-entries-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .dictionary-entry {
-    width: 28%;
+    width: 30%;
     margin: 20px 10px;
     padding: 10px;
+    text-align: center;
 }
 
 .dictionary-entry:nth-child(even) {
@@ -854,5 +855,8 @@ footer {
 }
 
 .dictionary-entry-heading {
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    padding-bottom: 10px;
 }
