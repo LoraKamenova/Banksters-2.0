@@ -834,16 +834,9 @@ footer {
 
 .dictionary-entries-container {
     display: flex;
-    flex-direction: column;
-    background: honeydew;
-    width: 35%;
-    margin: 1% auto;
+    flex-wrap: wrap;
 }
 
-.dictionary-letter {
-    font-size: 40px;
-    text-decoration: underline;
-}
 
 
 
