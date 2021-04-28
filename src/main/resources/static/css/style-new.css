@@ -846,20 +846,23 @@ footer {
     text-align: center;
 }
 
-.dictionary-entry:nth-child(1) {
-    border: 5px dashed black;
+/*.dictionary-entry:nth-child(n+1) {*/
+/*    border: 5px dashed black;*/
+/*}*/
+
+.dictionary-entry:nth-child(2n+1) {
+    border: 5px dotted black;
 }
 
-.dictionary-entry:nth-child(2) {
-    /*border: 5px dotted black;*/
+.dictionary-entry:nth-child(3n+1) {
     background-image: repeating-linear-gradient(214deg, #333333, #333333 7.56px, transparent 21px, transparent 31.08px, #333333 49px), repeating-linear-gradient(304deg, #333333, #333333 7.56px, transparent 21px, transparent 31.08px, #333333 49px), repeating-linear-gradient(34deg, #333333, #333333 7.56px, transparent 21px, transparent 31.08px, #333333 49px), repeating-linear-gradient(124deg, #333333, #333333 7.56px, transparent 21px, transparent 31.08px, #333333 49px);
     background-size: 3px 100%, 100% 3px, 3px 100% , 100% 3px;
     background-position: 0 0, 0 0, 100% 0, 0 100%;
     background-repeat: no-repeat;
 }
 
-.dictionary-entry:nth-child(3) {
-    border: 5px dotted black;
+.dictionary-entry:nth-child(4n+1) {
+    border: 5px dashed black;
 }
 
 .dictionary-entry-heading {
