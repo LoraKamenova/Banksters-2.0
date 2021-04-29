@@ -864,7 +864,9 @@ footer {
 
 .dictionary-entry-heading {
     margin: 10px 0 20px 0;
-    text-decoration-line: underline;
-    text-decoration-style: double;
     padding-bottom: 10px;
-}
+    /*border-bottom: 10px solid transparent;*/
+    border-image: url(https://res.cloudinary.com/dyhmxus4n/image/upload/v1619714638/Java%20Project/unnamed_cajzec.png);
+    border-width: 0 0 30px 0;
+    border-image-repeat: stretch;
+   }
