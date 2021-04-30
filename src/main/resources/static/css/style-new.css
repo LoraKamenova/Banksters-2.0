@@ -835,13 +835,10 @@ footer {
 
 .dictionary-entries-container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 .dictionary-entry {
-    width: 30%;
     margin: 20px 10px;
     padding: 30px;
     text-align: center;
@@ -849,24 +846,10 @@ footer {
     height: fit-content;
 }
 
-.dictionary-entry:nth-child(3n) {
-    flex-basis: 100%;
+.dictionary-entries-row-container {
+    display: flex;
+    flex-direction: column;
 }
-
-/*.dictionary-entry:nth-child(3n+1) {*/
-/*    border: 5px dashed black;*/
-/*}*/
-
-/*.dictionary-entry:nth-child(3n+2) {*/
-/*    border: 5px dotted black;*/
-/*}*/
-
-/*.dictionary-entry:nth-child(3n+3) {*/
-/*    background-image: repeating-linear-gradient(214deg, #333333, #333333 7.56px, transparent 21px, transparent 31.08px, #333333 49px), repeating-linear-gradient(304deg, #333333, #333333 7.56px, transparent 21px, transparent 31.08px, #333333 49px), repeating-linear-gradient(34deg, #333333, #333333 7.56px, transparent 21px, transparent 31.08px, #333333 49px), repeating-linear-gradient(124deg, #333333, #333333 7.56px, transparent 21px, transparent 31.08px, #333333 49px);*/
-/*    background-size: 3px 100%, 100% 3px, 3px 100% , 100% 3px;*/
-/*    background-position: 0 0, 0 0, 100% 0, 0 100%;*/
-/*    background-repeat: no-repeat;*/
-/*}*/
 
 .dictionary-image {
     width: 100%;
