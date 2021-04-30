@@ -849,7 +849,7 @@ footer {
     height: fit-content;
 }
 
-.dictionary-entry:nth-child(2n) {
+.dictionary-entry:nth-child(3n) {
     flex-basis: 100%;
 }
 
