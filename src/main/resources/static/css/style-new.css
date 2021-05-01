@@ -831,25 +831,25 @@ footer {
 
 .dictionary-heading {
     text-align: center;
-
+    margin: 15px 0;
+    color: #7C60AB;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 30px;
+    font-style: italic;
 }
 
 .dictionary-entries-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .dictionary-entry {
     margin: 20px 10px;
+    width: 30%;
     padding: 30px;
     text-align: center;
-    border: 2px solid black;
-    height: fit-content;
-}
-
-.dictionary-entries-row-container {
-    display: flex;
-    flex-direction: column;
+    border: 1px dashed plum;
 }
 
 .dictionary-image {
@@ -859,6 +859,8 @@ footer {
 }
 
 .dictionary-entry-heading {
+    font-family: 'Yusei Magic', sans-serif;
+    color: #7C60AB;
     position: relative;
     top: 15px;
 }
