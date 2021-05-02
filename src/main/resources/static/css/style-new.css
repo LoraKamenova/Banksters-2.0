@@ -845,9 +845,9 @@ footer {
 }
 
 .dictionary-entry {
+    background-image: url("https://res.cloudinary.com/dyhmxus4n/image/upload/v1619972023/Java%20Project/55e3bd36c02a81a87d113beb7f7a4256-removebg-preview_fbgy7v.png");
     margin: 20px 10px;
     width: 30%;
-    padding: 30px;
     text-align: center;
     border: 1px dashed plum;
 }
