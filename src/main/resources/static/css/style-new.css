@@ -849,7 +849,7 @@ footer {
     width: 30%;
     padding: 30px;
     text-align: center;
-    border: 1px dashed plum;
+    background: lightgoldenrodyellow;
 }
 
 .dictionary-image {
