@@ -477,10 +477,10 @@ footer {
 .register-form-heading, .login-form-heading {
     text-align: center;
     margin: 20px;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Yusei Magic', sans-serif;
-    color: #005C33;
-    font-style: italic;
+    color: #006B3C;
+    text-transform: uppercase;
 }
 
 .register-form, .login-form {
@@ -524,8 +524,10 @@ footer {
     color: white;
     background-color: #005C33;
     outline: none;
+    font-weight: bold;
     border: none;
     text-transform: uppercase;
+    letter-spacing: 2px;
     font-family: 'Yusei Magic', sans-serif;
 }
 
