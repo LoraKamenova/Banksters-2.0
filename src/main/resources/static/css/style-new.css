@@ -838,7 +838,9 @@ footer {
 .dictionary-heading {
     text-align: center;
     margin: 15px 0;
-    color: grey;
+    color: #005C33;
+    font-family: 'Yusei Magic', sans-serif;
+    font-style: italic;
 }
 
 .dictionary-entries-container {
@@ -882,14 +884,12 @@ footer {
 
 .contact-us-container {
     display: flex;
-    margin: 5% auto;
-    min-width: 60%;
-    min-height: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    /*background-size: cover;*/
-    background-image: url("https://expressenglish.today/wp-content/uploads/2020/08/31839fd3a06c696b7b6df04bfb9eb38ecc7fac3c.jpg");
+    margin: 2% auto;
+    width: 80%;
+    height: 470px;
+    background: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1620477138/Java%20Project/view-from-ellis-island_tfavfw.jpg') no-repeat center;
+    background-size: 100% 100%;
+    overflow: hidden;
 }
 
 .contacts-table {
