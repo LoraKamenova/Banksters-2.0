@@ -893,5 +893,9 @@ footer {
 }
 
 .contacts-table {
-    color: white;
+
+}
+
+.contact-item {
+    font-size: 25px;
 }
