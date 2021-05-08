@@ -884,6 +884,7 @@ footer {
 
 .contact-us-container {
     display: flex;
+    justify-content: flex-end;
     margin: 2% auto;
     width: 80%;
     height: 470px;
@@ -893,9 +894,18 @@ footer {
 }
 
 .contacts-table {
+    margin: 50px 150px;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
 
+.contact-info {
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .contact-item {
-    font-size: 25px;
+    font-size: 30px;
 }
