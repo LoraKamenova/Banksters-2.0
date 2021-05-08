@@ -475,10 +475,12 @@ footer {
 }
 
 .register-form-heading, .login-form-heading {
-    color: white;
     text-align: center;
     margin: 20px;
     font-size: 25px;
+    font-family: 'Yusei Magic', sans-serif;
+    color: #005C33;
+    font-style: italic;
 }
 
 .register-form, .login-form {
@@ -520,15 +522,16 @@ footer {
     margin: 5px;
     padding: 10px;
     color: white;
-    background-color: green;
+    background-color: #005C33;
     outline: none;
     border: none;
-    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 .register-form-button:hover, .login-form-button:hover {
     cursor: pointer;
-    background-color: darkgreen;
+    background-color: #006B3C;
 }
 
 /*-----------------------------------------------------------------------*/
