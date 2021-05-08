@@ -884,7 +884,8 @@ footer {
 
 .contact-us-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 50px 130px;
     margin: 2% auto;
     width: 80%;
     height: 470px;
@@ -893,8 +894,14 @@ footer {
     overflow: hidden;
 }
 
+.contacts-heading {
+    font-family: 'Yusei Magic', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    margin-top: 80px;
+}
+
 .contacts-table {
-    margin: 50px 150px;
     border-collapse: separate;
     border-spacing: 20px;
 }
