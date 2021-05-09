@@ -889,21 +889,23 @@ footer {
     margin: 2% auto;
     width: 80%;
     height: 470px;
-    background: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1620477138/Java%20Project/view-from-ellis-island_tfavfw.jpg') no-repeat center;
+    background: url('https://res.cloudinary.com/dyhmxus4n/image/upload/v1620504104/Java%20Project/sky-water-city-night-_quhsod.jpg') no-repeat center;
     background-size: 100% 100%;
     overflow: hidden;
 }
 
 .contacts-heading {
+    color: white;
     font-family: 'Yusei Magic', sans-serif;
     font-style: italic;
     font-size: 50px;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .contacts-table {
     border-collapse: separate;
     border-spacing: 20px;
+    color: white;
 }
 
 .contact-info {
