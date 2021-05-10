@@ -961,7 +961,7 @@ footer {
 .data-panel-button {
     padding: 10px 25px;
     margin: 5px;
-    border: 2px solid green;
+    border: 1px solid green;
     background-color: transparent;
     outline: none;
     text-decoration: none;
