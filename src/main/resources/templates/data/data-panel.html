@@ -6,30 +6,34 @@
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <div class="data-panel-container">
-        <h1 class="data-panel-heading">Data Panel</h1>
+    <div class="data-panel-outer-container">
+        <div class="data-panel-middle-container">
+            <div class="data-panel-inner-container">
+                <h1 class="data-panel-heading">Data Panel</h1>
 
-        <div class="data-panel-buttons-container">
+                <div class="data-panel-buttons-container">
 
-            <div class="data-panel-button-row">
-                <a class="data-panel-button" th:href="@{/all-questions}">All Questions</a>
-                <a class="data-panel-button" th:href="@{/create-faq}">Add Q & A</a>
-                <a class="data-panel-button" th:href="@{/all-analysis}">All Analysis</a>
+                    <div class="data-panel-button-row">
+                        <a class="data-panel-button" th:href="@{/all-questions}">All Questions</a>
+                        <a class="data-panel-button" th:href="@{/create-faq}">Add Q & A</a>
+                        <a class="data-panel-button" th:href="@{/all-analysis}">All Analysis</a>
+                    </div>
+
+                    <div class="data-panel-button-row">
+                        <a class="data-panel-button" th:href="@{/admin-all-stock-exchange}">Stock Exchange</a>
+                        <a class="data-panel-button" th:href="@{/admin-all-index}">Market Index</a>
+                        <a class="data-panel-button" th:href="@{/admin-all-company}">Company</a>
+                        <a class="data-panel-button" th:href="@{/admin-all-stock}">Stock</a>
+                    </div>
+
+                    <div class="data-panel-button-row">
+                        <a class="data-panel-button" th:href="@{/all-orders}">All Orders</a>
+                        <a class="data-panel-button" th:href="@{/all-contracts}">All Contracts</a>
+                        <a class="data-panel-button" th:href="@{/users/all}">All Users</a>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="data-panel-button-row">
-                <a class="data-panel-button" th:href="@{/admin-all-stock-exchange}">Stock Exchange</a>
-                <a class="data-panel-button" th:href="@{/admin-all-index}">Market Index</a>
-                <a class="data-panel-button" th:href="@{/admin-all-company}">Company</a>
-                <a class="data-panel-button" th:href="@{/admin-all-stock}">Stock</a>
-            </div>
-
-            <div class="data-panel-button-row">
-                <a class="data-panel-button" th:href="@{/all-orders}">All Orders</a>
-                <a class="data-panel-button" th:href="@{/all-contracts}">All Contracts</a>
-                <a class="data-panel-button" th:href="@{/users/all}">All Users</a>
-            </div>
-
         </div>
     </div>
 
