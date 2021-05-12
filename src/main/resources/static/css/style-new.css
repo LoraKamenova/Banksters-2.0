@@ -929,12 +929,6 @@ footer {
     padding: 30px;
 }
 
-.data-panel-middle-container {
-    border: 2px solid green;
-    padding: 3px;
-    width: 100%;
-}
-
 .data-panel-inner-container {
     display: flex;
     flex-direction: column;
