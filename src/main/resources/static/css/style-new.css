@@ -922,28 +922,31 @@ footer {
 /*----------------------------------------------------------------------*/
 /*data panel*/
 
-.data-panel-outer-container {
-    margin: 2% auto;
+.data-panel-container {
+    margin: 5% auto;
     background-color: honeydew;
     width: 60%;
-    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
 }
 
-.data-panel-inner-container {
+.data-panel-buttons-column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 70px 50px;
-    border: 2px solid green;
+    width: 30%;
 }
 
 .data-panel-heading {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
     font-family: 'Yusei Magic', sans-serif;
     font-style: italic;
-    font-size: 30px;
+    font-size: 50px;
     color: green;
+    justify-content: center;
+    align-items: center;
 }
 
 .data-panel-buttons-container {
@@ -960,12 +963,7 @@ footer {
     outline: none;
     text-decoration: none;
     color: green;
-}
-
-.data-panel-button-row {
-    display: flex;
-    margin: 5px;
-    justify-content: center;
+    text-align: center;
 }
 
 .data-panel-button:hover {
