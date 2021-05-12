@@ -925,10 +925,10 @@ footer {
 .data-panel-container {
     margin: 5% auto;
     background-color: honeydew;
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    padding: 80px;
 }
 
 .data-panel-buttons-column {
@@ -942,17 +942,14 @@ footer {
     flex-direction: column;
     width: 30%;
     font-family: 'Yusei Magic', sans-serif;
-    font-style: italic;
     font-size: 50px;
     color: green;
     justify-content: center;
     align-items: center;
 }
 
-.data-panel-buttons-container {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
+.data-panel-heading > span{
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 .data-panel-button {
