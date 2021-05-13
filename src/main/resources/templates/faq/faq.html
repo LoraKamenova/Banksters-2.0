@@ -8,13 +8,15 @@
 
     <div class="faq-container">
         <h1 class="faq-heading">FAQ</h1>
-        <a class="faq-button" th:href="@{/ask-question}">Ask a question</a>
+
         <th:block th:each="faq : ${faqs}">
             <div class="faq-item">
                 <p class="faq-question" th:text="${faq.question}"></p>
                 <p class="faq-answer" th:text="${faq.answer}"></p>
             </div>
         </th:block>
+
+        <a class="faq-button" th:href="@{/ask-question}">Ask a question</a>
     </div>
 
 </main>
