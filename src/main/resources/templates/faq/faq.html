@@ -10,9 +10,10 @@
     <h1 class="faq-heading">Frequently Asked Questions(FAQ)</h1>
     <a class="btn btn-danger text-center mr-3" th:href="@{/ask-question}">Ask a question</a>
     <th:block th:each="faq : ${faqs}">
-        <li><span style="font-weight:bold; font-style: italic;" th:text="${faq.question}"></span><br>
-            <br><span th:text="${faq.answer}"></span>
-        </li>
+        <div class="faq-item">
+            <p class="faq-question" th:text="${faq.question}"></p>
+            <p class="faq-answer" th:text="${faq.answer}"></p>
+        </div>
     </th:block>
 </div>
 

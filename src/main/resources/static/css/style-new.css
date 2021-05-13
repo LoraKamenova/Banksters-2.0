@@ -967,3 +967,10 @@ footer {
     background-color: green;
     color: honeydew;
 }
+/*---------------------------------------------------------------------*/
+/*faq*/
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
