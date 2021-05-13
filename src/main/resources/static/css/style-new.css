@@ -972,5 +972,21 @@ footer {
 .faq-container {
     display: flex;
     flex-direction: column;
+    width: 40%;
+    background-color: aliceblue;
+    margin: 3% auto;
+}
+
+.faq-button {
+    padding: 10px 25px;
+    margin: 5px;
     color: white;
+    background-color: #A81230;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.faq-button:hover {
+    background-color: #AB274F;
 }

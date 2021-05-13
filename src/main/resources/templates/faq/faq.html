@@ -6,18 +6,16 @@
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
-<div class="faq-container">
-    <h1 class="faq-heading">Frequently Asked Questions(FAQ)</h1>
-    <a class="btn btn-danger text-center mr-3" th:href="@{/ask-question}">Ask a question</a>
-    <th:block th:each="faq : ${faqs}">
-        <div class="faq-item">
-            <p class="faq-question" th:text="${faq.question}"></p>
-            <p class="faq-answer" th:text="${faq.answer}"></p>
-        </div>
-    </th:block>
-</div>
-
-
+    <div class="faq-container">
+        <h1 class="faq-heading">FAQ</h1>
+        <a class="faq-button" th:href="@{/ask-question}">Ask a question</a>
+        <th:block th:each="faq : ${faqs}">
+            <div class="faq-item">
+                <p class="faq-question" th:text="${faq.question}"></p>
+                <p class="faq-answer" th:text="${faq.answer}"></p>
+            </div>
+        </th:block>
+    </div>
 
 </main>
 <th:block th:include="~{fragments/footer}"/>
