@@ -992,3 +992,17 @@ footer {
 .faq-button:hover {
     background-color: darkred;
 }
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-question {
+    background-color: #b3d7ff;
+    width: 100%;
+}
+
+.faq-answer {
+    padding: 0 10px;
+}
