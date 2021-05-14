@@ -996,10 +996,13 @@ footer {
 .faq-item {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    background-color: #E8FFF3;
+    margin: 5px 0;
 }
 
 .faq-question {
-    background-color: #b3d7ff;
+    color: darkgreen;
     width: 100%;
 }
 
