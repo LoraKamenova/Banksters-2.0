@@ -979,8 +979,30 @@ footer {
     padding: 30px 0;
 }
 
+.faq-heading {
+    font-size: 40px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #E9FFF3;
+    margin: 10px 0;
+    padding: 25px 35px;
+}
+
+.faq-question {
+    color: #357F5E;
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
 .faq-button {
-    padding: 10px 25px;
+    padding: 15px 25px;
     margin: 5px;
     color: white;
     background-color: #79C9A2;
@@ -992,20 +1014,4 @@ footer {
 
 .faq-button:hover {
     background-color: #87E0B4;
-}
-
-.faq-item {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #E9FFF3;
-    margin: 10px 0;
-    padding: 25px;
-}
-
-.faq-question {
-    color: #357F5E;
-    width: 100%;
-    font-size: 17px;
-    margin-bottom: 10px;
 }
