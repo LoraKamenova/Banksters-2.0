@@ -972,17 +972,18 @@ footer {
 .faq-container {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 65%;
     background-color: snow;
     margin: 3% auto;
     align-items: center;
+    padding: 30px 0;
 }
 
 .faq-button {
     padding: 10px 25px;
     margin: 5px;
     color: white;
-    background-color: #87E0B4;
+    background-color: #79C9A2;
     outline: none;
     text-decoration: none;
     text-align: center;
@@ -990,7 +991,7 @@ footer {
 }
 
 .faq-button:hover {
-    background-color: #79C9A2;
+    background-color: #87E0B4;
 }
 
 .faq-item {
@@ -998,14 +999,13 @@ footer {
     flex-direction: column;
     width: 100%;
     background-color: #E9FFF3;
-    margin: 5px 0;
+    margin: 10px 0;
+    padding: 25px;
 }
 
 .faq-question {
     color: #357F5E;
     width: 100%;
-}
-
-.faq-answer {
-    padding: 0 10px;
+    font-size: 17px;
+    margin-bottom: 10px;
 }
