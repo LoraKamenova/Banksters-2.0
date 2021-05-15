@@ -982,7 +982,7 @@ footer {
     padding: 10px 25px;
     margin: 5px;
     color: white;
-    background-color: #AAF0D1;
+    background-color: #87E0B4;
     outline: none;
     text-decoration: none;
     text-align: center;
@@ -990,7 +990,7 @@ footer {
 }
 
 .faq-button:hover {
-    background-color: darkred;
+    background-color: #79C9A2;
 }
 
 .faq-item {
