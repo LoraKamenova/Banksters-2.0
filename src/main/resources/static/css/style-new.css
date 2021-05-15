@@ -997,12 +997,12 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #E8FFF3;
+    background-color: #E9FFF3;
     margin: 5px 0;
 }
 
 .faq-question {
-    color: darkgreen;
+    color: #357F5E;
     width: 100%;
 }
 
