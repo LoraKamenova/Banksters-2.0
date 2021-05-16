@@ -575,7 +575,7 @@ footer {
 /*dreamland page*/
 .dreamland-heading-wrapper {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: 10px auto;
     justify-content: center;
     padding: 5px 0;
@@ -749,13 +749,23 @@ footer {
 /*--------------------------------------------------------------------------------------------*/
 /*Walkthrough*/
 
-.walkthrough-wrapper {
+.walkthrough-outer-wrapper {
     display: flex;
-    width: 50%;
+    width: 70%;
     flex-direction: column;
-    margin: 1% auto;
-    color: white;
     align-items: center;
+    background-color: snow;
+    padding: 20px 20px;
+    margin: 3% auto;
+}
+
+.walkthrough-inner-wrapper {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 .walkthrough-heading-container {
@@ -781,7 +791,6 @@ footer {
     padding: 40px;
     counter-increment: section;
     position: relative;
-    color: white;
 }
 
 .walkthrough-article:nth-child(odd) {
@@ -810,13 +819,21 @@ footer {
     border-bottom: 3px solid;
 }
 
-.walkthroigh-article-heading {
+.walkthrough-article-heading {
     margin-bottom: 20px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.walkthrough-heading {
+    font-family: 'Yusei Magic', sans-serif;
+    font-style: italic;
+    color: #005C33;
 }
 
 .walkthrough-link {
     text-decoration: none;
-    color: #4CB550;
+    color: #005C33;
+    font-weight: bold;
 }
 
 .walkthrough-link:hover {

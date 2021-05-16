@@ -6,93 +6,110 @@
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <div class="walkthrough-wrapper">
+    <div class="walkthrough-outer-wrapper">
+        <div class="walkthrough-inner-wrapper">
+            <div class="walkthrough-heading-container">
+                <h1 class="walkthrough-heading">Walkthrough</h1>
+                <!--            <h4 class="walkthroigh-subheading">for buying stocks</h4>-->
+            </div>
 
-        <div class="walkthrough-heading-container">
-            <h1 class="walkthroigh-heading">Walkthrough</h1>
-            <h4 class="walkthroigh-subheading">for buying stocks</h4>
-        </div>
+            <div class="walkthrough-container">
+                <article class="walkthrough-article">
+                    <h1 class="walkthrough-article-heading">Clarify your investment goals</h1>
+                    <p class="walkthrough-article-paragraph">
+                        You can earn investment returns in two ways: growing the value of your portfolio, or earning
+                        income
+                        through dividends. Growth stocks are the ones that you want to buy low and sell high, although
+                        you
+                        can't guarantee that result. Income stocks generally have more predictable returns, but you
+                        won't
+                        get any big jumps in the stock's value.</p>
+                </article>
 
-        <div class="walkthrough-container">
-            <article class="walkthrough-article">
-                <h1 class="walkthroigh-article-heading">Clarify your investment goals</h1>
-                <p class="walkthroigh-article-paragraph">
-                    You can earn investment returns in two ways: growing the value of your portfolio, or earning income
-                    through dividends. Growth stocks are the ones that you want to buy low and sell high, although you
-                    can't guarantee that result. Income stocks generally have more predictable returns, but you won't
-                    get any big jumps in the stock's value.</p>
-            </article>
+                <article class="walkthrough-article">
+                    <h1 class="walkthrough-article-heading">Set your budget and timeline</h1>
+                    <p class="walkthrough-article-paragraph">
+                        Decide how much cash you can invest in your portfolio and how often you'll put in more.
+                        Also, think about when you might need to convert your stock holdings into cash.
+                        The more time you have, the more aggressive you can be with your stock picks.</p>
+                </article>
 
-            <article class="walkthrough-article">
-                <h1 class="walkthroigh-article-heading">Set your budget and timeline</h1>
-                <p class="walkthroigh-article-paragraph">
-                    Decide how much cash you can invest in your portfolio and how often you'll put in more.
-                    Also, think about when you might need to convert your stock holdings into cash.
-                    The more time you have, the more aggressive you can be with your stock picks.</p>
-            </article>
+                <article class="walkthrough-article">
+                    <h1 class="walkthrough-article-heading">Plan for diversification</h1>
+                    <p class="walkthrough-article-paragraph">
+                        If you own only one stock, it takes just one scandal to send the value of your portfolio
+                        plummeting.
+                        Diversifying your investments among different companies and industries will spread out your
+                        exposure, so that no single stock can wipe out your savings.</p>
+                </article>
 
-            <article class="walkthrough-article">
-                <h1 class="walkthroigh-article-heading">Plan for diversification</h1>
-                <p class="walkthroigh-article-paragraph">
-                    If you own only one stock, it takes just one scandal to send the value of your portfolio plummeting.
-                    Diversifying your investments among different companies and industries will spread out your
-                    exposure, so that no single stock can wipe out your savings.</p>
-            </article>
-
-            <article class="walkthrough-article">
-                <h1 class="walkthroigh-article-heading">Make your picks, do your research</h1>
-                <p class="walkthroigh-article-paragraph">
-                    Buying stocks strategically can take an incredible amount of research.
-                    If you aren't sure where to begin, start with companies and industries you already know.
-                    Make it a habit to read investors' newsletters and the daily financial news.
-                    At this step we strongly advice you ro register on our site where you can find lots of financial
-                    data and analysis.</p>
-            </article>
+                <article class="walkthrough-article">
+                    <h1 class="walkthrough-article-heading">Make your picks, do your research</h1>
+                    <p class="walkthrough-article-paragraph">
+                        Buying stocks strategically can take an incredible amount of research.
+                        If you aren't sure where to begin, start with companies and industries you already know.
+                        Make it a habit to read investors' newsletters and the daily financial news.
+                        At this step we strongly advice you ro register on our site where you can find lots of financial
+                        data and analysis.</p>
+                </article>
 
 
-            <article class="walkthrough-article">
-                <h1 class="walkthroigh-article-heading">Make a contract request</h1>
-                <p class="walkthroigh-article-paragraph">
-                    Once you feel ready to buy some first you must send us your <a class="walkthrough-link" th:href="@{/contract}">contract
-                    request</a> where you have to fill in your personal data and the initial balance of your brokerage
-                    account. You must also choose your preferred way of signing your contract - with e-signature or by
-                    visiting us in our office.
-                </p></p>
-            </article>
+                <article class="walkthrough-article">
+                    <h1 class="walkthrough-article-heading">Make a contract request</h1>
+                    <p class="walkthrough-article-paragraph">
+                        Once you feel ready to buy some first you must send us your <a class="walkthrough-link"
+                                                                                       th:href="@{/contract}">contract
+                        request</a> where you have to fill in your personal data and the initial balance of your
+                        brokerage
+                        account. You must also choose your preferred way of signing your contract - with e-signature or
+                        by
+                        visiting us in our office.
+                    </p></p>
+                </article>
 
-            <article class="walkthrough-article">
-                <h1 class="walkthroigh-article-heading">Opening of your brokerage account</h1>
-                <p class="walkthroigh-article-paragraph">
-                    After signing your contract, you have to transfer the money for the initial balance of your
-                    brokerage account. Upon receiving the money transfer, you brokerage account is open. You can have
-                    only one brokerage at a time. Once your account is open, you can make as many money transfers as you
-                    want, especially if you plan to buy large number of stocks.</p>
-            </article>
+                <article class="walkthrough-article">
+                    <h1 class="walkthrough-article-heading">Opening of your brokerage account</h1>
+                    <p class="walkthrough-article-paragraph">
+                        After signing your contract, you have to transfer the money for the initial balance of your
+                        brokerage account. Upon receiving the money transfer, you brokerage account is open. You can
+                        have
+                        only one brokerage at a time. Once your account is open, you can make as many money transfers as
+                        you
+                        want, especially if you plan to buy large number of stocks.</p>
+                </article>
 
-            <article class="walkthrough-article">
-                <h1 class="walkthroigh-article-heading">Making a stock order</h1>
-                <p class="walkthroigh--articleparagraph">Once your brokerage account is open, you can start placing <a class="walkthrough-link"
-                        th:href="@{/order-any-stock}">orders</a> for buying stocks. You can place order for any stock
-                    you want to buy by filling in the name of the company, the stock ticker and the number of the stocks
-                    you want to buy. You can place as many orders as you like. After processing of each order you will
-                    receive an email with detailed information.</p>
-            </article>
+                <article class="walkthrough-article">
+                    <h1 class="walkthrough-article-heading">Making a stock order</h1>
+                    <p class="walkthrough-article-paragraph">Once your brokerage account is open, you can start placing
+                        <a class="walkthrough-link"
+                           th:href="@{/order-any-stock}">orders</a> for buying stocks. You can place order for any stock
+                        you want to buy by filling in the name of the company, the stock ticker and the number of the
+                        stocks
+                        you want to buy. You can place as many orders as you like. After processing of each order you
+                        will
+                        receive an email with detailed information.</p>
+                </article>
 
-            <article class="walkthrough-article">
-                <h1 class="walkthroigh-article-heading">Receiving your dividends</h1>
-                <p class="walkthroigh-article-paragraph">You will receive regular dividends for the stocks, whose issuer decides
-                    to pay dividends to its shareholders. There will be regular notifications for all the stocks which
-                    are declared to pay dividends and the expected amount of dividends. We will consult you about the
-                    taxation of the paid dividends.</p>
-            </article>
+                <article class="walkthrough-article">
+                    <h1 class="walkthrough-article-heading">Receiving your dividends</h1>
+                    <p class="walkthrough-article-paragraph">You will receive regular dividends for the stocks, whose
+                        issuer decides
+                        to pay dividends to its shareholders. There will be regular notifications for all the stocks
+                        which
+                        are declared to pay dividends and the expected amount of dividends. We will consult you about
+                        the
+                        taxation of the paid dividends.</p>
+                </article>
 
-            <article class="walkthrough-article">
-                <h1 class="walkthroigh-article-heading">Selling stocks</h1>
-                <p class="walkthroigh-article-paragraph">If you decide to sell a stock you must contact us in the most
-                    convenient way for you. We will consult you about the advantages and disadvantages or selling the
-                    stock and we will help you with arranging the sale and receiving the money in your account.</p>
-            </article>
-
+                <article class="walkthrough-article">
+                    <h1 class="walkthrough-article-heading">Selling stocks</h1>
+                    <p class="walkthrough-article-paragraph">If you decide to sell a stock you must contact us in the
+                        most
+                        convenient way for you. We will consult you about the advantages and disadvantages or selling
+                        the
+                        stock and we will help you with arranging the sale and receiving the money in your account.</p>
+                </article>
+            </div>
         </div>
     </div>
 
