@@ -2,82 +2,83 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="~{fragments/head}"/>
-<body class="background" id="general">
+<body class="background">
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <div class="tabs">
-        <div class="tab-2">
-            <label for="tab2-1">Cookies Policy</label>
-            <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-            <div>
-                <p class="text-justify text-white">INTRODUCTION</p>
-                <p class="text-justify text-white" style = "font-size:16px">"Banksters" (“we” or “us” or “our”) may use cookies, web beacons, tracking pixels,
-                    and other tracking technologies when you visit our website, including any other media form,
-                    media channel, mobile website, or mobile application related or connected thereto (collectively, the “Site”)
-                    to help customize the Site and improve your experience. We reserve the right to make changes to this
-                    Cookie Policy at any time and for any reason. We will alert you about any changes by updating the
-                    “Last Updated” date of this Cookie Policy. Any changes or modifications will be effective immediately
-                    upon posting the updated Cookie Policy on the Site, and you waive the right to receive specific notice
-                    of each such change or modification. You are encouraged to periodically review this Cookie Policy
-                    to stay informed of updates. You will be deemed to have been made aware of, will be subject to,
-                    and will be deemed to have accepted the changes in any revised Cookie Policy by your continued use
-                    of the Site after the date such revised Cookie Policy is posted.</p>
-                <br>
-                <p class="text-justify text-white">USE OF COOKIES</p>
-                <p class="text-justify text-white" style = "font-size:16px">A “cookie” is a string of information which assigns you a unique identifier that we store on your computer.
-                    Your browser then provides that unique identifier to use each time you submit a query to the Site.
-                    We use cookies on the Site to, among other things, keep track of services you have used, record registration
-                    information, record your user preferences, keep you logged into the Site, facilitate purchase procedures,
-                    and track the pages you visit. Cookies help us understand how the Site is being used and improve your user
-                    experience.</p>
-                <br>
-                <p class="text-justify text-white">CONTROL OF COOKIES</p>
-                <p class="text-justify text-white" style = "font-size:16px">Most browsers are set to accept cookies by default. However, you can remove or reject cookies in your browser’s settings.
-                    Please be aware that such action could affect the availability and functionality of the Site.</p>
+    <div class="cookie-gdpr-policy-container">
+        <div class="cookie-policy-container">
+            <div class="cookie-policy-heading">Cookies Policy</div>
+            <div class="cookie-policy-text">
+                <div class="cookie-policy-subheading">INTRODUCTION</div>
+                <div class="cookie-policy-paragraph">"Banksters" (“we” or “us” or “our”) may use cookies, web beacons,
+                    tracking pixels, and other tracking technologies when you visit our website, including any other
+                    media form, media channel, mobile website, or mobile application related or connected thereto
+                    (collectively, the “Site”) to help customize the Site and improve your experience. We reserve the
+                    right to make changes to this Cookie Policy at any time and for any reason. We will alert you about
+                    any changes by updating the “Last Updated” date of this Cookie Policy. Any changes or modifications
+                    will be effective immediately upon posting the updated Cookie Policy on the Site, and you waive the
+                    right to receive specific notice of each such change or modification. You are encouraged to
+                    periodically review this Cookie Policy to stay informed of updates. You will be deemed to have been
+                    made aware of, will be subject to, and will be deemed to have accepted the changes in any revised
+                    Cookie Policy by your continued use of the Site after the date such revised Cookie Policy is posted.
+                </div>
+            </div>
+            <div class="cookie-policy-subheading">USE OF COOKIES</div>
+            <div class="cookie-policy-paragraph">A “cookie” is a string of information which assigns you a unique
+                identifier that we store on your computer. Your browser then provides that unique identifier to use each
+                time you submit a query to the Site. We use cookies on the Site to, among other things, keep track of
+                services you have used, record registration information, record your user preferences, keep you logged
+                into the Site, facilitate purchase procedures, and track the pages you visit. Cookies help us understand
+                how the Site is being used and improve your user experience.
+            </div>
+            <div class="cookie-policy-subheading">CONTROL OF COOKIES</div>
+            <div class="cookie-policy-paragraph">Most browsers are set to accept cookies by default. However, you can
+                remove or reject cookies in your browser’s settings. Please be aware that such action could affect the
+                availability and functionality of the Site.
             </div>
         </div>
-
-        <div class="tab-2">
-            <label for="tab2-2">GDPR</label>
-            <input id="tab2-2" name="tabs-two" type="radio">
-            <div>
-                <p class="text-justify text-white">DATA CONTROLLER DETAILS</p>
-                <p class="text-justify text-white" style = "font-size:15px">Banksters Ltd. (The Company), is a
-                    controller of personal data and processes your personal data lawfully, in good faith and in a transparent
-                    fashion. In order to provide you with a quality service The Company processes information that constitutes
-                    personal data for the following purposes: Perform investment brokerage services; Promoting and selling
-                    products/services, including through profiling so that it can offer you a
-                    quality  service; When customer satisfaction surveys are conducted by the Company; Selecting outsourcing service
-                    providers for the Company and managing the Company’s relations with
-                    outsourcing service providers; Managing anti-fraud activities. The Company process personal data when it carries
-                    out activities related to fraud prevention, discovery, investigation and management; Processing complaints and other received
-                    client requests.</p>
-                <br>
-                <p class="text-justify text-white">CATEGORY OF PERSONAL DATA RECIPIENTS</p>
-                <p class="text-justify text-white" style = "font-size:15px">In accordance with the requirements of Regulation (EU) 2016/679 the Company has the right to disclose
-                    personal data which it processes to the following categories of recipients: Public authorities,
-                    institutions, establishments and auditors in cases when the Company  has a legal
-                    obligation to provide the data; Third parties, individuals, legal entities, public authorities,
-                    institutions, establishments, upon
-                    fulfillment of legal or contractual obligations or other valid legal grounds; Subcontractors of the
-                    Company, in their capacity as processors. If the necessity arises for the Company to transfer to  third
-                    countries or international organizations
-                    with personal data which it has processed, the provisions of Regulation (EU) 2016/679 shall be complied
+        <div class="gdpr-policy-container">
+            <div class="gdpr-policy-heading">GDPR Policy</div>
+            <div class="gdpr-policy-text">
+                <div class="cookie-policy-subheading">DATA CONTROLLER DETAILS</div>
+                <div class="cookie-policy-paragraph">Banksters Ltd. (The Company), is a controller of personal data and
+                    processes your personal data lawfully, in good faith and in a transparent fashion. In order to
+                    provide you with a quality service The Company processes information that constitutes personal data
+                    for the following purposes: Perform investment brokerage services; Promoting and selling
+                    products/services, including through profiling so that it can offer you a quality service; When
+                    customer satisfaction surveys are conducted by the Company; Selecting outsourcing service providers
+                    for the Company and managing the Company’s relations with outsourcing service providers; Managing
+                    anti-fraud activities. The Company process personal data when it carries out activities related to
+                    fraud prevention, discovery, investigation and management; Processing complaints and other received
+                    client requests.
+                </div>
+                <div class="cookie-policy-subheading">CATEGORY OF PERSONAL DATA RECIPIENTS</div>
+                <div class="cookie-policy-paragraph">In accordance with the requirements of Regulation (EU) 2016/679 the
+                    Company has the right to disclose personal data which it processes to the following categories of
+                    recipients: Public authorities, institutions, establishments and auditors in cases when the Company
+                    has a legal obligation to provide the data; Third parties, individuals, legal entities, public
+                    authorities, institutions, establishments, upon fulfillment of legal or contractual obligations or
+                    other valid legal grounds; Subcontractors of the Company, in their capacity as processors. If the
+                    necessity arises for the Company to transfer to third countries or international organizations with
+                    personal data which it has processed, the provisions of Regulation (EU) 2016/679 shall be complied
                     with, including in the case of any possible transfer of personal data by the third country or
-                    international organization to another third country or organization.</p>
-                <br>
-                <p class="text-justify text-white">RETENTION PERIODS AND EXERCISING RIGHTS UNDER REGULATION (EU) 2016/679</p>
-                <p class="text-justify text-white" style = "font-size:15px">The Company processes personal data within the terms stipulated in the effective legislation in the
-                    country and by regulatory supervisory authorities. After the expiry of legal/regulatory periods, the
-                    Company will erase your personal data. Personal data with regard to which there is no explicit
-                    legislative/supervisory obligation to be stored shall be erased after the purpose for which it was
-                    collected and processed has been achieved.<br> In addition to the provided information the Company
-                    provides the following information regarding your
-                    rights as personal data subjects which you can exercise in compliance with the provisions of Regulation
-                    (EU) 2016/679: access; rectification; erasure; restriction; objection; portability; withdrawal of
-                    consent; complaint; template of requested; request in free wording; submission of request; reception of
-                    response; competent supervisory authority.</p>
+                    international organization to another third country or organization.
+                </div>
+                <div class="cookie-policy-subheading">RETENTION PERIODS AND EXERCISING RIGHTS UNDER REGULATION (EU)
+                    2016/679
+                </div>
+                <div class="cookie-policy-paragraph">The Company processes personal data within the terms stipulated in
+                    the effective legislation in the country and by regulatory supervisory authorities. After the expiry
+                    of legal/regulatory periods, the Company will erase your personal data. Personal data with regard to
+                    which there is no explicit legislative/supervisory obligation to be stored shall be erased after the
+                    purpose for which it was collected and processed has been achieved.<br> In addition to the provided
+                    information the Company provides the following information regarding your rights as personal data
+                    subjects which you can exercise in compliance with the provisions of Regulation (EU) 2016/679:
+                    access; rectification; erasure; restriction; objection; portability; withdrawal of consent;
+                    complaint; template of requested; request in free wording; submission of request; reception of
+                    response; competent supervisory authority.
+                </div>
             </div>
         </div>
     </div>

@@ -1015,3 +1015,50 @@ footer {
 .faq-button:hover {
     background-color: #87E0B4;
 }
+/*--------------------------------------------------------------------------*/
+/*Cookie and GDPR Policy*/
+
+.cookie-gdpr-policy-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 70%;
+    padding: 30px;
+    justify-content: center;
+    margin: 1% auto;
+}
+
+.cookie-policy-container{
+    width: 50%;
+    padding: 5px;
+    border-right: 2px solid firebrick;
+}
+
+.gdpr-policy-container {
+    width: 50%;
+    padding: 5px;
+}
+
+.cookie-policy-paragraph {
+    text-align: justify;
+}
+
+.gdpr-policy-paragraph {
+    text-align: justify;
+}
+
+.cookie-policy-subheading {
+    text-align: right;
+}
+
+.gdpr-policy-subheading {
+    text-align: left;
+}
+
+.cookie-policy-heading {
+
+}
+
+.gdpr-policy-heading {
+
+}
