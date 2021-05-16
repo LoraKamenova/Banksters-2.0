@@ -923,7 +923,7 @@ footer {
 /*data panel*/
 
 .data-panel-container {
-    margin: 5% auto;
+    margin: 4% auto;
     background-color: honeydew;
     width: 70%;
     display: flex;
@@ -1025,7 +1025,7 @@ footer {
     width: 70%;
     padding: 30px;
     justify-content: center;
-    margin: 1% auto;
+    margin: 2% auto;
 }
 
 .cookie-policy-container{
@@ -1049,22 +1049,30 @@ footer {
 
 .cookie-policy-subheading {
     text-align: right;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 25px;
 }
 
 .gdpr-policy-subheading {
     text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 25px;
 }
 
 .cookie-policy-heading {
     text-align: right;
-    font-size: 25px;
-    margin-bottom: 15px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #005C33;
     font-family: 'Yusei Magic', sans-serif;
 }
 
 .gdpr-policy-heading {
     text-align: left;
-    font-size: 25px;
-    margin-bottom: 15px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #005C33;
     font-family: 'Yusei Magic', sans-serif;
 }
