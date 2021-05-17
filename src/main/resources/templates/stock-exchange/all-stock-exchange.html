@@ -13,7 +13,7 @@
         <div class="all-cards-container">
             <th:block th:each="stockExchange : ${stockExchanges}">
                 <div class="card">
-                    <img th:src="${stockExchange.logoURL}" class="card-image">
+                    <img class="card-image" th:src="${stockExchange.logoURL}" >
 
                     <p class="card-title" th:text="${stockExchange.name}"></p>
 

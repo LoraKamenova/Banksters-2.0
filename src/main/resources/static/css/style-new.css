@@ -1110,13 +1110,13 @@ footer {
 
 .all-cards-container {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-direction: row;
 }
 
 .card {
     background-color: white;
     margin: 20px;
-    width: 30%;
+    /*width: 50%;*/
 }
 
 .card-image {
