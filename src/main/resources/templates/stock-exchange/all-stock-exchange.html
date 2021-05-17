@@ -2,31 +2,26 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="~{fragments/head}"/>
-<body class="background" id="stock-exchange">
+<body class="background">
 <main class="main">
 
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <p class=" text-center text-white" style="font-size:25px;"><span>Top Stock Exchanges</span></p>
-    <br><br>
+    <div class="all-wrapper">
+        <h2 class="all-heading">Top Stock Exchanges</h2>
 
-    <div class="containerAll">
-        <th:block th:each="stockExchange : ${stockExchanges}">
-            <div class="cardAll">
-                <br>
-                <img th:src="${stockExchange.logoURL}" class="card__imageAll">
-                <br>
-                <br>
-                <p class="card__nameAll" th:text="${stockExchange.name}"></p>
-                <br>
-                <br>
-                <div class="grid-containerAll">
+        <div class="all-cards-container">
+            <th:block th:each="stockExchange : ${stockExchanges}">
+                <div class="card">
+                    <img th:src="${stockExchange.logoURL}" class="card-image">
+
+                    <p class="card-title" th:text="${stockExchange.name}"></p>
+
+                    <a class="card-button" th:href="@{/stock-exchange/details/{id}(id=${stockExchange.id})}">Details</a>
                 </div>
-                <a class="btnAll draw-border mb-3" th:href="@{/stock-exchange/details/{id}(id=${stockExchange.id})}">Details</a>
-            </div>
-        </th:block>
+            </th:block>
+        </div>
     </div>
-    <br>
 
 </main>
 <th:block th:include="~{fragments/footer}"/>
