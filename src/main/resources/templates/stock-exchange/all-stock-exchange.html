@@ -14,9 +14,7 @@
             <th:block th:each="stockExchange : ${stockExchanges}">
                 <div class="card">
                     <img class="card-image" th:src="${stockExchange.logoURL}" >
-
                     <p class="card-title" th:text="${stockExchange.name}"></p>
-
                     <a class="card-button" th:href="@{/stock-exchange/details/{id}(id=${stockExchange.id})}">Details</a>
                 </div>
             </th:block>
