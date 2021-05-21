@@ -1102,6 +1102,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 70%;
+
 }
 
 .all-heading {
@@ -1112,7 +1113,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: space-between;
 }
 
 .card {
