@@ -1118,13 +1118,11 @@ footer {
 .card {
     background-color: white;
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 400px;
     height: 150px;
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
-
 }
 
 .card-image {
@@ -1132,4 +1130,6 @@ footer {
     height: 100px;
     box-shadow: 0px 0px 15px -3px #000000;
     border-radius: 10px;
+    position: relative;
+    left: -30px;
 }
