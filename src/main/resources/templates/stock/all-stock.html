@@ -6,26 +6,23 @@
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <p class=" text-center text-white" style="font-size:25px;"><span>Top Stocks</span></p>
-    <br><br>
+    <div class="all-wrapper">
+        <h2 class="all-heading">Top Stocks</h2>
 
-        <div class="containerAll">
+        <div class="all-cards-container">
             <th:block th:each="stock : ${stocks}">
-                <div class="cardAll">
-                    <br>
-                    <img th:src="${stock.logoURL}" class="card__imageAll">
-                    <br>
-                    <br>
-                    <p class="card__nameAll" th:text="${stock.name}"></p>
-                    <br>
-                    <br>
-                    <div class="grid-containerAll">
+                <div class="card all-stock-card">
+                    <img class="card-image" th:src="${stock.logoURL}" >
+                    <div class="card-content">
+                        <p class="card-title" th:text="${stock.name}"></p>
+                        <div class="button-container">
+                            <a class="card-button stock-button" th:href="@{/stock/details/{id}(id=${stock.id})}">Details</a>
+                        </div>
                     </div>
-                    <a class="btnAll draw-border mb-3" th:href="@{/stock/details/{id}(id=${stock.id})}">Details</a>
                 </div>
             </th:block>
+        </div>
     </div>
-    <br>
 
 </main>
 <th:block th:include="~{fragments/footer}"/>

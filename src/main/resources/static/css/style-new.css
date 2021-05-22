@@ -1133,7 +1133,8 @@ footer {
 }
 
 .card-image {
-    width: 140px;
+    max-width: 140px;
+    min-width: 140px;
     height: 100px;
     box-shadow: 0px 0px 15px -3px #000000;
     border-radius: 10px;
@@ -1205,6 +1206,11 @@ footer {
     background: linear-gradient(90deg, rgba(167,84,199,0.8911939775910365) 0%, rgba(199,184,214,0.938813025210084) 100%);
 }
 
+.all-stock-card {
+    background: rgb(193,12,25);
+    background: linear-gradient(90deg, rgba(193,12,25,0.9023984593837535) 0%, rgba(240,135,140,0.8687850140056023) 100%);
+}
+
 .market-index-button:hover {
     color: rgb(35,81,149);
 }
@@ -1217,6 +1223,10 @@ footer {
     color: rgb(167,84,199);
 }
 
+.stock-button:hover {
+    color: rgb(193,12,25);
+}
+
 .add-stock-exchange-button:hover {
     background: linear-gradient(90deg, rgba(45,149,35,0.938813025210084) 0%, rgba(103,249,157,0.8911939775910365) 100%);
 }
@@ -1227,5 +1237,9 @@ footer {
 
 .add-company-button:hover {
     background: linear-gradient(90deg, rgba(167,84,199,0.8911939775910365) 0%, rgba(199,184,214,0.938813025210084) 100%);
+}
+
+.add-stock-button:hover {
+    background: linear-gradient(90deg, rgba(193,12,25,0.9023984593837535) 0%, rgba(240,135,140,0.8687850140056023) 100%);
 }
 
