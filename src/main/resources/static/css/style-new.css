@@ -1200,8 +1200,9 @@ footer {
     background: linear-gradient(90deg, rgba(35,81,149,0.938813025210084) 0%, rgba(103,216,249,0.8911939775910365) 100%);
 }
 
-.add-stock-exchange-button:hover {
-    background: linear-gradient(90deg, rgba(45,149,35,0.938813025210084) 0%, rgba(103,249,157,0.8911939775910365) 100%);
+.all-company-card {
+    background: rgb(167,84,199);
+    background: linear-gradient(90deg, rgba(167,84,199,0.8911939775910365) 0%, rgba(199,184,214,0.938813025210084) 100%);
 }
 
 .market-index-button:hover {
@@ -1209,9 +1210,22 @@ footer {
 }
 
 .stock-exchange-button:hover {
-    color: rgb(45,149,35);;
+    color: rgb(45,149,35);
+}
+
+.company-button:hover {
+    color: rgb(167,84,199);
+}
+
+.add-stock-exchange-button:hover {
+    background: linear-gradient(90deg, rgba(45,149,35,0.938813025210084) 0%, rgba(103,249,157,0.8911939775910365) 100%);
 }
 
 .add-market-index-button:hover {
     background: linear-gradient(90deg, rgba(35,81,149,0.938813025210084) 0%, rgba(103,216,249,0.8911939775910365) 100%);
 }
+
+.add-company-button:hover {
+    background: linear-gradient(90deg, rgba(167,84,199,0.8911939775910365) 0%, rgba(199,184,214,0.938813025210084) 100%);
+}
+
