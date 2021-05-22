@@ -1106,7 +1106,7 @@ footer {
     align-items: center;
     width: 80%;
     background-color: snow;
-    padding: 20px 40px 10px 70px;
+    padding: 30px 40px 20px 70px;
 }
 
 .all-heading {
@@ -1127,6 +1127,7 @@ footer {
     height: 160px;
     display: flex;
     align-items: center;
+    padding-right: 20px;
 }
 
 .card.all-stock-exchange-card {
@@ -1152,6 +1153,7 @@ footer {
 .card-title {
     font-size: 18px;
     font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
 }
 
 .card-button {
@@ -1160,10 +1162,19 @@ footer {
     border: 1px solid white;
     padding: 5px;
     text-decoration: none;
+    margin-top: 15px;
+}
+
+.card-button:hover {
+    color: rgb(45,149,35);;
+    background-color: white;
+    cursor: pointer;
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
 }
+
