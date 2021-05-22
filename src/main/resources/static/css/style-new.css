@@ -1162,7 +1162,10 @@ footer {
     border: 1px solid white;
     padding: 5px;
     text-decoration: none;
-    margin-top: 15px;
+
+    min-width: 70px;
+    flex: 1;
+    margin: 0 2px;
 }
 
 .card-button:hover {
@@ -1178,3 +1181,23 @@ footer {
     justify-content: center;
 }
 
+.button-container {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+
+.add-button {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.add-button:hover {
+    background: linear-gradient(90deg, rgba(45,149,35,0.938813025210084) 0%, rgba(103,249,157,0.8911939775910365) 100%);
+    color: white;
+    cursor: pointer;
+}

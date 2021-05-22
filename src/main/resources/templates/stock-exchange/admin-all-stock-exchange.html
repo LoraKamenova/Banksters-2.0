@@ -7,29 +7,25 @@
 
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <div class="text-center">
-        <a class="btn btn-danger text-center mr-3" th:href="@{/create-stock-exchange}">Add Stock Exchange</a>
-    </div>
-    <br><br>
+    <div class="all-wrapper">
+        <a class="add-button add-stock-exchange-button" th:href="@{/create-stock-exchange}">Add Stock Exchange</a>
 
-    <div class="containerAll">
-        <th:block th:each="se : ${ses}">
-            <div class="cardAllD">
-                <br>
-                <img th:src="${se.logoURL}" class="card__imageAll">
-                <br>
-                <br>
-                <p class="card__nameAll" th:text="${se.name}"></p>
-                <br>
-                <div class="grid-containerAll">
+        <div class="all-cards-container">
+            <th:block th:each="se : ${ses}">
+                <div class="card all-stock-exchange-card">
+                    <img class="card-image" th:src="${se.logoURL}">
+                    <div class="card-content">
+                        <p class="card-title" th:text="${se.name}"></p>
+                        <div class="button-container">
+                            <a class="card-button" th:href="@{/stock-exchange/details/{id}(id=${se.id})}">Details</a>
+                            <a class="card-button" th:href="@{/stock-exchange/edit/{id}(id=${se.id})}">Edit</a>
+                            <a class="card-button" th:href="@{/stock-exchange/delete/{id}(id=${se.id})}">Delete</a>
+                        </div>
+                    </div>
                 </div>
-                <a class="btnAll draw-border mb-3" th:href="@{/stock-exchange/details/{id}(id=${se.id})}">Details</a>
-                <a class="btnAll draw-border mb-3" th:href="@{/stock-exchange/edit/{id}(id=${se.id})}">Edit</a>
-                <a class="btnAll draw-border mb-3" th:href="@{/stock-exchange/delete/{id}(id=${se.id})}">Delete</a>
-            </div>
-        </th:block>
+            </th:block>
+        </div>
     </div>
-    <br>
 
 </main>
 <th:block th:include="~{fragments/footer}"/>
