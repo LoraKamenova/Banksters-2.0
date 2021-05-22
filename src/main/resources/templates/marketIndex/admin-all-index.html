@@ -6,29 +6,49 @@
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <div class="text-center">
-        <a class="btn btn-danger text-center mr-3" th:href="@{/create-index}">Add Market Index</a>
-    </div>
-    <br><br>
+    <div class="all-wrapper">
+        <a class="add-button add-market-index-button" th:href="@{/create-index}">Add Market Index</a>
 
-    <div class="containerAll">
-        <th:block th:each="mi : ${mis}">
-            <div class="cardAllD">
-                <br>
-                <img th:src="${mi.logoURL}" class="card__imageAll">
-                <br>
-                <br>
-                <p class="card__nameAll" th:text="${mi.name}"></p>
-                <br>
-                <div class="grid-containerAll">
+        <div class="all-cards-container">
+            <th:block th:each="mi : ${mis}">
+                <div class="card all-market-index-card">
+                    <img class="card-image" th:src="${mi.logoURL}">
+                    <div class="card-content">
+                        <p class="card-title" th:text="${mi.name}"></p>
+                        <div class="button-container">
+                            <a class="card-button market-index-button" th:href="@{/market-index/details/{id}(id=${mi.id})}">Details</a>
+                            <a class="card-button market-index-button" th:href="@{/market-index/edit/{id}(id=${mi.id})}">Edit</a>
+                            <a class="card-button market-index-button" th:href="@{/market-index/delete/{id}(id=${mi.id})}">Delete</a>
+                        </div>
+                    </div>
                 </div>
-                <a class="btnAll draw-border mb-3" th:href="@{/market-index/details/{id}(id=${mi.id})}">Details</a>
-                <a class="btnAll draw-border mb-3" th:href="@{/market-index/edit/{id}(id=${mi.id})}">Edit</a>
-                <a class="btnAll draw-border mb-3" th:href="@{/market-index/delete/{id}(id=${mi.id})}">Delete</a>
-            </div>
-        </th:block>
+            </th:block>
+        </div>
     </div>
-    <br>
+
+<!--    <div class="text-center">-->
+<!--        <a class="btn btn-danger text-center mr-3" th:href="@{/create-index}">Add Market Index</a>-->
+<!--    </div>-->
+<!--    <br><br>-->
+
+<!--    <div class="containerAll">-->
+<!--        <th:block th:each="mi : ${mis}">-->
+<!--            <div class="cardAllD">-->
+<!--                <br>-->
+<!--                <img th:src="${mi.logoURL}" class="card__imageAll">-->
+<!--                <br>-->
+<!--                <br>-->
+<!--                <p class="card__nameAll" th:text="${mi.name}"></p>-->
+<!--                <br>-->
+<!--                <div class="grid-containerAll">-->
+<!--                </div>-->
+<!--                <a class="btnAll draw-border mb-3" th:href="@{/market-index/details/{id}(id=${mi.id})}">Details</a>-->
+<!--                <a class="btnAll draw-border mb-3" th:href="@{/market-index/edit/{id}(id=${mi.id})}">Edit</a>-->
+<!--                <a class="btnAll draw-border mb-3" th:href="@{/market-index/delete/{id}(id=${mi.id})}">Delete</a>-->
+<!--            </div>-->
+<!--        </th:block>-->
+<!--    </div>-->
+<!--    <br>-->
 
 </main>
 <th:block th:include="~{fragments/footer}"/>

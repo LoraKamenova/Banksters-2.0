@@ -17,7 +17,7 @@
                     <div class="card-content">
                         <p class="card-title" th:text="${stockExchange.name}"></p>
                         <div class="button-container">
-                            <a class="card-button" th:href="@{/stock-exchange/details/{id}(id=${stockExchange.id})}">Details</a>
+                            <a class="card-button stock-exchange-button" th:href="@{/stock-exchange/details/{id}(id=${stockExchange.id})}">Details</a>
                         </div>
                     </div>
                 </div>

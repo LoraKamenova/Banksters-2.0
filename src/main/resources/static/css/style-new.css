@@ -1110,7 +1110,9 @@ footer {
 }
 
 .all-heading {
-    color: white;
+    font-size: 30px;
+    font-family: 'Yusei Magic', sans-serif;
+    color: black;
 }
 
 .all-cards-container {
@@ -1130,11 +1132,6 @@ footer {
     padding-right: 20px;
 }
 
-.card.all-stock-exchange-card {
-    background: rgb(45,149,35);
-    background: linear-gradient(90deg, rgba(45,149,35,0.938813025210084) 0%, rgba(103,249,157,0.8911939775910365) 100%);
-}
-
 .card-image {
     width: 140px;
     height: 100px;
@@ -1144,10 +1141,11 @@ footer {
     left: -30px;
 }
 
-.all-heading {
-    font-size: 30px;
-    font-family: 'Yusei Magic', sans-serif;
-    color: black;
+.card-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
 }
 
 .card-title {
@@ -1156,35 +1154,26 @@ footer {
     text-align: center;
 }
 
+.button-container {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+
 .card-button {
     color: white;
     text-align: center;
     border: 1px solid white;
     padding: 5px;
     text-decoration: none;
-
     min-width: 70px;
     flex: 1;
     margin: 0 2px;
 }
 
 .card-button:hover {
-    color: rgb(45,149,35);;
     background-color: white;
     cursor: pointer;
-}
-
-.card-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-}
-
-.button-container {
-    display: flex;
-    margin-top: 15px;
-    justify-content: space-around;
 }
 
 .add-button {
@@ -1197,7 +1186,32 @@ footer {
 }
 
 .add-button:hover {
-    background: linear-gradient(90deg, rgba(45,149,35,0.938813025210084) 0%, rgba(103,249,157,0.8911939775910365) 100%);
     color: white;
     cursor: pointer;
+}
+
+.all-stock-exchange-card {
+    background: rgb(45,149,35);
+    background: linear-gradient(90deg, rgba(45,149,35,0.938813025210084) 0%, rgba(103,249,157,0.8911939775910365) 100%);
+}
+
+.all-market-index-card {
+    background: rgb(35,81,149);
+    background: linear-gradient(90deg, rgba(35,81,149,0.938813025210084) 0%, rgba(103,216,249,0.8911939775910365) 100%);
+}
+
+.add-stock-exchange-button:hover {
+    background: linear-gradient(90deg, rgba(45,149,35,0.938813025210084) 0%, rgba(103,249,157,0.8911939775910365) 100%);
+}
+
+.market-index-button:hover {
+    color: rgb(35,81,149);
+}
+
+.stock-exchange-button:hover {
+    color: rgb(45,149,35);;
+}
+
+.add-market-index-button:hover {
+    background: linear-gradient(90deg, rgba(35,81,149,0.938813025210084) 0%, rgba(103,216,249,0.8911939775910365) 100%);
 }

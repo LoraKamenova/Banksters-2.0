@@ -2,30 +2,27 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="~{fragments/head}"/>
-<body class="background" id="market-index">
+<body class="background">
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <p class=" text-center text-white" style="font-size:25px;"><span>Top Market Indexes</span></p>
-        <br><br>
+    <div class="all-wrapper">
+        <h2 class="all-heading">Top Market Indexes</h2>
 
-        <div class="containerAll">
+        <div class="all-cards-container">
             <th:block th:each="marketIndex : ${marketIndexes}">
-                <div class="cardAll">
-                    <br>
-                    <img th:src="${marketIndex.logoURL}" class="card__imageAll">
-                    <br>
-                    <br>
-                    <p class="card__nameAll" th:text="${marketIndex.name}"></p>
-                    <br>
-                    <br>
-                    <div class="grid-containerAll">
+                <div class="card all-market-index-card">
+                    <img class="card-image" th:src="${marketIndex.logoURL}" >
+                    <div class="card-content">
+                        <p class="card-title" th:text="${marketIndex.name}"></p>
+                        <div class="button-container">
+                            <a class="card-button market-index-button" th:href="@{/market-index/details/{id}(id=${marketIndex.id})}">Details</a>
+                        </div>
                     </div>
-                    <a class="btnAll draw-border mb-3" th:href="@{/market-index/details/{id}(id=${marketIndex.id})}">Details</a>
                 </div>
             </th:block>
+        </div>
     </div>
-    <br>
 
 </main>
 <th:block th:include="~{fragments/footer}"/>

@@ -17,9 +17,9 @@
                     <div class="card-content">
                         <p class="card-title" th:text="${se.name}"></p>
                         <div class="button-container">
-                            <a class="card-button" th:href="@{/stock-exchange/details/{id}(id=${se.id})}">Details</a>
-                            <a class="card-button" th:href="@{/stock-exchange/edit/{id}(id=${se.id})}">Edit</a>
-                            <a class="card-button" th:href="@{/stock-exchange/delete/{id}(id=${se.id})}">Delete</a>
+                            <a class="card-button stock-exchange-button" th:href="@{/stock-exchange/details/{id}(id=${se.id})}">Details</a>
+                            <a class="card-button stock-exchange-button" th:href="@{/stock-exchange/edit/{id}(id=${se.id})}">Edit</a>
+                            <a class="card-button stock-exchange-button" th:href="@{/stock-exchange/delete/{id}(id=${se.id})}">Delete</a>
                         </div>
                     </div>
                 </div>
