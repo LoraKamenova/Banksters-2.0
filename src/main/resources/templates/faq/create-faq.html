@@ -6,29 +6,29 @@
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <p class=" text-center text-white" style = "font-size:25px;" ><span>Add FAQ</span></p>
-    <br><br>
+    <section class="general-form-page">
+        <h2 class="general-form-heading">Add FAQ</h2>
 
-    <form id="faqForm" th:method="post" th:action="@{/create-faq}" enctype="multipart/form-data" th:object="${model}">
-        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
-        <div class="row">
+        <form class="general-form" th:method="post" th:action="@{/create-faq}" enctype="multipart/form-data"
+              th:object="${model}">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
 
-            <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('question')}? 'text-danger'">
-                <label for="FQuestion">Question</label>
-                <textarea class="text-white" th:field="*{question}" name="question" id="FQuestion" maxlength="3000" rows="5" cols="5" placeholder="Type question here..." required></textarea>
+            <div class="form-group" th:classappend="${#fields.hasErrors('question')}? 'text-danger'">
+                <textarea class="general-form-field" th:field="*{question}" name="question" id="FQuestion"
+                          maxlength="3000" rows="5" cols="5" placeholder="Question" required></textarea>
                 <small th:each="error : ${#fields.errors('question')}" th:text="${error}"></small>
             </div>
 
-            <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('answer')}? 'text-danger'">
-                <label for="FAnswer">Answer</label>
-                <textarea class="text-white" th:field="*{answer}" name="answer" id="FAnswer" maxlength="3000" rows="5" cols="5" placeholder="Type answer here..." required></textarea>
+            <div class="form-group" th:classappend="${#fields.hasErrors('answer')}? 'text-danger'">
+                <textarea class="general-form-field" th:field="*{answer}" name="answer" id="FAnswer" maxlength="3000"
+                          rows="5" cols="5" placeholder="Answer" required></textarea>
                 <small th:each="error : ${#fields.errors('answer')}" th:text="${error}"></small>
             </div>
-            <br>
-            
-        <input id="FButton" type="submit" value="Add">
-        </div>
-    </form>
+
+            <input class="general-form-button" type="submit" value="Send">
+        </form>
+
+    </section>
 </main>
 <th:block th:include="~{fragments/footer}"/>
 </body>

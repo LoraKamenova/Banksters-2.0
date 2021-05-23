@@ -470,13 +470,13 @@ footer {
 /*------------------------------------------------------------------------------------------------*/
 /*register and login page*/
 
-.register-page, .login-page {
+.register-page, .login-page, .general-form-page {
     width: 40%;
     margin: 3% auto;
     justify-content: center;
 }
 
-.register-form-heading, .login-form-heading {
+.register-form-heading, .login-form-heading, .general-form-heading {
     text-align: center;
     margin: 20px;
     font-size: 30px;
@@ -485,7 +485,7 @@ footer {
     text-transform: uppercase;
 }
 
-.register-form, .login-form {
+.register-form, .login-form, .general-form {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -495,12 +495,17 @@ footer {
     padding: 15px 5px;
 }
 
+.general-form-label {
+    color: white;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
 .form-group {
     width: 95%;
     margin-top: 5px;
 }
 
-.register-form-field {
+.register-form-field, .general-form-field {
     background-color: transparent;
     color: white;
     padding: 10px;
@@ -519,7 +524,7 @@ footer {
     border: 1px solid gray;
 }
 
-.register-form-button, .login-form-button {
+.register-form-button, .login-form-button, .general-form-button {
     width: 95%;
     margin: 5px;
     padding: 10px;
@@ -533,7 +538,7 @@ footer {
     font-family: 'Yusei Magic', sans-serif;
 }
 
-.register-form-button:hover, .login-form-button:hover {
+.register-form-button:hover, .login-form-button:hover, .general-form-button:hover {
     cursor: pointer;
     background-color: #006B3C;
 }
@@ -1048,11 +1053,11 @@ footer {
 }
 
 .cookie-policy-paragraph {
-    text-align: justify;
+    text-align: right;
 }
 
 .gdpr-policy-paragraph {
-    text-align: justify;
+    text-align: left;
 }
 
 .cookie-policy-subheading {
