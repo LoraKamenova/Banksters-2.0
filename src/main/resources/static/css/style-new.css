@@ -470,21 +470,29 @@ footer {
 /*------------------------------------------------------------------------------------------------*/
 /*register and login page*/
 
-.register-page, .login-page, .general-form-page {
+.register-page, .login-page {
     width: 40%;
     margin: 3% auto;
     justify-content: center;
 }
 
+.general-form-page {
+    width: 50%;
+    margin: 2% auto;
+    justify-content: center;
+}
+
 .register-form-heading, .login-form-heading, .general-form-heading {
     text-align: center;
-    margin: 20px;
     font-size: 30px;
     font-family: 'Yusei Magic', sans-serif;
     color: #006B3C;
     text-transform: uppercase;
 }
 
+.register-form-heading, .login-form-heading {
+    margin: 20px;
+}
 .register-form, .login-form, .general-form {
     box-sizing: border-box;
     display: flex;
@@ -496,14 +504,13 @@ footer {
 }
 
 .general-form-label {
-    /*color: white;*/
     font-family: 'Yusei Magic', sans-serif;
     color: #009956;
 }
 
 .form-group {
     width: 95%;
-    margin-top: 5px;
+    margin: 10px 0;
 }
 
 .register-form-field, .general-form-field {
