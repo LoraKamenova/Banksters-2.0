@@ -872,14 +872,12 @@ footer {
     border-bottom: 3px solid black;
     font-family: 'Dancing Script', cursive;
     padding-left: 30px;
+    color: #005C33;
 }
 
 .dictionary-entry {
-    /*margin: 20px 10px;*/
-    /*padding: 30px;*/
     text-align: justify;
     padding: 20px 30px;
-    /*border-bottom: 1px solid lightgray;*/
 }
 
 .dictionary-entry-heading {
