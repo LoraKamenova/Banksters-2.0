@@ -2,69 +2,69 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="~{fragments/head}" />
-<body class="background" id="stock-exchange">
+<body class="background">
 <main class="main">
 
     <th:block th:include="~{fragments/navbar-user}" />
 
-    <p class=" text-center text-white" style="font-size:25px;"><span>Edit Stock Exchange</span></p>
-    <br><br>
+    <section class="general-form-page">
+        <h2 class="general-form-heading">Edit Stock Exchange</h2>
 
-    <form id="stockExchangeForm" method="post" th:action="@{/stock-exchange/edit/{id}(id=${stockExchangeId})}" enctype="multipart/form-data" th:object="${model}">
-        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
-    <div class="row">
+        <form class="general-form" method="post" th:action="@{/stock-exchange/edit/{id}(id=${stockExchangeId})}" enctype="multipart/form-data" th:object="${model}">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
 
-        <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('name')}? 'text-danger'">
-            <label for="SEName">Name</label>
-            <input type="text" th:field="*{name}" name="name" id="SEName" required/>
-            <small th:each="error : ${#fields.errors('name')}" th:text="${error}"></small>
-        </div>
+            <div class="form-group" th:classappend="${#fields.hasErrors('name')}? 'text-danger'">
+                <label class="general-form-label" for="SEName">Name</label>
+                <input class="general-form-field" type="text" th:field="*{name}" name="name" id="SEName" required/>
+                <small th:each="error : ${#fields.errors('name')}" th:text="${error}"></small>
+            </div>
 
-        <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('description')}? 'text-danger'">
-            <label for="SEDescription">Description</label>
-            <textarea class= "text-white" th:text="*{description}" name="description" id="SEDescription" maxlength="1201" rows="6" cols="5" required></textarea>
-            <small th:each="error : ${#fields.errors('description')}" th:text="${error}"></small>
-        </div>
+            <div class="form-group" th:classappend="${#fields.hasErrors('description')}? 'text-danger'">
+                <label class="general-form-label" for="SEDescription">Description</label>
+                <textarea class="general-form-field" th:text="*{description}" name="description" id="SEDescription" maxlength="1201" rows="6" cols="5" required></textarea>
+                <small th:each="error : ${#fields.errors('description')}" th:text="${error}"></small>
+            </div>
 
-        <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('region')}? 'text-danger'">
-            <label for="SERegion">Region</label>
-            <input type="text" th:field="*{region}" name="region" id="SERegion" th:value="${model.region}" required/>
-            <small th:each="error : ${#fields.errors('region')}" th:text="${error}"></small>
-        </div>
+            <div class="form-group" th:classappend="${#fields.hasErrors('region')}? 'text-danger'">
+                <label class="general-form-label" for="SERegion">Region</label>
+                <input class="general-form-field" type="text" th:field="*{region}" name="region" id="SERegion" th:value="${model.region}" required/>
+                <small th:each="error : ${#fields.errors('region')}" th:text="${error}"></small>
+            </div>
 
-        <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('marketPlace')}? 'text-danger'">
-            <label for="SEMarketPlace">Market Place</label>
-            <input type="text" th:field="*{marketPlace}" name="marketPlace" id="SEMarketPlace" th:value="${model.marketPlace}" required/>
-            <small th:each="error : ${#fields.errors('marketPlace')}" th:text="${error}"></small>
-        </div>
+            <div class="form-group" th:classappend="${#fields.hasErrors('marketPlace')}? 'text-danger'">
+                <label class="general-form-label" for="SEMarketPlace">Market Place</label>
+                <input class="general-form-field" type="text" th:field="*{marketPlace}" name="marketPlace" id="SEMarketPlace" th:value="${model.marketPlace}" required/>
+                <small th:each="error : ${#fields.errors('marketPlace')}" th:text="${error}"></small>
+            </div>
 
-        <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('timeZone')}? 'text-danger'">
-            <label for="SETimeZone">Time Zone</label>
-            <input type="text" th:field="*{timeZone}" name="timeZone" id="SETimeZone" th:value="${model.timeZone}" required/>
-            <small th:each="error : ${#fields.errors('timeZone')}" th:text="${error}"></small>
-        </div>
+            <div class="form-group" th:classappend="${#fields.hasErrors('timeZone')}? 'text-danger'">
+                <label class="general-form-label" for="SETimeZone">Time Zone</label>
+                <input class="general-form-field" type="text" th:field="*{timeZone}" name="timeZone" id="SETimeZone" th:value="${model.timeZone}" required/>
+                <small th:each="error : ${#fields.errors('timeZone')}" th:text="${error}"></small>
+            </div>
 
-        <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('currency')}? 'text-danger'">
-            <label for="SECurrency">Currency</label>
-            <input type="text" th:field="*{currency}" name="currency" id="SECurrency" th:value="${model.currency}" required/>
-            <small th:each="error : ${#fields.errors('currency')}" th:text="${error}"></small>
-        </div>
+            <div class="form-group" th:classappend="${#fields.hasErrors('currency')}? 'text-danger'">
+                <label class="general-form-label" for="SECurrency">Currency</label>
+                <input class="general-form-field" type="text" th:field="*{currency}" name="currency" id="SECurrency" th:value="${model.currency}" required/>
+                <small th:each="error : ${#fields.errors('currency')}" th:text="${error}"></small>
+            </div>
 
-        <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('marketCap')}? 'text-danger'">
-            <label for="SEMarketCap">Market Capitalisation</label>
-            <input type="text" th:field="*{marketCap}" name="marketCap" id="SEMarketCap" th:value="${model.marketCap}" required/>
-            <small th:each="error : ${#fields.errors('marketCap')}" th:text="${error}"></small>
-        </div>
+            <div class="form-group" th:classappend="${#fields.hasErrors('marketCap')}? 'text-danger'">
+                <label class="general-form-label" for="SEMarketCap">Market Capitalisation</label>
+                <input class="general-form-field" type="text" th:field="*{marketCap}" name="marketCap" id="SEMarketCap" th:value="${model.marketCap}" required/>
+                <small th:each="error : ${#fields.errors('marketCap')}" th:text="${error}"></small>
+            </div>
 
-        <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('website')}? 'text-danger'">
-            <label for="SEWebsite">Website</label>
-            <input type="text" th:field="*{website}" name="website" id="SEWebsite" th:value="${model.website}" required/>
-            <small th:each="error : ${#fields.errors('website')}" th:text="${error}"></small>
-        </div>
-    </div>
+            <div class="form-group" th:classappend="${#fields.hasErrors('website')}? 'text-danger'">
+                <label class="general-form-label" for="SEWebsite">Website</label>
+                <input class="general-form-field" type="text" th:field="*{website}" name="website" id="SEWebsite" th:value="${model.website}" required/>
+                <small th:each="error : ${#fields.errors('website')}" th:text="${error}"></small>
+            </div>
 
-        <input id="SEButton" type="submit" value="Edit">
-    </form>
+            <input class="general-form-button" type="submit" value="Send">
+        </form>
+
+    </section>
 
 </main>
 <th:block th:include="~{fragments/footer}" />

@@ -486,12 +486,16 @@ footer {
     text-align: center;
     font-size: 30px;
     font-family: 'Yusei Magic', sans-serif;
-    color: #006B3C;
     text-transform: uppercase;
 }
 
 .register-form-heading, .login-form-heading {
     margin: 20px;
+    color: #006B3C;
+}
+
+.general-form-heading {
+    color: white;
 }
 .register-form, .login-form, .general-form {
     box-sizing: border-box;
@@ -553,6 +557,10 @@ footer {
 .register-form-button:hover, .login-form-button:hover, .general-form-button:hover {
     cursor: pointer;
     background-color: #006B3C;
+}
+
+.general-form-button.delete-button {
+    background-color: firebrick;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -1195,6 +1203,7 @@ footer {
 .add-button:hover {
     color: white;
     cursor: pointer;
+    border: 1px solid white;;
 }
 
 .all-stock-exchange-card {
