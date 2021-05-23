@@ -496,8 +496,9 @@ footer {
 }
 
 .general-form-label {
-    color: white;
+    /*color: white;*/
     font-family: 'Yusei Magic', sans-serif;
+    color: #009956;
 }
 
 .form-group {
@@ -512,6 +513,10 @@ footer {
     outline: none;
     width: 100%;
     border: 1px solid gray;
+}
+
+.readonly-field {
+    color: gray;
 }
 
 .login-form-field {
