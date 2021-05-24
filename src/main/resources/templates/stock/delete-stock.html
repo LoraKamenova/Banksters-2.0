@@ -2,114 +2,113 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="~{fragments/head}" />
-<body class="background" id="stock">
+<body class="background">
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}" />
 
-    <p class=" text-center text-white" style="font-size:25px;"><span>Delete Stock</span></p>
-    <br><br>
+    <section class="general-form-page">
+        <h2 class="general-form-heading">Delete Stock</h2>
 
-    <form id="stockForm" th:method="post" th:action="@{/stock/delete/{id}(id=${model.id})}">
-        <div class="row">
-            <div class="col-md-12 text-white">
-                <label for="SName">Company Name</label>
-                <input type="text" name="companyName" id="SName" th:value="${model.companyName}" readonly/>
+        <form id="stockForm" th:method="post" th:action="@{/stock/delete/{id}(id=${model.id})}">
+
+            <div class="general-form-group">
+                <label class="general-form-label" for="SName">Company Name</label>
+                <input class="general-form-field readonly-field" type="text" name="companyName" id="SName" th:value="${model.companyName}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="STicker">Ticker code</label>
-                <input type="text" name="tickerCode" id="STicker" th:value="${model.tickerCode}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="STicker">Ticker code</label>
+                <input class="general-form-field readonly-field" type="text" name="tickerCode" id="STicker" th:value="${model.tickerCode}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="SDescription">Description</label>
-                <textarea class="text-white" name="description" id="SDescription" maxlength="1500" rows="6" cols="5"
+            <div class="general-form-group">
+                <label class="general-form-label" for="SDescription">Description</label>
+                <textarea class="general-form-field readonly-field" name="description" id="SDescription" maxlength="1500" rows="6" cols="5"
                           placeholder="Add description here..." th:text="${model.description}" readonly></textarea>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="SCurrency">Currency</label>
-                <input type="text" name="currency" id="SCurrency" th:value="${model.currency}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="SCurrency">Currency</label>
+                <input class="general-form-field readonly-field" type="text" name="currency" id="SCurrency" th:value="${model.currency}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="SMinTradedQty">Minimal Traded Qty</label>
-                <input type="text" name="minTradedQty" id="SMinTradedQty" th:value="${model.minTradedQty}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="SMinTradedQty">Minimal Traded Qty</label>
+                <input class="general-form-field readonly-field" type="text" name="minTradedQty" id="SMinTradedQty" th:value="${model.minTradedQty}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="SStockMarket">Stock Exchange </label>
-                <input type="text" name="exchange" id="SStockMarket" th:value="${model.exchange}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="SStockMarket">Stock Exchange </label>
+                <input class="general-form-field readonly-field" type="text" name="exchange" id="SStockMarket" th:value="${model.exchange}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="SIndex">Included in Index</label>
-                <input type="text" name="includedInIndex" id="SIndex" th:value="${model.includedInIndex}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="SIndex">Included in Index</label>
+                <input class="general-form-field readonly-field" type="text" name="includedInIndex" id="SIndex" th:value="${model.includedInIndex}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="SDividendDate">Ex-Dividend Date </label>
-                <input type="text" name="exDividendDate" id="SDividendDate" th:value="${model.exDividendDate}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="SDividendDate">Ex-Dividend Date </label>
+                <input class="general-form-field readonly-field" type="text" name="exDividendDate" id="SDividendDate" th:value="${model.exDividendDate}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="SForwardDividend">Forward Dividend & Yield</label>
-                <input type="text" name="forwardDividendAndYield" id="SForwardDividend" placeholder="e.g. 0.12 (1.60%)"
+            <div class="general-form-group">
+                <label class="general-form-label" for="SForwardDividend">Forward Dividend & Yield</label>
+                <input class="general-form-field readonly-field" type="text" name="forwardDividendAndYield" id="SForwardDividend" placeholder="e.g. 0.12 (1.60%)"
                        th:value="${model.forwardDividendAndYield}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="SClosingPrice">Previous Day Closing Price</label>
-                <input type="text" name="previousDayClosingPrice" id="SClosingPrice" th:value="${model.previousDayClosingPrice}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="SClosingPrice">Previous Day Closing Price</label>
+                <input class="general-form-field readonly-field" type="text" name="previousDayClosingPrice" id="SClosingPrice" th:value="${model.previousDayClosingPrice}" readonly/>
             </div>
 
-            <div class="col-md-12 text-white">
-                <label for="year">Year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="year" type="text" id="year" th:value="${model.year}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="year">Year</label>
+                <input class="general-form-field readonly-field" name="year" type="text" id="year" th:value="${model.year}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="january">January &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="january" type="text" id="january" th:value="${model.january}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="january">January</label>
+                <input class="general-form-field readonly-field" name="january" type="text" id="january" th:value="${model.january}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="february">February &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="february" type="text" id="february" th:value="${model.february}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="february">February</label>
+                <input class="general-form-field readonly-field" name="february" type="text" id="february" th:value="${model.february}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="march">March&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="march" type="text" id="march" th:value="${model.march}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="march">March</label>
+                <input class="general-form-field readonly-field" name="march" type="text" id="march" th:value="${model.march}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="april">April&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="april" type="text" id="april" th:value="${model.april}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="april">April</label>
+                <input class="general-form-field readonly-field" name="april" type="text" id="april" th:value="${model.april}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="may">May &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="may" type="text" id="may" th:value="${model.may}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="may">May</label>
+                <input class="general-form-field readonly-field" name="may" type="text" id="may" th:value="${model.may}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="june">June &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="june" type="text" id="june" th:value="${model.june}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="june">June</label>
+                <input class="general-form-field readonly-field" name="june" type="text" id="june" th:value="${model.june}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="july">July &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="july" type="text" id="july" th:value="${model.july}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="july">July</label>
+                <input class="general-form-field readonly-field" name="july" type="text" id="july" th:value="${model.july}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="august">August&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="august" type="text" id="august" th:value="${model.august}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="august">August</label>
+                <input class="general-form-field readonly-field" name="august" type="text" id="august" th:value="${model.august}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="september">September &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="september" type="text" id="september" th:value="${model.september}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="september">September</label>
+                <input class="general-form-field readonly-field" name="september" type="text" id="september" th:value="${model.september}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="october">October &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="october" type="text" id="october" th:value="${model.october}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="october">October</label>
+                <input class="general-form-field readonly-field" name="october" type="text" id="october" th:value="${model.october}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="november">November&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="november" type="text" id="november" th:value="${model.november}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="november">November</label>
+                <input class="general-form-field readonly-field" name="november" type="text" id="november" th:value="${model.november}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="december">December&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input class="text-white" name="december" type="text" id="december" th:value="${model.december}" readonly/>
+            <div class="general-form-group">
+                <label class="general-form-label" for="december">December</label>
+                <input class="general-form-field readonly-field" name="december" type="text" id="december" th:value="${model.december}" readonly/>
             </div>
-        </div>
-
-        <input id="SDeleteButton" type="submit" value="Delete">
-    </form>
+            <input class="general-form-button delete-button" type="submit" value="Send">
+        </form>
+    </section>
 
 </main>
 <th:block th:include="~{fragments/footer}" />
