@@ -7,7 +7,7 @@
     <th:block th:include="~{fragments/navbar-user}" />
 
     <section class="general-form-page">
-        <h2 class="general-form-heading">Add Stock Exchange</h2>
+        <h2 class="general-form-heading">Add a Stock Exchange</h2>
 
         <form class="general-form" th:method="post" th:action="@{create-stock-exchange}" enctype="multipart/form-data"  th:object="${model}">
             <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
