@@ -632,6 +632,11 @@ footer {
     background-color: firebrick;
 }
 
+.general-form-button.delete-button:hover {
+    background-color: #E02B2B;
+}
+
+
 /*-----------------------------------------------------------------------*/
 /*Terms and conditions*/
 
