@@ -637,32 +637,24 @@ footer {
 }
 /*---------------------------------------------------*/
 /*my profile*/
-.hexagon {
-    position: relative;
-    width: 200px;
-    height: 115.47px;
-    background-color: #64C7CC;
-    margin: 57.74px 0;
+.d {
+    height: 100px;
+    width: 100px;
 }
 
-.hexagon:before,
-.hexagon:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
+.hex3 {
+    background: red;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }
 
-.hexagon:before {
-    bottom: 100%;
-    border-bottom: 57.74px solid #64C7CC;
+.s {
+    color: black;
 }
-
-.hexagon:after {
-    top: 100%;
-    width: 0;
-    border-top: 57.74px solid #64C7CC;
+.hex4 {
+    background: blue;
+    -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
 /*-----------------------------------------------------------------------*/
 /*Terms and conditions*/
