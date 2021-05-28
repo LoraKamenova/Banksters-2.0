@@ -642,11 +642,12 @@ footer {
     flex-direction: column;
     width: 50%;
     background-color: snow;
-    margin: 3% auto;
+    margin: 5% auto;
 }
 
 .profile-notification-container {
     min-height: 70px;
+
 }
 .profile-header {
     text-align: center;
@@ -659,6 +660,8 @@ footer {
 
 .profile-links-container {
     display: flex;
+    border-top: 1px solid black;
+    width: 100%;
 }
 
 .profile-link {
@@ -666,12 +669,25 @@ footer {
     flex-direction: column;
     text-align: center;
     width: 20%;
-    border: 1px solid black;
+}
+
+.profile-link:hover {
+    background-color: black;
 }
 
 .profile-link-content {
     color: black;
     text-decoration: none;
+    padding: 20px 0;
+}
+
+.profile-link-content:hover {
+    color: white;
+}
+
+.profile-link-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 /*-----------------------------------------------------------------------*/
 /*Terms and conditions*/
