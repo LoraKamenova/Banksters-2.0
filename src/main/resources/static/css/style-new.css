@@ -656,6 +656,15 @@ footer {
 .profile-heading {
     font-family: 'Yusei Magic', sans-serif;
 }
+
+.profile-links-container {
+    display: flex;
+}
+
+.profile-link {
+    display: flex;
+    flex-direction: column;
+}
 /*-----------------------------------------------------------------------*/
 /*Terms and conditions*/
 
