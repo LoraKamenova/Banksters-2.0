@@ -637,7 +637,25 @@ footer {
 }
 /*---------------------------------------------------*/
 /*my profile*/
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: snow;
+    margin: 3% auto;
+}
 
+.profile-notification-container {
+    min-height: 70px;
+}
+.profile-header {
+    text-align: center;
+    margin: 30px 0 100px 0;
+}
+
+.profile-heading {
+    font-family: 'Yusei Magic', sans-serif;
+}
 /*-----------------------------------------------------------------------*/
 /*Terms and conditions*/
 

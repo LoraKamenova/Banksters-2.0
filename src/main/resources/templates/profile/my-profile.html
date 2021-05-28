@@ -7,7 +7,7 @@
     <th:block th:include="~{fragments/navbar-user}"/>
 
     <div class="profile-container">
-        <div class="profile-notification">
+        <div class="profile-notification-container">
             <div th:if="${notifications.size()} > 0" th:text="'You have ' + ${notifications.size()} + ' new notification(s).'" class="alert alert-info"></div>
         </div>
         <div class="profile-header">
