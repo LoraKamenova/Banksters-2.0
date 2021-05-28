@@ -668,6 +668,11 @@ footer {
     width: 20%;
     border: 1px solid black;
 }
+
+.profile-link-content {
+    color: black;
+    text-decoration: none;
+}
 /*-----------------------------------------------------------------------*/
 /*Terms and conditions*/
 
