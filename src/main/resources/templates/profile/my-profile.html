@@ -7,19 +7,14 @@
     <th:block th:include="~{fragments/navbar-user}"/>
 
     <div class="profile-container">
-        <div class="profile-notification-container">
-            <div th:if="${notifications.size()} > 0"
-                 th:text="'You have ' + ${notifications.size()} + ' new notification(s).'"
-                 class="alert alert-info"></div>
-        </div>
+
         <div class="profile-header">
             <h1 class="profile-heading" th:text="${model.username} + '`s Profile'"></h1>
         </div>
         <div class="profile-links-container">
 
             <div class="profile-link">
-                <a class="profile-link-content" th:href="@{/contract}"><i
-                        class="fas fa-file-signature profile-link-icon"></i><br>Contact</a>
+                <a class="profile-link-content" th:href="@{/contract}"><i class="fas fa-file-signature profile-link-icon"></i><br>Contact</a>
             </div>
             <div class="profile-link">
                 <a class="profile-link-content" th:href="@{/order-any-stock}"><i class="fas fa-shopping-cart profile-link-icon"></i><br>Transaction</a>
@@ -28,8 +23,7 @@
                 <a class="profile-link-content" th:href="@{/my-portfolio}"><i class="fas fa-wallet profile-link-icon"></i><br>Portfolio</a>
             </div>
             <div class="profile-link">
-                <a class="profile-link-content" th:href="@{/notifications}"><i
-                        class="far fa-bell profile-link-icon"></i><br>Notifications</a>
+                <a class="profile-link-content" th:href="@{/notifications}"><i class="fas fa-bell profile-link-icon"></i><span class="notification" th:if="${notifications.size()} > 0" th:text="${notifications.size()}"></span><br>Notifications</a>
             </div>
             <div class="profile-link">
                 <a class="profile-link-content" th:href="@{/converter}"><i class="fas fa-coins profile-link-icon"></i><br>Converter</a>
@@ -40,54 +34,6 @@
             </a>
         </div>
     </div>
-
-
-    <!--        <div class="cardMP">-->
-    <!--            <div class="face face1">-->
-    <!--                <div class="contentMP">-->
-    <!--                    <img src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1593333363/Java%20Project/pngtree-vector-bell-icon-png-image_927119_j18wrs.jpg">-->
-    <!--                    <h3 style="font-size:19px">Notifications</h3>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="face face2">-->
-    <!--                <div class="contentMP">-->
-    <!--                    <p>Check your notifications here</p>-->
-    <!--                    <a th:href="@{/notifications}">Open</a>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-
-    <!--        <div class="cardMP">-->
-    <!--            <div class="face face1">-->
-    <!--                <div class="contentMP">-->
-    <!--                    <img src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1593599530/Java%20Project/208-2081744_currency-exchange-icon-currency-exchange-clipart_ttwjw5.jpg">-->
-    <!--                    <h3>Converter</h3>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="face face2">-->
-    <!--                <div class="contentMP">-->
-    <!--                    <p>Check your stocks here</p>-->
-    <!--                    <a th:href="@{/converter}">Open</a>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-
-    <!--        <div class="cardMP">-->
-    <!--            <div class="face face1">-->
-    <!--                <div class="contentMP">-->
-    <!--                    <img src="https://res.cloudinary.com/dyhmxus4n/image/upload/v1592741559/Java%20Project/history_wmjsvw.jpg">-->
-    <!--                    <h3>History</h3>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="face face2">-->
-    <!--                <div class="contentMP">-->
-    <!--                    <p>Check your order history</p>-->
-    <!--                    <a th:href="@{/my-orders}">Open</a>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    <br>-->
 
 </main>
 <th:block th:include="~{fragments/footer}"/>
