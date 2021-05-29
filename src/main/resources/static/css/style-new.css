@@ -642,16 +642,22 @@ footer {
     flex-direction: column;
     width: 50%;
     background-color: snow;
-    margin: 5% auto;
+    margin: 2% auto;
 }
 
 .profile-header {
     text-align: center;
-    margin: 100px 0;
+    margin: 40px 0 20px 0;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
 }
 
 .profile-heading {
     font-family: 'Yusei Magic', sans-serif;
+    font-size: 35px;
 }
 
 .profile-links-container {
