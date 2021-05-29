@@ -656,7 +656,7 @@ footer {
 
 .profile-links-container {
     display: flex;
-    border-top: 1px solid black;
+    border-top: 1px solid #324031;
     width: 100%;
 }
 
@@ -668,11 +668,11 @@ footer {
 }
 
 .profile-link:hover {
-    background-color: black;
+    background-color: #324031;
 }
 
 .profile-link-content {
-    color: black;
+    color: #324031;
     text-decoration: none;
     padding: 20px 0;
 }
@@ -686,14 +686,22 @@ footer {
     margin-bottom: 15px;
 }
 
+.notification-bar {
+    text-align: center;
+}
+
 .notification {
     background-color: #ff0057;
     color: white;
     padding: 4px 6px;
     border-radius: 50%;
     position: relative;
-    top: -20px;
-    left: -8px;
+    bottom: -30px;
+    right: -70px;
+}
+
+.notification-bar {
+    min-height: 20px;
 }
 /*-----------------------------------------------------------------------*/
 /*Terms and conditions*/

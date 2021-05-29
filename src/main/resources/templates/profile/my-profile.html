@@ -11,6 +11,9 @@
         <div class="profile-header">
             <h1 class="profile-heading" th:text="${model.username} + '`s Profile'"></h1>
         </div>
+        <div class="notification-bar">
+            <span class="notification" th:if="${notifications.size()} > 0" th:text="${notifications.size()}"></span>
+        </div>
         <div class="profile-links-container">
 
             <div class="profile-link">
@@ -23,7 +26,7 @@
                 <a class="profile-link-content" th:href="@{/my-portfolio}"><i class="fas fa-wallet profile-link-icon"></i><br>Portfolio</a>
             </div>
             <div class="profile-link">
-                <a class="profile-link-content" th:href="@{/notifications}"><i class="fas fa-bell profile-link-icon"></i><span class="notification" th:if="${notifications.size()} > 0" th:text="${notifications.size()}"></span><br>Notifications</a>
+                <a class="profile-link-content" th:href="@{/notifications}"><i class="fas fa-bell profile-link-icon"></i><br>Notifications</a>
             </div>
             <div class="profile-link">
                 <a class="profile-link-content" th:href="@{/converter}"><i class="fas fa-coins profile-link-icon"></i><br>Converter</a>

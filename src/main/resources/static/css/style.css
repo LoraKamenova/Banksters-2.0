@@ -695,35 +695,7 @@ ul.add-currency-list li span {
     ul.add-currency-list { bottom: 48px; height: calc(100vh - 80px - 51px); }
     .add-currency-btn i { left: 25%; top:0.65rem; }
 }
-/*----------------------------------------------------------------------------------------------------------------------*/
-/*My Profile - alert*/
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
-.alert {
-    margin: 0 auto;
-    padding: 12px;
-    border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 300;
-    letter-spacing: 1px;
-    width: 40%;
-}
-
-.alert:before {
-    padding-right: 12px;
-}
-
-.alert-info {
-    color: white;
-    background-color: #ff0057;
-    border: 1px solid black;
-}
-.alert-info:before {
-    content: '\f05a';
-    font-family: 'FontAwesome';
-}
 /*-------------------------------------------------------------------------------------*/
 /*Loading*/
 .loading {
