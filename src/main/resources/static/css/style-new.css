@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
 
 * {
@@ -635,6 +634,7 @@ footer {
 .general-form-button.delete-button:hover {
     background-color: #E02B2B;
 }
+
 /*---------------------------------------------------*/
 /*my profile*/
 .profile-container {
@@ -718,6 +718,7 @@ footer {
     left: -10px
 
 }
+
 /*-----------------------------------------------------------------------*/
 /*Terms and conditions*/
 
@@ -1362,54 +1363,71 @@ footer {
 }
 
 .all-stock-exchange-card {
-    background: rgb(45,149,35);
-    background: linear-gradient(90deg, rgba(45,149,35,0.938813025210084) 0%, rgba(103,249,157,0.8911939775910365) 100%);
+    background: rgb(45, 149, 35);
+    background: linear-gradient(90deg, rgba(45, 149, 35, 0.938813025210084) 0%, rgba(103, 249, 157, 0.8911939775910365) 100%);
 }
 
 .all-market-index-card {
-    background: rgb(35,81,149);
-    background: linear-gradient(90deg, rgba(35,81,149,0.938813025210084) 0%, rgba(103,216,249,0.8911939775910365) 100%);
+    background: rgb(35, 81, 149);
+    background: linear-gradient(90deg, rgba(35, 81, 149, 0.938813025210084) 0%, rgba(103, 216, 249, 0.8911939775910365) 100%);
 }
 
 .all-company-card {
-    background: rgb(167,84,199);
-    background: linear-gradient(90deg, rgba(167,84,199,0.8911939775910365) 0%, rgba(199,184,214,0.938813025210084) 100%);
+    background: rgb(167, 84, 199);
+    background: linear-gradient(90deg, rgba(167, 84, 199, 0.8911939775910365) 0%, rgba(199, 184, 214, 0.938813025210084) 100%);
 }
 
 .all-stock-card {
-    background: rgb(193,12,25);
-    background: linear-gradient(90deg, rgba(193,12,25,0.9023984593837535) 0%, rgba(240,135,140,0.8687850140056023) 100%);
+    background: rgb(193, 12, 25);
+    background: linear-gradient(90deg, rgba(193, 12, 25, 0.9023984593837535) 0%, rgba(240, 135, 140, 0.8687850140056023) 100%);
 }
 
 .market-index-button:hover {
-    color: rgb(35,81,149);
+    color: rgb(35, 81, 149);
 }
 
 .stock-exchange-button:hover {
-    color: rgb(45,149,35);
+    color: rgb(45, 149, 35);
 }
 
 .company-button:hover {
-    color: rgb(167,84,199);
+    color: rgb(167, 84, 199);
 }
 
 .stock-button:hover {
-    color: rgb(193,12,25);
+    color: rgb(193, 12, 25);
 }
 
 .add-stock-exchange-button:hover {
-    background: linear-gradient(90deg, rgba(45,149,35,0.938813025210084) 0%, rgba(103,249,157,0.8911939775910365) 100%);
+    background: linear-gradient(90deg, rgba(45, 149, 35, 0.938813025210084) 0%, rgba(103, 249, 157, 0.8911939775910365) 100%);
 }
 
 .add-market-index-button:hover {
-    background: linear-gradient(90deg, rgba(35,81,149,0.938813025210084) 0%, rgba(103,216,249,0.8911939775910365) 100%);
+    background: linear-gradient(90deg, rgba(35, 81, 149, 0.938813025210084) 0%, rgba(103, 216, 249, 0.8911939775910365) 100%);
 }
 
 .add-company-button:hover {
-    background: linear-gradient(90deg, rgba(167,84,199,0.8911939775910365) 0%, rgba(199,184,214,0.938813025210084) 100%);
+    background: linear-gradient(90deg, rgba(167, 84, 199, 0.8911939775910365) 0%, rgba(199, 184, 214, 0.938813025210084) 100%);
 }
 
 .add-stock-button:hover {
-    background: linear-gradient(90deg, rgba(193,12,25,0.9023984593837535) 0%, rgba(240,135,140,0.8687850140056023) 100%);
+    background: linear-gradient(90deg, rgba(193, 12, 25, 0.9023984593837535) 0%, rgba(240, 135, 140, 0.8687850140056023) 100%);
 }
 
+/*---------------------------------------------------*/
+/*notifications*/
+
+.notification-container {
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 50px;
+    margin: 3% auto;
+    justify-content: center;
+}
+
+.notification-heading {
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+}

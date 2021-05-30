@@ -7,20 +7,25 @@
 
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <p class=" text-center text-white" style="font-size:25px;"><span>My Notifications</span></p>
-    <br><br>
+    <div class="notification-container">
+        <h1 class="notification-heading">My Notifications</h1>
+        <div class="notifications-bubbles-container">
+            <div class="notification-bubble"></div>
+        </div>
+    </div>
 
-    <div class='wrapper2'>
+
+
         <th:block th:each="notification, iter : ${notifications}" th:object="${notification}">
 
-            <div class='speechbubble'>
+            <div class='notification-bubble'>
                 <span><u th:text="${notification.type}"></u></span><br><br><br>
                 <p th:if="${notification.question} != null" th:text="${notification.question}"></p>
                 <span class='username' th:if="${notification.date} != null" th:text="'Asked on ' + ${notification.date}"></span><br><br>
                 <p th:if="${notification.answer} != null" th:text="${notification.answer}"></p><br>
             </div>
         </th:block>
-    </div>
+
 
 </main>
 <th:block th:include="~{fragments/footer}" />
