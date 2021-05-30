@@ -10,9 +10,9 @@
 
         <div class="notification-bar">
             <div class="profile-link">
-                <a class="profile-link-content" th:href="@{/notifications}"><i class="fas fa-bell profile-link-icon"></i></a>
+                <a class="profile-link-content" th:href="@{/notifications}"><i class="fas fa-bell profile-link-icon"><span class="notification" th:if="${notifications.size()} > 0" th:text="${notifications.size()}"></span></i></a>
             </div>
-            <span class="notification" th:if="${notifications.size()} > 0" th:text="${notifications.size()}"></span>
+
         </div>
 
         <div class="profile-header">
