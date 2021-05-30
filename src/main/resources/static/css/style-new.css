@@ -646,8 +646,10 @@ footer {
 }
 
 .profile-header {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 30px 0 100px 0;
+    margin: 20px 0 80px 0;
 }
 
 .profile-image {
@@ -658,6 +660,14 @@ footer {
 .profile-heading {
     font-family: 'Yusei Magic', sans-serif;
     font-size: 35px;
+    text-transform: uppercase;
+}
+
+.profile-subheading {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 35px;
+    font-style: oblique;
+    margin-top: 10px;
 }
 
 .profile-links-container {
@@ -702,10 +712,11 @@ footer {
     color: white;
     padding: 4px 6px;
     border-radius: 50%;
-    font-size: 16px;
-    /*position: relative;*/
-    /*bottom: -30px;*/
-    /*right: -70px;*/
+    font-size: 15px;
+    position: relative;
+    top: -20px;
+    left: -10px
+
 }
 /*-----------------------------------------------------------------------*/
 /*Terms and conditions*/
