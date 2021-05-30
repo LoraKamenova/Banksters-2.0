@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
-<th:block th:include="~{fragments/head}" />
-<body class="background" id="profile">
+<th:block th:include="~{fragments/head}"/>
+<body class="background">
 <main class="main">
 
     <th:block th:include="~{fragments/navbar-user}"/>
@@ -10,24 +10,24 @@
     <div class="notification-container">
         <h1 class="notification-heading">My Notifications</h1>
         <div class="notifications-bubbles-container">
-            <div class="notification-bubble"></div>
+            <th:block th:each="notification, iter : ${notifications}" th:object="${notification}">
+                <div class='notification-bubble'>
+                    <span th:text="${notification.type}"></span>
+
+                    <p th:if="${notification.question} != null" th:text="${notification.question}"></p>
+
+                    <span th:if="${notification.date} != null"
+                          th:text="'Asked on ' + ${notification.date}"></span>
+
+                    <p th:if="${notification.answer} != null" th:text="${notification.answer}"></p>
+                </div>
+            </th:block>
+
         </div>
     </div>
 
 
-
-        <th:block th:each="notification, iter : ${notifications}" th:object="${notification}">
-
-            <div class='notification-bubble'>
-                <span><u th:text="${notification.type}"></u></span><br><br><br>
-                <p th:if="${notification.question} != null" th:text="${notification.question}"></p>
-                <span class='username' th:if="${notification.date} != null" th:text="'Asked on ' + ${notification.date}"></span><br><br>
-                <p th:if="${notification.answer} != null" th:text="${notification.answer}"></p><br>
-            </div>
-        </th:block>
-
-
 </main>
-<th:block th:include="~{fragments/footer}" />
+<th:block th:include="~{fragments/footer}"/>
 </body>
 </html>

@@ -1431,3 +1431,19 @@ footer {
     font-family: 'Yusei Magic', sans-serif;
     text-align: center;
 }
+
+.notifications-bubbles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notification-bubble {
+    background-color: #00FCBD;
+    opacity: 0.6;
+    margin: 15px;
+    padding: 30px 50px;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
