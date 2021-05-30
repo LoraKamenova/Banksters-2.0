@@ -640,14 +640,14 @@ footer {
 .profile-container {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     background-color: snow;
     margin: 2% auto;
 }
 
 .profile-header {
     text-align: center;
-    margin: 40px 0 20px 0;
+    margin: 70px 0;
 }
 
 .profile-image {
@@ -693,7 +693,8 @@ footer {
 }
 
 .notification-bar {
-    text-align: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .notification {
@@ -704,10 +705,6 @@ footer {
     position: relative;
     bottom: -30px;
     right: -70px;
-}
-
-.notification-bar {
-    min-height: 20px;
 }
 /*-----------------------------------------------------------------------*/
 /*Terms and conditions*/
