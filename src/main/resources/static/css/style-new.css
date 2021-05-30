@@ -1439,6 +1439,9 @@ footer {
 }
 
 .notification-bubble {
+    display: flex;
+    flex-direction: column;
+    color: black;
     background-color: #00FCBD;
     opacity: 0.6;
     margin: 15px;
@@ -1446,4 +1449,6 @@ footer {
     border-radius: 50%;
     height: 300px;
     width: 300px;
+    justify-content: center;
+    align-items: center;
 }
