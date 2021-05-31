@@ -1428,8 +1428,8 @@ footer {
     background-color: snow;
     display: flex;
     flex-direction: column;
-    width: 60%;
-    padding: 50px;
+    width: 75%;
+    padding: 50px 10px;
     margin: 3% auto;
     justify-content: center;
 }
@@ -1449,13 +1449,27 @@ footer {
     display: flex;
     flex-direction: column;
     color: black;
-    background-color: #00FCBD;
-    opacity: 0.6;
-    margin: 15px;
+    margin: 10px;
     padding: 30px 50px;
     border-radius: 50%;
     height: 300px;
     width: 300px;
     justify-content: center;
     align-items: center;
+}
+
+.notification-bubble:nth-child(1n) {
+    background-color: #8CBF1C;
+}
+
+.notification-bubble:nth-child(2n) {
+    background-color: #ADCF1A;
+}
+
+.notification-bubble:nth-child(3n) {
+    background-color: #CCE00E;
+}
+
+.notification-bubble:nth-child(4n) {
+    background-color: #FFF700;
 }
