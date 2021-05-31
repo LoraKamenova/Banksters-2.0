@@ -1429,7 +1429,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 75%;
-    padding: 50px 10px;
+    padding: 40px 10px 50px 10px;
     margin: 3% auto;
     justify-content: center;
 }
@@ -1437,6 +1437,7 @@ footer {
 .notification-heading {
     font-family: 'Yusei Magic', sans-serif;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .notifications-bubbles-container {
