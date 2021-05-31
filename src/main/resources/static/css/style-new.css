@@ -661,6 +661,12 @@ footer {
     font-family: 'Yusei Magic', sans-serif;
     font-size: 35px;
     text-transform: uppercase;
+    background: #40632C;
+    background: -webkit-linear-gradient(to right, #40632C 0%, #57ED39 100%);
+    background: -moz-linear-gradient(to right, #40632C 0%, #57ED39 100%);
+    background: linear-gradient(to right, #40632C 0%, #57ED39 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .profile-subheading {
@@ -668,6 +674,7 @@ footer {
     font-size: 35px;
     font-style: oblique;
     margin-top: 10px;
+    color: gray;
 }
 
 .profile-links-container {
