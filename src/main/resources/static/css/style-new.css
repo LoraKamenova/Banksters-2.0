@@ -1459,18 +1459,14 @@ footer {
     align-items: center;
 }
 
-.notification-bubble:nth-child(1n) {
+.notification-bubble:nth-child(3n) {
+    background-color: #FFF700;
+}
+
+.notification-bubble:nth-child(3n+1) {
     background-color: #8CBF1C;
 }
 
-.notification-bubble:nth-child(2n) {
-    background-color: #ADCF1A;
-}
-
-.notification-bubble:nth-child(3n) {
+.notification-bubble:nth-child(3n+2) {
     background-color: #CCE00E;
-}
-
-.notification-bubble:nth-child(4n) {
-    background-color: #FFF700;
 }
