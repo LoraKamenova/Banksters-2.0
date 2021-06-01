@@ -15,6 +15,7 @@ import softuni.banksters.domain.models.serivice.StockServiceModel;
 import softuni.banksters.error.NotificationNotFoundException;
 import softuni.banksters.repository.NotificationRepository;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -35,12 +36,13 @@ public class NotificationServiceImpl implements NotificationService {
     @Override
     public void createNotification(NotificationServiceModel notificationServiceModel) {
         notificationServiceModel.setAlerted("no");
+        notificationServiceModel.setCreatedOn(LocalDateTime.now());
         this.notificationRepository.saveAndFlush(this.modelMapper.map(notificationServiceModel, Notification.class));
     }
 
     @Override
     public List<NotificationServiceModel> findNotificationsByUser(String username) {
-        return this.notificationRepository.findAllNotificationsByUser(username)
+        return this.notificationRepository.findAllNotificationsByUserOrderByCreatedOn(username)
                 .stream()
                 .map(o -> modelMapper.map(o, NotificationServiceModel.class))
                 .collect(Collectors.toList());

@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface NotificationRepository extends JpaRepository<Notification, String> {
-    List<Notification> findAllNotificationsByUser(String username);
+    List<Notification> findAllNotificationsByUserOrderByCreatedOn(String username);
     List<Notification> findAllNotificationsByAlertedAndUser(String alerted, String username);
 }

@@ -3,6 +3,7 @@ package softuni.banksters.domain.entities;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "notifications")
@@ -13,6 +14,8 @@ public class Notification extends BaseEntity{
     private String answer;
     private String date;
     private String alerted;
+
+    private LocalDateTime createdOn;
 
     private String user;
 
@@ -62,6 +65,15 @@ public class Notification extends BaseEntity{
 
     public void setAlerted(String alert) {
         this.alerted = alert;
+    }
+
+    @Column(name = "created_on", columnDefinition = "TEXT", nullable = false)
+    public LocalDateTime getCreatedOn() {
+        return createdOn;
+    }
+
+    public void setCreatedOn(LocalDateTime createdOn) {
+        this.createdOn = createdOn;
     }
 
     @Column(name = "user", columnDefinition = "TEXT", nullable = false)
