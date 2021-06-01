@@ -1457,6 +1457,7 @@ footer {
     width: 300px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .notification-bubble:nth-child(3n) {
@@ -1469,4 +1470,8 @@ footer {
 
 .notification-bubble:nth-child(3n+2) {
     background-color: #CCE00E;
+}
+
+.notification-type {
+    font-weight: bold;
 }
