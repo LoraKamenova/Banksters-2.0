@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="~{fragments/head}"/>
-<body class="background" id="data">
+<body class="background">
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
@@ -12,44 +12,37 @@
         <form class="general-form" th:method="post" th:action="@{/create-notification-A/{id}(id=${model.id})}" enctype="multipart/form-data">
             <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
 
-<!--            <div class="form-group" th:classappend="${#fields.hasErrors('name')}? 'text-danger'">-->
-<!--                <label class="general-form-label" for="SEName">Name</label>-->
-<!--                <input class="general-form-field" type="text" th:field="*{name}" name="name" id="SEName" placeholder="e.g. NASDAQ" required/>-->
-<!--                <small th:each="error : ${#fields.errors('name')}" th:text="${error}"></small>-->
-<!--            </div>-->
-
-            <div class="col-md-12 text-white">
-                <label for="NType">Notification Type</label>
-                <input list="notifications" type="text" name="type" id="NType" required/>
+            <div class="form-group">
+                <label class="general-form-label" for="NType">Notification Type</label>
+                <input class="general-form-label" list="notifications" type="text" name="type" id="NType" required/>
                 <datalist id="notifications">
                     <option value="You have 1 new answer.">
                     <option value="We have sent additional materials to your email in order to answer to your question more thoroughly.">
                     <option value="Your question was included in section FAQ.">
                 </datalist>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="NUser">User</label>
-                <input type="text" name="user" id="NUser" th:value="${model.user.username}"/>
+            <div class="form-group">
+                <label class="general-form-label" for="NUser">User</label>
+                <input class="general-form-label" type="text" name="user" id="NUser" th:value="${model.user.username}"/>
             </div>
             <div class="col-md-12 text-white">
-                <label for="NQuestion">Question</label>
-                <textarea class="text-white" name="question" id="NQuestion" maxlength="3000" rows="5" cols="5"
+                <label class="general-form-label" for="NQuestion">Question</label>
+                <textarea class="general-form-label" name="question" id="NQuestion" maxlength="3000" rows="5" cols="5"
                           th:text="${model.question}" readonly></textarea>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="NDate">Date</label>
-                <input type="text" name="date" id="NDate" th:value="*{#temporals.format(model.finishedOn, 'dd-MM-yyyy HH:mm')}" readonly/>
+            <div class="form-group">
+                <label class="general-form-label" for="NDate">Date</label>
+                <input class="general-form-label" type="text" name="date" id="NDate" th:value="*{#temporals.format(model.finishedOn, 'dd-MM-yyyy HH:mm')}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
-                <label for="NAnswer">Answer</label>
-                <textarea class="text-white" name="answer" id="NAnswer" maxlength="3000" rows="5" cols="5"
+            <div class="form-group">
+                <label class="general-form-label" for="NAnswer">Answer</label>
+                <textarea class="general-form-label" name="answer" id="NAnswer" maxlength="3000" rows="5" cols="5"
                           placeholder="Type answer here..." th:text="${model.answer}" readonly></textarea>
             </div>
 
-
             <input class="general-form-button" type="submit" value="Send">
         </form>
-
+    </section>
 </main>
 <th:block th:include="~{fragments/footer}"/>
 </body>
