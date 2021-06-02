@@ -6,12 +6,18 @@
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <p class=" text-center text-white" style = "font-size:25px;" ><span>Add new answer notification</span></p>
-    <br><br>
+    <section class="general-form-page">
+        <h2 class="general-form-heading">Add a new answer notification</h2>
 
-    <form id="notificationForm" th:method="post" th:action="@{/create-notification-A/{id}(id=${model.id})}" enctype="multipart/form-data">
-        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
-        <div class="row">
+        <form class="general-form" th:method="post" th:action="@{/create-notification-A/{id}(id=${model.id})}" enctype="multipart/form-data">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+
+<!--            <div class="form-group" th:classappend="${#fields.hasErrors('name')}? 'text-danger'">-->
+<!--                <label class="general-form-label" for="SEName">Name</label>-->
+<!--                <input class="general-form-field" type="text" th:field="*{name}" name="name" id="SEName" placeholder="e.g. NASDAQ" required/>-->
+<!--                <small th:each="error : ${#fields.errors('name')}" th:text="${error}"></small>-->
+<!--            </div>-->
+
             <div class="col-md-12 text-white">
                 <label for="NType">Notification Type</label>
                 <input list="notifications" type="text" name="type" id="NType" required/>
@@ -39,11 +45,10 @@
                 <textarea class="text-white" name="answer" id="NAnswer" maxlength="3000" rows="5" cols="5"
                           placeholder="Type answer here..." th:text="${model.answer}" readonly></textarea>
             </div>
-        </div>
-        <br>
 
-        <input id="NButton" type="submit" value="Send">
-    </form>
+
+            <input class="general-form-button" type="submit" value="Send">
+        </form>
 
 </main>
 <th:block th:include="~{fragments/footer}"/>
