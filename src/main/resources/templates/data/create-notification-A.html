@@ -14,7 +14,7 @@
 
             <div class="form-group">
                 <label class="general-form-label" for="NType">Notification Type</label>
-                <input class="general-form-label" list="notifications" type="text" name="type" id="NType" required/>
+                <input class="general-form-field" list="notifications" type="text" name="type" id="NType" required/>
                 <datalist id="notifications">
                     <option value="You have 1 new answer.">
                     <option value="We have sent additional materials to your email in order to answer to your question more thoroughly.">
@@ -23,21 +23,21 @@
             </div>
             <div class="form-group">
                 <label class="general-form-label" for="NUser">User</label>
-                <input class="general-form-label" type="text" name="user" id="NUser" th:value="${model.user.username}"/>
+                <input class="general-form-field readonly-field" type="text" name="user" id="NUser" th:value="${model.user.username}" readonly/>
             </div>
-            <div class="col-md-12 text-white">
+            <div class="form-group">
                 <label class="general-form-label" for="NQuestion">Question</label>
-                <textarea class="general-form-label" name="question" id="NQuestion" maxlength="3000" rows="5" cols="5"
+                <textarea class="general-form-field readonly-field" name="question" id="NQuestion" maxlength="3000" rows="5"
                           th:text="${model.question}" readonly></textarea>
             </div>
             <div class="form-group">
                 <label class="general-form-label" for="NDate">Date</label>
-                <input class="general-form-label" type="text" name="date" id="NDate" th:value="*{#temporals.format(model.finishedOn, 'dd-MM-yyyy HH:mm')}" readonly/>
+                <input class="general-form-field readonly-field" type="text" name="date" id="NDate" th:value="*{#temporals.format(model.finishedOn, 'dd-MM-yyyy HH:mm')}" readonly/>
             </div>
             <div class="form-group">
                 <label class="general-form-label" for="NAnswer">Answer</label>
-                <textarea class="general-form-label" name="answer" id="NAnswer" maxlength="3000" rows="5" cols="5"
-                          placeholder="Type answer here..." th:text="${model.answer}" readonly></textarea>
+                <textarea class="general-form-field readonly-field" name="answer" id="NAnswer" maxlength="3000" rows="5" cols="5"
+                          th:text="${model.answer}" readonly></textarea>
             </div>
 
             <input class="general-form-button" type="submit" value="Send">
