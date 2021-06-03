@@ -1476,6 +1476,13 @@ footer {
     background-color: #CCE00E;
 }
 
-.notification-type {
+.notification-text {
     font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.notification-question-time {
+    font-style: italic;
+    font-size: 12px;
 }
