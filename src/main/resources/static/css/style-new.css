@@ -1486,3 +1486,7 @@ footer {
     font-style: italic;
     font-size: 12px;
 }
+
+.notification-answer {
+    margin-bottom: 10px;
+}
