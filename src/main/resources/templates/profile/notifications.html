@@ -14,9 +14,9 @@
                 <div class='notification-bubble'>
                     <span class="notification-text" th:text="${notification.type}"></span>
 
-                    <p class="notification-answer" th:if="${notification.answer} != null" th:text="'Answer: ' + ${notification.answer}"></p>
+                    <p class="notification-answer" th:if="${notification.answer} != null" th:text="'ANSWER: ' + ${notification.answer}"></p>
 
-                    <p  class="notification-question" th:if="${notification.question} != null" th:text="'Question: ' + ${notification.question}"></p>
+                    <p  class="notification-question" th:if="${notification.question} != null" th:text="'QUESTION: ' + ${notification.question}"></p>
 
                     <span class="notification-question-time" th:if="${notification.date} != null"
                           th:text="'Asked on ' + ${notification.date}"></span>
