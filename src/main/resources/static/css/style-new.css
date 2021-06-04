@@ -1494,10 +1494,14 @@ footer {
 /*-------------------------------------------------------------------------------*/
 /*Contract Request*/
 
-.small-letter-text {
-    text-decoration: none;
+.small-letters-text {
     color: white;
     font-style: italic;
     margin-top: 5px;
     font-size: 14px;
+}
+
+.small-letters-link {
+    text-decoration: none;
+    color: mediumpurple;
 }
