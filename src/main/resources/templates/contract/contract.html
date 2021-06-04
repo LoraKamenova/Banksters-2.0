@@ -2,82 +2,81 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="~{fragments/head}" />
-<body class="background" id="contract">
+<body class="background">
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}" />
-    <p class=" text-center text-white" style = "font-size:25px;" ><span>Contract Request</span></p>
-    <br><br>
 
-    <form id="contractForm" th:method="post" th:action="@{contract}" th:object="${model}">
-        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
-        <div class="row">
+    <section class="general-form-page">
+        <h2 class="general-form-heading">Contract Request</h2>
 
-            <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('fullName')}? 'text-danger'">
-                <label for="AFullName">Full name</label>
-                <input type="text" th:field="*{fullName}" name="fullName" id="AFullName" placeholder="e.g. Ivan Ivanov Ivanov" required/>
+        <form class="general-form" th:method="post" th:action="@{contract}" th:object="${model}">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+
+            <div class="form-group" th:classappend="${#fields.hasErrors('fullName')}? 'text-danger'">
+                <label class="general-form-label" for="AFullName">Full name</label>
+                <input class="general-form-field" type="text" th:field="*{fullName}" name="fullName" id="AFullName" placeholder="e.g. Ivan Ivanov Ivanov" required/>
                 <small th:each="error : ${#fields.errors('fullName')}" th:text="${error}"></small>
             </div>
 
-            <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('PIN')}? 'text-danger'">
-                <label for="APIN">Personal Identification Number (PIN) </label>
-                <input type="text" th:field="*{PIN}" name="PIN" id="APIN" placeholder="e.g. 7500000000" required/>
+            <div class="form-group" th:classappend="${#fields.hasErrors('PIN')}? 'text-danger'">
+                <label class="general-form-label" for="APIN">Personal Identification Number (PIN) </label>
+                <input class="general-form-field" type="text" th:field="*{PIN}" name="PIN" id="APIN" placeholder="e.g. 7500000000" required/>
                 <small th:each="error : ${#fields.errors('PIN')}" th:text="${error}"></small>
             </div>
 
-            <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('idCard')}? 'text-danger'">
-                <label for="AIDCard">ID card number </label>
-                <input type="text" th:field="*{idCard}" name="idCard" id="AIDCard" placeholder="e.g. 123456789" required/>
+            <div class="form-group" th:classappend="${#fields.hasErrors('idCard')}? 'text-danger'">
+                <label class="general-form-label" for="AIDCard">ID card number </label>
+                <input class="general-form-field" type="text" th:field="*{idCard}" name="idCard" id="AIDCard" placeholder="e.g. 123456789" required/>
                 <small th:each="error : ${#fields.errors('idCard')}" th:text="${error}"></small>
             </div>
 
-            <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('address')}? 'text-danger'">
-                <label for="AAddress">Address</label>
-                <input type="text" th:field="*{address}" name="address" id="AAddress" placeholder="e.g. 4, Ivan Vazov, str, Sofia" required/>
+            <div class="form-group" th:classappend="${#fields.hasErrors('address')}? 'text-danger'">
+                <label class="general-form-label" for="AAddress">Address</label>
+                <input class="general-form-field" type="text" th:field="*{address}" name="address" id="AAddress" placeholder="e.g. 4, Ivan Vazov, str, Sofia" required/>
                 <small th:each="error : ${#fields.errors('address')}" th:text="${error}"></small>
             </div>
 
-            <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('profession')}? 'text-danger'">
-                <label for="AProfession">Profession</label>
-                <input type="text" th:field="*{profession}" name="profession" id="AProfession" placeholder="e.g. IT specialist" required/>
+            <div class="form-group" th:classappend="${#fields.hasErrors('profession')}? 'text-danger'">
+                <label class="general-form-label" for="AProfession">Profession</label>
+                <input class="general-form-field" type="text" th:field="*{profession}" name="profession" id="AProfession" placeholder="e.g. IT specialist" required/>
                 <small th:each="error : ${#fields.errors('profession')}" th:text="${error}"></small>
             </div>
 
-            <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('netIncome')}? 'text-danger'">
-                <label for="AIncome">Net Monthly Income (BGN)</label>
-                <input class="text-white" type="number" th:field="*{netIncome}" name="netIncome" id="AIncome" placeholder="e.g. 3000.00" required/>
+            <div class="form-group" th:classappend="${#fields.hasErrors('netIncome')}? 'text-danger'">
+                <label class="general-form-label" for="AIncome">Net Monthly Income (BGN)</label>
+                <input class="general-form-field" type="number" th:field="*{netIncome}" name="netIncome" id="AIncome" placeholder="e.g. 3000.00" required/>
                 <small th:each="error : ${#fields.errors('netIncome')}" th:text="${error}"></small>
             </div>
 
-            <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('mobile')}? 'text-danger'">
-                <label for="APhoneNumber">Mobile phone</label>
-                <input type="text" th:field="*{mobile}" name="mobile" id="APhoneNumber" placeholder="e.g. 0888000000" required/>
+            <div class="form-group" th:classappend="${#fields.hasErrors('mobile')}? 'text-danger'">
+                <label class="general-form-label" for="APhoneNumber">Mobile phone</label>
+                <input class="general-form-field" type="text" th:field="*{mobile}" name="mobile" id="APhoneNumber" placeholder="e.g. 0888000000" required/>
                 <small th:each="error : ${#fields.errors('mobile')}" th:text="${error}"></small>
             </div>
 
-            <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('signing')}? 'text-danger'">
-                <label for="ASigning">Preferred way of signing</label>
-                <select class="text-secondary" th:field="*{signing}" name="signing" id="ASigning" required>
+            <div class="form-group" th:classappend="${#fields.hasErrors('signing')}? 'text-danger'">
+                <label class="general-form-label" for="ASigning">Preferred way of signing</label>
+                <select class="general-form-field" th:field="*{signing}" name="signing" id="ASigning" required>
                     <option value="In Person">In Person</option>
                     <option value="E-Signature">E-Signature</option>
                 </select>
                 <small th:each="error : ${#fields.errors('signing')}" th:text="${error}"></small>
             </div>
 
-            <div class="form-group col-md-12 text-white" th:classappend="${#fields.hasErrors('initialAccountBalance')}? 'text-danger'">
-                <label for="ABalance">Initial Account Balance (BGN)</label>
-                <input class="text-white" type="number" th:field="*{initialAccountBalance}" name="initialAccountBalance" id="ABalance" placeholder="e.g. 5000.00" required/>
+            <div class="form-group" th:classappend="${#fields.hasErrors('initialAccountBalance')}? 'text-danger'">
+                <label class="general-form-label" for="ABalance">Initial Account Balance (BGN)</label>
+                <input  class="general-form-field" type="number" th:field="*{initialAccountBalance}" name="initialAccountBalance" id="ABalance" placeholder="e.g. 5000.00" required/>
                 <small th:each="error : ${#fields.errors('initialAccountBalance')}" th:text="${error}"></small>
             </div>
 
-        </div>
+            </div>
 
-        <p class="text-white" style="font-style: italic">*By sending your contract request you agree with our <a th:href="@{/general-terms}">General Terms & Conditions.</a></p>
-        <br>
+            <p class="text-white" style="font-style: italic">*By sending your contract request you agree with our <a th:href="@{/general-terms}">General Terms & Conditions.</a></p>
+            <br>
 
-        <div class="text-left">
-            <input id="ContactButton" type="submit" value="Send">
-        </div>
-    </form>
+            <input class="general-form-button" type="submit" value="Send">
+        </form>
+    </section>
 
 </main>
 <th:block th:include="~{fragments/footer}" />
