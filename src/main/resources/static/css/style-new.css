@@ -1490,3 +1490,14 @@ footer {
 .notification-answer {
     margin-bottom: 15px;
 }
+
+/*-------------------------------------------------------------------------------*/
+/*Contract Request*/
+
+.small-letter-text {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 14px;
+}

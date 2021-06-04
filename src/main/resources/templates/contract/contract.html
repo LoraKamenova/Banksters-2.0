@@ -56,7 +56,7 @@
 
             <div class="form-group" th:classappend="${#fields.hasErrors('signing')}? 'text-danger'">
                 <label class="general-form-label" for="ASigning">Preferred way of signing</label>
-                <select class="general-form-field" th:field="*{signing}" name="signing" id="ASigning" required>
+                <select class="general-form-field readonly-field" th:field="*{signing}" name="signing" id="ASigning" required>
                     <option value="In Person">In Person</option>
                     <option value="E-Signature">E-Signature</option>
                 </select>
@@ -71,7 +71,7 @@
 
             </div>
 
-            <p class="text-white" style="font-style: italic">*By sending your contract request you agree with our <a th:href="@{/general-terms}">General Terms & Conditions.</a></p>
+            <p class="small-letter-text">*By sending your contract request you agree with our <a th:href="@{/general-terms}">General Terms & Conditions.</a></p>
             <br>
 
             <input class="general-form-button" type="submit" value="Send">
