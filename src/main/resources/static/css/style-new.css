@@ -1510,7 +1510,7 @@ footer {
 /*details page*/
 
 .details-page-wrapper {
-    width: 65%;
+    width: 60%;
     background-color: snow;
     margin: 2% auto;
     display: flex;
@@ -1527,11 +1527,29 @@ footer {
     display: flex;
 }
 
-.details-page-overview {
+.details-page-data-section {
     width: 35%;
+    display: flex;
+    flex-direction: column;
 }
 
 .details-page-logo {
     width: 200px;
     height: 100px;
+}
+
+.details-page-text-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-page-heading {
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+    margin: 25px 10px;
+}
+
+.display-page-text {
+    padding: 10px;
 }

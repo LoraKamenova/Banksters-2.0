@@ -10,41 +10,39 @@
     <div class="details-page-wrapper">
         <img class="details-page-main-picture" th:src="${model.pictureURL}" alt="picture">
         <div class="details-page-content">
-            <div class="details-page-overview">
+            <section class="details-page-data-section">
                 <img class="details-page-logo" th:src="${model.logoURL}" alt="logo">
-                <div class="details-page-data">
-                    <table class="stock-table">
-                        <tr>
-                            <td class="td text-white" colspan="2">Overview</td>
-                        </tr>
-                        <tr>
-                            <td class="td text-white">Region</td>
-                            <td class="td text-white" th:text="${model.region}"></td>
-                        </tr>
-                        <tr>
-                            <td class="td text-white">Market Place</td>
-                            <td class="td text-white" th:text="${model.marketPlace}"></td>
-                        </tr>
-                        <tr>
-                            <td class="td text-white">Currency</td>
-                            <td class="td text-white" th:text="${model.currency}"></td>
-                        </tr>
-                        <tr>
-                            <td class="td text-white">Market cap</td>
-                            <td class="td text-white" th:text="${model.marketCap}"></td>
-                        </tr>
-                        <tr>
-                            <td class="td text-white">Time zone</td>
-                            <td class="td text-white" th:text="${model.timeZone}"></td>
-                        </tr>
-                        <tr>
-                            <td class="td text-white">Website</td>
-                            <td class="td text-white" th:text="${model.website}"></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div>
+                <table class="">
+                    <tr>
+                        <td class="" colspan="2">Overview</td>
+                    </tr>
+                    <tr>
+                        <td class="">Region</td>
+                        <td class="" th:text="${model.region}"></td>
+                    </tr>
+                    <tr>
+                        <td class="">Market Place</td>
+                        <td class="" th:text="${model.marketPlace}"></td>
+                    </tr>
+                    <tr>
+                        <td class="">Currency</td>
+                        <td class="" th:text="${model.currency}"></td>
+                    </tr>
+                    <tr>
+                        <td class="">Market cap</td>
+                        <td class="" th:text="${model.marketCap}"></td>
+                    </tr>
+                    <tr>
+                        <td class="">Time zone</td>
+                        <td class="" th:text="${model.timeZone}"></td>
+                    </tr>
+                    <tr>
+                        <td class="">Website</td>
+                        <td class="" th:text="${model.website}"></td>
+                    </tr>
+                </table>
+            </section>
+            <div class="details-page-text-section">
                 <h1 class="display-page-heading" th:text="${model.name}"></h1>
                 <p class="display-page-text" th:text="${model.description}"></p>
             </div>
