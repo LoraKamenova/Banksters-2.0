@@ -1507,3 +1507,31 @@ footer {
 }
 
 /*------------------------------------------------*/
+/*details page*/
+
+.details-page-wrapper {
+    width: 65%;
+    background-color: snow;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-page-main-picture {
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+}
+
+.details-page-content {
+    display: flex;
+}
+
+.details-page-overview {
+    width: 35%;
+}
+
+.details-page-logo {
+    width: 200px;
+    height: 100px;
+}
