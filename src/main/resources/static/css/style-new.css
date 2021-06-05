@@ -1537,7 +1537,7 @@ footer {
 
 .details-page-logo {
     width: 200px;
-    height: 100px;
+    height: 85px;
 }
 
 .details-page-text-section {
@@ -1549,7 +1549,9 @@ footer {
 .display-page-heading {
     font-family: 'Yusei Magic', sans-serif;
     text-align: center;
-    margin: 25px 10px 0 10px;
+    margin: 30px 10px 5px 10px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .display-page-text {
@@ -1568,8 +1570,8 @@ footer {
 }
 
 .table-data-left-cell {
-    border-right: 1px solid black;
-    width: 40%;
+    border-right: 1px solid darkgreen;
+    width: 45%;
     padding: 10px 0 10px 0;
 }
 
@@ -1579,7 +1581,7 @@ footer {
 
 .overview-table-row {
     display: flex;
-    border-top: 1px solid black;
+    border-top: 1px solid darkgreen;
     margin-bottom: 15px;
 }
 
@@ -1588,4 +1590,13 @@ footer {
     flex-direction: column;
     width: 100%;
     font-size: 14px;
+}
+
+.table-link {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.table-link:hover {
+    text-decoration: underline;
 }

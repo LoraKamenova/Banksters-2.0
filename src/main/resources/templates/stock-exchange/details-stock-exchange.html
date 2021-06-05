@@ -13,7 +13,9 @@
         <div class="details-page-content">
             <section class="details-page-data-section">
                 <img class="details-page-logo" th:src="${model.logoURL}" alt="logo">
+
                 <h3 class="overview-heading">Overview</h3>
+
                 <div class="overview-table">
                     <div class="overview-table-row">
                         <div class="table-data-left-cell">Region</div>
@@ -43,7 +45,7 @@
                 </div>
             </section>
             <div class="details-page-text-section">
-                <h1 class="display-page-heading" th:text="${model.name}"></h1>
+                <p class="display-page-heading" th:text="${model.name}"></p>
                 <p class="display-page-text" th:text="${model.description}"></p>
             </div>
 
