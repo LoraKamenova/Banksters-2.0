@@ -1,76 +1,76 @@
-/*details pages*/
-.grid-container {
-    display: grid;
-    grid-template-columns: 32% 7% 23% 32%;
-    grid-gap: 30px 30px;
-    padding: 10px;
-    grid-template-rows: 50px 400px;
-}
-.grid-item {
-    background-color: transparent;
-    /*border: 1px solid white;*/
-    /*color: white;*/
-    /*font-size: 30px;*/
-    /*text-align: center;*/
-}
+/*!*details pages*!*/
+/*.grid-container {*/
+/*    display: grid;*/
+/*    grid-template-columns: 32% 7% 23% 32%;*/
+/*    grid-gap: 30px 30px;*/
+/*    padding: 10px;*/
+/*    grid-template-rows: 50px 400px;*/
+/*}*/
+/*.grid-item {*/
+/*    background-color: transparent;*/
+/*    !*border: 1px solid white;*!*/
+/*    !*color: white;*!*/
+/*    !*font-size: 30px;*!*/
+/*    !*text-align: center;*!*/
+/*}*/
 
-#SEitem6 {
-    grid-column: 2 / span 2;
-    vertical-align: 25px;
-    text-align: center
-}
+/*#SEitem6 {*/
+/*    grid-column: 2 / span 2;*/
+/*    vertical-align: 25px;*/
+/*    text-align: center*/
+/*}*/
 
-#SEitem1,#SEitem2,#SEitem3,#SEitem4,#SEitem5 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/*#SEitem1,#SEitem2,#SEitem3,#SEitem4,#SEitem5 {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
 
-#SEitem3 {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
+/*#SEitem3 {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: right;*/
+/*}*/
 
-#SEitem7 {
-    display: flex;
-    justify-content: center;
-}
+/*#SEitem7 {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
 
-.img1{
-    height: 100%;
-    width: 100%;
-    display: block;
-}
+/*.img1{*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    display: block;*/
+/*}*/
 
-.img2{
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-.stock-table {
-    position: fixed;
-    margin-top: 0;
-    width: 30%;
-}
-.td {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #009900;
-    text-align: center;
-}
+/*.img2{*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    display: block;*/
+/*}*/
+/*.stock-table {*/
+/*    position: fixed;*/
+/*    margin-top: 0;*/
+/*    width: 30%;*/
+/*}*/
+/*.td {*/
+/*    padding: 10px;*/
+/*    font-size: 16px;*/
+/*    border: 1px solid #009900;*/
+/*    text-align: center;*/
+/*}*/
 
-#BuyStockButton{
-    color: white;
-    width: 346px;
-    background-color: brown;
-}
+/*#BuyStockButton{*/
+/*    color: white;*/
+/*    width: 346px;*/
+/*    background-color: brown;*/
+/*}*/
 
-#showGraphics{
-    color: white;
-    width: 346px;
-    background-color: brown;
-}
+/*#showGraphics{*/
+/*    color: white;*/
+/*    width: 346px;*/
+/*    background-color: brown;*/
+/*}*/
 /*-----------------------------------------------------------------------------------------------------*/
 /*All-Tables*/
 .fl-table {
