@@ -1544,6 +1544,7 @@ footer {
     width: 55%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .display-page-heading {
@@ -1605,6 +1606,15 @@ footer {
     padding: 10px 30px;
     outline: none;
     border-radius: 5px;
-    background: #AB274F;
+    background: #A81230;
     color: white;
+    width: 250px;
+    text-decoration: none;
+    text-align: center;
 }
+
+.show-graphics-button:hover {
+    cursor: pointer;
+    background: #AB274F;
+}
+
