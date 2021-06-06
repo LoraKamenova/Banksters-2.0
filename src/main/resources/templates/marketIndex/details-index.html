@@ -17,79 +17,40 @@
 
                 <div class="overview-table">
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell">Region</div>
-                        <div class="table-data-right-cell" th:text="${model.region}"></div>
+                        <div class="table-data-left-cell">Foundation</div>
+                        <div class="table-data-right-cell" th:text="${model.foundation}"></div>
                     </div>
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell">Market Place</div>
-                        <div class="table-data-right-cell" th:text="${model.marketPlace}"></div>
+                        <div class="table-data-left-cell">Operator</div>
+                        <div class="table-data-right-cell" th:text="${model.operator}"></div>
                     </div>
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell">Currency</div>
-                        <div class="table-data-right-cell" th:text="${model.currency}"></div>
+                        <div class="table-data-left-cell">Exchanges</div>
+                        <div class="table-data-right-cell" th:text="${model.exchange}"></div>
                     </div>
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell">Market cap</div>
-                        <div class="table-data-right-cell" th:text="${model.marketCap}"></div>
+                        <div class="table-data-left-cell">Constituents</div>
+                        <div class="table-data-right-cell" th:text="${model.constituents}"></div>
                     </div>
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell">Time zone</div>
-                        <div class="table-data-right-cell" th:text="${model.timeZone}"></div>
+                        <div class="table-data-left-cell">Type</div>
+                        <div class="table-data-right-cell" th:text="${model.type}"></div>
                     </div>
                     <div class="overview-table-row">
                         <div class="table-data-left-cell">Website</div>
-                        <div class="table-data-right-cell"><a class="table-link" th:href="@{ ${model.website}}">visit website</a></div>
+                        <div class="table-data-right-cell"><a class="table-link" th:href="@{ ${model.website}}">visit
+                            website</a></div>
 
                     </div>
                 </div>
+                <a class="show-graphics-button" th:href="@{/graphics/index/{id}(id=${model.id})}">Graphics</a>
+
             </section>
             <div class="details-page-text-section">
                 <p class="display-page-heading" th:text="${model.name}"></p>
                 <p class="display-page-text" th:text="${model.description}"></p>
             </div>
 
-        </div>
-    </div>
-
-    <div class="grid-container">
-        <div class="grid-item" id="SEitem1"></div>
-        <div class="grid-item" id="SEitem2"><img class="img2" th:src="${model.logoURL}" alt="logo"></div>
-        <div class="grid-item" id="SEitem3"><span class=" text-center text-white" style="font-size:23px;" th:text="${model.name}"></span>
-        </div>
-        <div class="grid-item" id="SEitem4"><div class="text-center"><a id="showGraphics" class="btn text-center mr-3" th:href="@{/graphics/index/{id}(id=${model.id})}">Graphics</a></div></div>
-        <div class="grid-item" id="SEitem5"><img class="img2" th:src="${model.pictureURL}" alt="picture"></div>
-        <div class="grid-item" id="SEitem6"><p class=" text-justify text-white"
-                                               style="font-size:17px; text-align: center;" th:text="${model.description}"></p></div>
-        <div class="grid-item" id="SEitem7"><table class="stock-table">
-            <tr>
-                <td class="td text-white" colspan="2">Overview</td>
-            </tr>
-            <tr>
-                <td class="td text-white">Foundation</td>
-                <td class="td text-white" th:text="${model.foundation}"></td>
-            </tr>
-            <tr>
-                <td class="td text-white">Operator</td>
-                <td class="td text-white" th:text="${model.operator}"></td>
-            </tr>
-            <tr>
-                <td class="td text-white">Exchanges</td>
-                <td class="td text-white" th:text="${model.exchange}"></td>
-            </tr>
-            <tr>
-                <td class="td text-white">Constituents</td>
-                <td class="td text-white" th:text="${model.constituents}"></td>
-            </tr>
-            <tr>
-                <td class="td text-white">Type</td>
-                <td class="td text-white" th:text="${model.type}"></td>
-            </tr>
-            <tr>
-                <td class="td text-white">Website</td>
-                <td class="td text-white" th:text="${model.website}"></td>
-                </td>
-            </tr>
-        </table>
         </div>
     </div>
 
