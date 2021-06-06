@@ -2,9 +2,54 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="~{fragments/head}"/>
-<body class="background" id="market-index">
+<body class="background">
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
+
+    <div class="details-page-wrapper">
+        <img class="details-page-main-picture" th:src="${model.pictureURL}" alt="picture">
+
+        <div class="details-page-content">
+            <section class="details-page-data-section">
+                <img class="details-page-logo" th:src="${model.logoURL}" alt="logo">
+
+                <h3 class="overview-heading">Overview</h3>
+
+                <div class="overview-table">
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell">Region</div>
+                        <div class="table-data-right-cell" th:text="${model.region}"></div>
+                    </div>
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell">Market Place</div>
+                        <div class="table-data-right-cell" th:text="${model.marketPlace}"></div>
+                    </div>
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell">Currency</div>
+                        <div class="table-data-right-cell" th:text="${model.currency}"></div>
+                    </div>
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell">Market cap</div>
+                        <div class="table-data-right-cell" th:text="${model.marketCap}"></div>
+                    </div>
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell">Time zone</div>
+                        <div class="table-data-right-cell" th:text="${model.timeZone}"></div>
+                    </div>
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell">Website</div>
+                        <div class="table-data-right-cell"><a class="table-link" th:href="@{ ${model.website}}">visit website</a></div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="details-page-text-section">
+                <p class="display-page-heading" th:text="${model.name}"></p>
+                <p class="display-page-text" th:text="${model.description}"></p>
+            </div>
+
+        </div>
+    </div>
 
     <div class="grid-container">
         <div class="grid-item" id="SEitem1"></div>
