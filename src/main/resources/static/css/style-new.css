@@ -1515,6 +1515,7 @@ footer {
     margin: 2% auto;
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 
 .details-page-main-picture {
@@ -1572,8 +1573,15 @@ footer {
 
 .table-data-left-cell {
     border-right: 1px solid darkgreen;
-    width: 45%;
     padding: 10px 0 10px 0;
+}
+
+.table-data-left-cell.long {
+    width: 45%;
+}
+
+.table-data-left-cell.short {
+    min-width: 35%;
 }
 
 .table-data-right-cell {
@@ -1603,7 +1611,7 @@ footer {
 }
 
 .show-graphics-button {
-    padding: 10px 30px;
+    padding: 5px 30px 10px 30px;
     outline: none;
     border-radius: 5px;
     background: #A81230;
@@ -1611,6 +1619,8 @@ footer {
     width: 250px;
     text-decoration: none;
     text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 18px;
 }
 
 .show-graphics-button:hover {
