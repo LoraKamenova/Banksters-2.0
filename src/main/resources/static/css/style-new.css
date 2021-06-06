@@ -1600,3 +1600,11 @@ footer {
 .table-link:hover {
     text-decoration: underline;
 }
+
+.show-graphics-button {
+    padding: 10px 30px;
+    outline: none;
+    border-radius: 5px;
+    background: #AB274F;
+    color: white;
+}

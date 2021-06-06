@@ -43,12 +43,12 @@
 
                     </div>
                 </div>
-                <a class="show-graphics-button" th:href="@{/graphics/index/{id}(id=${model.id})}">Graphics</a>
 
             </section>
             <div class="details-page-text-section">
                 <p class="display-page-heading" th:text="${model.name}"></p>
                 <p class="display-page-text" th:text="${model.description}"></p>
+                <a class="show-graphics-button" th:href="@{/graphics/index/{id}(id=${model.id})}">Graphics</a>
             </div>
 
         </div>
