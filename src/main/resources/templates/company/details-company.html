@@ -6,48 +6,51 @@
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <div class="grid-container">
-        <div class="grid-item" id="SEitem1"></div>
-        <div class="grid-item" id="SEitem2"><img class="img2" th:src="${model.logoURL}" alt="logo"></div>
-        <div class="grid-item" id="SEitem3"><span class=" text-center text-white" style="font-size:23px;" th:text="${model.name}"></span>
-        </div>
-        <div class="grid-item" id="SEitem4"></div>
-        <div class="grid-item" id="SEitem5"><img class="img1" th:src="${model.brandsURL}" alt="brands"></div>
-        <div class="grid-item" id="SEitem6"><p class=" text-justify text-white"
-                                               style="font-size:17px; text-align: center;" th:text="${model.description}"></p></div>
-        <div class="grid-item" id="SEitem7">
-            <table class="stock-table">
-                <tr>
-                    <td class="td text-white" colspan="2">Overview</td>
-                </tr>
-                <tr>
-                    <td class="td text-white">Industry</td>
-                    <td class="td text-white" th:text="${model.industry}"></td>
-                </tr>
-                <tr>
-                    <td class="td text-white">Founded</td>
-                    <td class="td text-white" th:text="${model.founded}"></td>
-                </tr>
-                <tr>
-                    <td class="td text-white">Headquarters</td>
-                    <td class="td text-white" th:text="${model.headquarters}"></td>
-                </tr>
-                <tr>
-                    <td class="td text-white">Revenues</td>
-                    <td class="td text-white" th:text="${model.revenues}"></td>
-                </tr>
-                <tr>
-                    <td class="td text-white">Employees</td>
-                    <td class="td text-white" th:text="${model.employees}"></td>
-                </tr>
-                <tr>
-                    <td class="td text-white">Website</td>
-                    <td class="td text-white" th:text="${model.website}"></td>
-                    </td>
-                </tr>
-            </table>
+    <div class="details-page-wrapper">
+        <img class="details-page-main-picture" th:src="${model.brandsURL}" alt="picture">
+
+        <div class="details-page-content">
+            <section class="details-page-data-section">
+                <img class="details-page-logo" th:src="${model.logoURL}" alt="logo">
+
+                <h3 class="overview-heading">Overview</h3>
+
+                <div class="overview-table">
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell long">Industry</div>
+                        <div class="table-data-right-cell" th:text="${model.industry}"></div>
+                    </div>
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell long">Founded</div>
+                        <div class="table-data-right-cell" th:text="${model.founded}"></div>
+                    </div>
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell long">Headquarters</div>
+                        <div class="table-data-right-cell" th:text="${model.headquarters}"></div>
+                    </div>
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell long">Revenues</div>
+                        <div class="table-data-right-cell" th:text="${model.revenues}"></div>
+                    </div>
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell long">Employees</div>
+                        <div class="table-data-right-cell" th:text="${model.employees}"></div>
+                    </div>
+                    <div class="overview-table-row">
+                        <div class="table-data-left-cell long">Website</div>
+                        <div class="table-data-right-cell"><a class="table-link" th:href="@{ ${model.website}}">visit website</a></div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="details-page-text-section">
+                <p class="display-page-heading" th:text="${model.name}"></p>
+                <p class="display-page-text" th:text="${model.description}"></p>
+            </div>
+
         </div>
     </div>
+
 </main>
 <th:block th:include="~{fragments/footer}"/>
 </body>
