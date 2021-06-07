@@ -1521,9 +1521,16 @@ footer {
 .details-page-main-picture {
     width: 100%;
     object-fit: cover;
+}
+
+
+.details-page-main-picture.regular {
     height: 400px;
 }
 
+.details-page-main-picture.big {
+    height: 600px;
+}
 .details-page-content {
     display: flex;
 }
