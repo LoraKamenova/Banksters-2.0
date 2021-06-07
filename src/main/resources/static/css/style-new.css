@@ -1518,18 +1518,25 @@ footer {
     padding-bottom: 30px;
 }
 
-.details-page-main-picture {
-    width: 100%;
-    object-fit: cover;
-}
+/*.details-page-main-picture {*/
+/*    width: 100%;*/
+/*    object-fit: cover;*/
+/*    */
+/*}*/
 
 
 .details-page-main-picture.regular {
-    height: 400px;
+    width: auto;
+    height : auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .details-page-main-picture.big {
-    height: 600px;
+    width: auto;
+    height : auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 .details-page-content {
     display: flex;
