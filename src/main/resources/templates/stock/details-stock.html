@@ -17,7 +17,7 @@
                 </div>
 
                 <img class="details-page-logo" th:src="${model.logoURL}" alt="logo">
-
+                <a class="show-graphics-button" th:href="@{/graphics/stock/{id}(id=${model.id})}">Graphics</a>
                 <h3 class="overview-heading">Overview</h3>
 
                 <div class="overview-table">
