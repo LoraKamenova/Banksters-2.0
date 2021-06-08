@@ -7,10 +7,15 @@
     <th:block th:include="~{fragments/navbar-user}"/>
 
     <div class="details-page-wrapper">
-        <img class="details-page-main-picture regular" th:src="${model.pictureURL}" alt="picture">
 
         <div class="details-page-content">
             <section class="details-page-data-section">
+
+                <div class="details-page-text-section">
+                    <p class="display-page-heading" th:text="${model.name}"></p>
+                    <p class="display-page-text" th:text="${model.description}"></p>
+                </div>
+
                 <img class="details-page-logo" th:src="${model.logoURL}" alt="logo">
 
                 <h3 class="overview-heading">Overview</h3>
@@ -43,10 +48,7 @@
                     </div>
                 </div>
             </section>
-            <div class="details-page-text-section">
-                <p class="display-page-heading" th:text="${model.name}"></p>
-                <p class="display-page-text" th:text="${model.description}"></p>
-            </div>
+
 
         </div>
     </div>
