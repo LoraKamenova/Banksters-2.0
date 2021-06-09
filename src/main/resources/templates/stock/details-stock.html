@@ -10,13 +10,12 @@
 
         <div class="details-page-content">
             <section class="details-page-left-text-section">
+                <img class="details-page-logo" th:src="${model.logoURL}" alt="logo">
                 <p class="display-page-heading" th:text="${model.companyName}"></p>
                 <p class="display-page-text" th:text="${model.description}"></p>
+                <a class="show-graphics-button" th:href="@{/order-this-stock/{id}(id=${model.id})}">Transaction</a>
             </section>
             <section class="details-page-table-section">
-                <img class="details-page-logo" th:src="${model.logoURL}" alt="logo">
-                <a class="show-graphics-button" th:href="@{/graphics/stock/{id}(id=${model.id})}">Graphics</a>
-                <a class="show-graphics-button" th:href="@{/order-this-stock/{id}(id=${model.id})}">Transaction</a>
                 <h3 class="overview-heading">Overview</h3>
 
                 <div class="overview-table">
@@ -53,6 +52,7 @@
                         <div class="table-data-right-cell" th:text="${model.previousDayClosingPrice}"></div>
                     </div>
                 </div>
+                <a class="show-graphics-button" th:href="@{/graphics/stock/{id}(id=${model.id})}">Graphics</a>
             </section>
         </div>
     </div>
