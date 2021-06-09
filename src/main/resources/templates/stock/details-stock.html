@@ -16,42 +16,42 @@
 
             </section>
             <section class="details-page-table-section">
-                <a class="show-graphics-button" th:href="@{/order-this-stock/{id}(id=${model.id})}">Transaction</a>
-                <a class="show-graphics-button" th:href="@{/graphics/stock/{id}(id=${model.id})}">Graphics</a>
+                <a class="show-graphics-button stock-button" th:href="@{/order-this-stock/{id}(id=${model.id})}">Transaction</a>
+                <a class="show-graphics-button stock-button" th:href="@{/graphics/stock/{id}(id=${model.id})}">Graphics</a>
 
                 <h3 class="overview-heading">Overview</h3>
 
                 <div class="overview-table">
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell long">Stock Ticker</div>
+                        <div class="table-data-left-cell short">Stock Ticker</div>
                         <div class="table-data-right-cell" th:text="${model.tickerCode}"></div>
                     </div>
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell long">Stock Exchange</div>
+                        <div class="table-data-left-cell short">Stock Exchange</div>
                         <div class="table-data-right-cell" th:text="${model.exchange}"></div>
                     </div>
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell long">Included in Index</div>
+                        <div class="table-data-left-cell short">Included in Index</div>
                         <div class="table-data-right-cell" th:text="${model.includedInIndex}"></div>
                     </div>
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell long">Minimal Traded Qty</div>
+                        <div class="table-data-left-cell short">Minimal Traded Qty</div>
                         <div class="table-data-right-cell" th:text="${model.minTradedQty}"></div>
                     </div>
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell long">Ex-Dividend Date</div>
+                        <div class="table-data-left-cell short">Ex-Dividend Date</div>
                         <div class="table-data-right-cell" th:text="${model.exDividendDate}"></div>
                     </div>
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell long">Forward Dividend & Yield</div>
+                        <div class="table-data-left-cell short">Forward Dividend & Yield</div>
                         <div class="table-data-right-cell" th:text="${model.forwardDividendAndYield}"></div>
                     </div>
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell long">Ex-Dividend Date</div>
+                        <div class="table-data-left-cell short">Ex-Dividend Date</div>
                         <div class="table-data-right-cell" th:text="${model.currency}"></div>
                     </div>
                     <div class="overview-table-row">
-                        <div class="table-data-left-cell long">Previous Day Closing Price</div>
+                        <div class="table-data-left-cell short">Previous Day Closing Price</div>
                         <div class="table-data-right-cell" th:text="${model.previousDayClosingPrice}"></div>
                     </div>
                 </div>

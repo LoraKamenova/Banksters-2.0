@@ -1543,20 +1543,7 @@ footer {
     padding: 20px;
 }
 
-.details-page-table-section{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
 
-.details-page-left-text-section {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .details-page-logo {
     width: 200px;
@@ -1648,5 +1635,25 @@ footer {
 .show-graphics-button:hover {
     cursor: pointer;
     background: #AB274F;
+}
+
+.details-page-table-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.details-page-left-text-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.show-graphics-button.stock-button {
+    margin-top: 10px;
 }
 
