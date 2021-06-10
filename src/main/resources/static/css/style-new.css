@@ -1591,6 +1591,8 @@ footer {
 
 .table-data-left-cell.short {
     min-width: 35%;
+    word-wrap:break-word;
+    white-space: normal
 }
 
 .table-data-right-cell {
