@@ -1637,6 +1637,7 @@ footer {
 .show-graphics-button:hover {
     cursor: pointer;
     background: #AB274F;
+    color: white;
 }
 
 .details-page-table-section{
