@@ -775,6 +775,7 @@ footer {
     text-align: center;
     font-size: 30px;
     color: #BF1889;
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 .dreamland-container {
@@ -1104,7 +1105,7 @@ footer {
 .contact-info {
     padding-left: 15px;
     padding-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 20px;
 }
 
@@ -1162,8 +1163,9 @@ footer {
 }
 
 .data-panel-button:hover {
-    background-color: green;
+    background: linear-gradient(to right, #40632C 0%, #57ED39 100%);
     color: honeydew;
+    border: 1px solid white;
 }
 
 /*---------------------------------------------------------------------*/
