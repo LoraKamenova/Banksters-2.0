@@ -1661,3 +1661,44 @@ footer {
     margin-top: 20px;
 }
 
+/*-------------------------------------------------------------------*/
+/*Summary tables*/
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 70%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+    border-right: 1px solid black;
+}
+
+.fl-table td {
+    border-right: 1px solid black;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #AB274F;
+}
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #AB274F;
+}
+
+.fl-table tr:nth-child(even) {
+    background: lightgray;
+}
+

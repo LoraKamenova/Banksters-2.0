@@ -2,17 +2,19 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <th:block th:include="~{fragments/head}" />
-<body class="background" id="analysis">
+<body class="background">
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
-    <p class=" text-center text-white" style="font-size:25px;"><span>All Analyses</span></p>
-    <br><br>
-    <div class="text-center">
-        <a class="btn btn-danger text-center mr-3" th:href="@{/create-analysis}">Add Analysis</a>
-    </div>
-    <br><br>
 
-    <div class="table-wrapper">
+    <div class="all-analyses-container">
+        <div class="all-analyses-header">
+            <h1 class="all-analyses-title">All Analyses</h1>
+            <a class="btn btn-danger text-center mr-3" th:href="@{/create-analysis}">Add Analysis</a>
+        </div>
+
+    </div>
+
+    <div class="summary-table-wrapper">
         <table class="fl-table">
             <thead>
             <tr>
