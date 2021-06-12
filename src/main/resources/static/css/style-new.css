@@ -1680,7 +1680,7 @@ footer {
 .all-analyses-heading {
     font-family: 'Yusei Magic', sans-serif;
     color: white;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .summary-table {
@@ -1722,20 +1722,22 @@ footer {
 }
 
 .summary-table-add-button {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     outline: none;
     color: white;
     background-color: #006B3C;
     font-size: 30px;
     text-decoration: none;
-    text-align: center;
     margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .summary-table-add-button:hover {
     cursor: pointer;
-    background-color: #1e7e34;
+    background-color: #009E59;
 }
 
