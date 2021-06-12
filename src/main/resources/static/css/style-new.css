@@ -1668,16 +1668,16 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3% auto;
+    margin: 1% auto;
 }
 
 .all-analyses-header {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .all-analyses-heading {
-    color: black;
     font-family: 'Yusei Magic', sans-serif;
     color: white;
     font-size: 24px;
@@ -1719,5 +1719,23 @@ footer {
 
 .summary-table tr:nth-child(even) {
     background: lightgray;
+}
+
+.summary-table-add-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    outline: none;
+    color: white;
+    background-color: #006B3C;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.summary-table-add-button:hover {
+    cursor: pointer;
+    background-color: #1e7e34;
 }
 
