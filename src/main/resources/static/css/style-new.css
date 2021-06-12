@@ -1684,7 +1684,6 @@ footer {
 }
 
 .summary-table {
-    border-radius: 5px;
     font-size: 17px;
     font-weight: normal;
     border: none;
@@ -1698,13 +1697,13 @@ footer {
 
 .summary-table td, .summary-table th {
     text-align: center;
-    padding: 8px;
+    padding: 10px;
     border-right: 1px solid black;
 }
 
 .summary-table td {
     border-right: 1px solid black;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .summary-table thead th {
@@ -1743,15 +1742,15 @@ footer {
 
 .summary-table-button {
     outline: none;
-    color: black;
-    padding: 5px 10px;
+    color: #525252;
+    padding: 5px 20px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #525252;
     text-decoration: none;
 }
 
 .summary-table-button:hover {
     cursor: pointer;
     color: white;
-    background-color: black;
+    background-color: #575757;
 }
