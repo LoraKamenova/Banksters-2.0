@@ -1664,7 +1664,19 @@ footer {
 /*-------------------------------------------------------------------*/
 /*Summary tables*/
 
-.fl-table {
+.all-analyses-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% auto;
+}
+
+.all-analyses-header {
+    display: flex;
+    justify-content: center;
+}
+
+.summary-table {
     border-radius: 5px;
     font-size: 17px;
     font-weight: normal;
@@ -1677,28 +1689,28 @@ footer {
     margin: 0 auto;
 }
 
-.fl-table td, .fl-table th {
+.summary-table td, .summary-table th {
     text-align: center;
     padding: 8px;
     border-right: 1px solid black;
 }
 
-.fl-table td {
+.summary-table td {
     border-right: 1px solid black;
     font-size: 12px;
 }
 
-.fl-table thead th {
+.summary-table thead th {
     color: #ffffff;
     background: #AB274F;
 }
 
-.fl-table thead th:nth-child(odd) {
+.summary-table thead th:nth-child(odd) {
     color: #ffffff;
     background: #AB274F;
 }
 
-.fl-table tr:nth-child(even) {
+.summary-table tr:nth-child(even) {
     background: lightgray;
 }
 
