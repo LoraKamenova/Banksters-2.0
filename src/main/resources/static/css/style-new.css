@@ -1741,3 +1741,17 @@ footer {
     background-color: #009E59;
 }
 
+.summary-table-button {
+    outline: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.summary-table-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
