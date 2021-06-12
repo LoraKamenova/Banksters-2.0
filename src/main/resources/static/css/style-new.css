@@ -1676,6 +1676,13 @@ footer {
     justify-content: center;
 }
 
+.all-analyses-heading {
+    color: black;
+    font-family: 'Yusei Magic', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
 .summary-table {
     border-radius: 5px;
     font-size: 17px;

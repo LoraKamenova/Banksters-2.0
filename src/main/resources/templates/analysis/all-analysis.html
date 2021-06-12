@@ -8,8 +8,8 @@
 
     <div class="all-analyses-container">
         <div class="all-analyses-header">
-            <h1 class="all-analyses-title">All Analyses</h1>
-            <a class="summary-table-button add" th:href="@{/create-analysis}">Add Analysis</a>
+            <h1 class="all-analyses-heading">All Analyses</h1>
+            <a class="summary-table-add-button" th:href="@{/create-analysis}">New Analysis</a>
         </div>
 
         <table class="summary-table">
@@ -31,8 +31,7 @@
                     <td>
                         <div>
                             <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-                                <a th:href="@{/analysis/edit/{id}(id=${analysis.id})}"
-                                   class="summary-table-button edit">Edit</a>
+                                <a th:href="@{/analysis/edit/{id}(id=${analysis.id})}" class="summary-table-button edit">Edit</a>
                             </th:block>
                             <th:block sec:authorize="hasRole('ROLE_ADMIN')">
                                 <a th:href="@{/analysis/delete/{id}(id=*{id})}" class="summary-table-button delete">Delete</a>
@@ -43,7 +42,6 @@
             </th:block>
             </tbody>
         </table>
-
     </div>
 
 </main>
