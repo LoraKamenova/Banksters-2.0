@@ -31,10 +31,10 @@
                     <td>
                         <div>
                             <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-                                <a th:href="@{/analysis/edit/{id}(id=${analysis.id})}" class="summary-table-button edit">Edit</a>
+                                <a th:href="@{/analysis/edit/{id}(id=${analysis.id})}" class="summary-table-button">Edit</a>
                             </th:block>
                             <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-                                <a th:href="@{/analysis/delete/{id}(id=*{id})}" class="summary-table-button delete">Delete</a>
+                                <a th:href="@{/analysis/delete/{id}(id=*{id})}" class="summary-table-button">Delete</a>
                             </th:block>
                         </div>
                     </td>

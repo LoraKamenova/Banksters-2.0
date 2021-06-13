@@ -6,11 +6,13 @@
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
 
-    <p class=" text-center text-white" style="font-size:25px;"><span>All Questions</span></p>
-    <br><br>
+    <div class="all-analyses-container">
+        <div class="all-analyses-header">
+            <h1 class="all-analyses-heading">All Questions</h1>
+<!--            <a class="summary-table-add-button" th:href="@{/create-analysis}">+</a>-->
+        </div>
 
-    <div class="table-wrapper">
-        <table class="fl-table" style="width: 90%">
+        <table class="summary-table">
             <thead>
             <tr>
                 <th>#</th>
@@ -23,6 +25,7 @@
             </thead>
 
             <tbody>
+
             <th:block th:each="question, iter : ${questions}" th:object="${question}">
                 <tr>
                     <td th:text="${iter.index + 1}"></td>
@@ -33,19 +36,19 @@
                     <td >
                         <div>
                             <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-                                <a th:href="@{/answer-question/{id}(id=*{id})}" class="btn btn-outline-dark">Answer</a>
+                                <a th:href="@{/answer-question/{id}(id=*{id})}" class="summary-table-button">Answer</a>
                             </th:block>
                             <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-                                <a th:href="@{/create-notification-A/{id}(id=*{id})}" class="btn btn-outline-dark">Notification</a>
+                                <a th:href="@{/create-notification-A/{id}(id=*{id})}" class="summary-table-button">Notification</a>
                             </th:block>
                         </div>
                     </td>
                 </tr>
             </th:block>
+
             </tbody>
         </table>
     </div>
-    <br><br>
 
 </main>
 <th:block th:include="~{fragments/footer}" />
