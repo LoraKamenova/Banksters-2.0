@@ -5,11 +5,13 @@
 <body class="background" id="order">
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
-    <p class=" text-center text-white" style="font-size:25px;"><span>All Orders</span></p>
-    <br><br>
 
-    <div class="table-wrapper">
-        <table class="fl-table">
+    <div class="all-analyses-container">
+        <div class="all-analyses-header">
+            <h1 class="all-analyses-heading">All Orders</h1>
+        </div>
+
+        <table class="summary-table">
             <thead>
             <tr>
                 <th>#</th>
@@ -38,8 +40,8 @@
                     <td >
                         <div>
                             <th:block>
-                                <a style="margin-left: 10px" th:href="@{/edit-order/{id}(id=*{id})}" class="btn btn-outline-dark">Process</a>
-                                <a style="margin-left: 10px" th:href="@{/create-notification-O/{id}(id=*{id})}" class="btn btn-outline-dark">Notification</a>
+                                <a th:href="@{/edit-order/{id}(id=*{id})}" class="summary-table-button">Process</a>
+                                <a th:href="@{/create-notification-O/{id}(id=*{id})}" class="summary-table-button">Notification</a>
                             </th:block>
                         </div>
                     </td>
@@ -48,7 +50,6 @@
             </tbody>
         </table>
     </div>
-    <br><br>
 
 </main>
 <th:block th:include="~{fragments/footer}" />
