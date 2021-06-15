@@ -5,6 +5,46 @@
 <body class="background" id="contract">
 <main class="main">
     <th:block th:include="~{fragments/navbar-user}"/>
+
+    <div class="all-analyses-container">
+        <div class="all-analyses-header">
+            <h1 class="all-analyses-heading">All Contracts</h1>
+        </div>
+
+        <table class="summary-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>USER</th>
+                <th>DATE</th>
+                <th>WAY OF SIGNING</th>
+                <th>INITIAL BALANCE</th>
+                <th>ACTIONS</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <th:block th:each="analysis, iter : ${analyses}" th:object="${analysis}">
+                <tr>
+                    <td th:text="${iter.index + 1}"></td>
+                    <td th:text="${analysis.company}"></td>
+                    <td th:text="${analysis.ticker}"></td>
+                    <td>
+                        <div>
+                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                                <a th:href="@{/analysis/edit/{id}(id=${analysis.id})}" class="summary-table-button">Edit</a>
+                            </th:block>
+                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                                <a th:href="@{/analysis/delete/{id}(id=*{id})}" class="summary-table-button">Delete</a>
+                            </th:block>
+                        </div>
+                    </td>
+                </tr>
+            </th:block>
+            </tbody>
+        </table>
+    </div>
+
     <p class=" text-center text-white" style="font-size:25px;"><span>All Contracts</span></p>
     <br><br>
 
