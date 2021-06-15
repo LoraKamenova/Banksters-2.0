@@ -24,18 +24,18 @@
             </thead>
 
             <tbody>
-            <th:block th:each="analysis, iter : ${analyses}" th:object="${analysis}">
+
+            <th:block th:each="contract, iter : ${contracts}" th:object="${contract}">
                 <tr>
                     <td th:text="${iter.index + 1}"></td>
-                    <td th:text="${analysis.company}"></td>
-                    <td th:text="${analysis.ticker}"></td>
-                    <td>
+                    <td th:text="*{user.username}"></td>
+                    <td th:text="*{#temporals.format(finishedOn, 'dd-MM-yyyy HH:mm') }"></td>
+                    <td th:text="${contract.signing}"></td>
+                    <td th:text="${contract.initialAccountBalance}"></td>
+                    <td >
                         <div>
                             <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-                                <a th:href="@{/analysis/edit/{id}(id=${analysis.id})}" class="summary-table-button">Edit</a>
-                            </th:block>
-                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-                                <a th:href="@{/analysis/delete/{id}(id=*{id})}" class="summary-table-button">Delete</a>
+                                <a th:href="@{/create-notification-C/{id}(id=*{id})}" class="summary-table-button">Notification</a>
                             </th:block>
                         </div>
                     </td>
@@ -63,22 +63,7 @@
             </thead>
 
             <tbody>
-            <th:block th:each="contract, iter : ${contracts}" th:object="${contract}">
-                <tr>
-                    <td th:text="${iter.index + 1}"></td>
-                    <td th:text="*{user.username}"></td>
-                    <td th:text="*{#temporals.format(finishedOn, 'dd-MM-yyyy HH:mm') }"></td>
-                    <td th:text="${contract.signing}"></td>
-                    <td th:text="${contract.initialAccountBalance}"></td>
-                    <td >
-                        <div>
-                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">
-                                <a th:href="@{/create-notification-C/{id}(id=*{id})}" class="btn btn-outline-dark">Notification</a>
-                            </th:block>
-                        </div>
-                    </td>
-                </tr>
-            </th:block>
+
             </tbody>
 
         </table>
