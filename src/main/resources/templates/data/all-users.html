@@ -24,12 +24,12 @@
 
             <tbody>
             <th:block th:each="user, iter : ${users}">
-                <tr class="bla row mx-auto">
-                    <th class="col-md-2 text-center text-white" th:text="${iter.index + 1}"></th>
-                    <td class="col-md-3 text-center text-white" th:text="${user.username}"></td>
-                    <td class="col-md-2 text-center text-white" th:text="${user.email}"></td>
-                    <td class="col-md-2 text-center text-white" th:text="${#strings.replace(#strings.listJoin(user.authorities, ', '), 'ROLE_', '')}"></td>
-                    <td class="col-md-3 text-center text-white">
+                <tr>
+                    <th th:text="${iter.index + 1}"></th>
+                    <td th:text="${user.username}"></td>
+                    <td th:text="${user.email}"></td>
+                    <td th:text="${#strings.replace(#strings.listJoin(user.authorities, ', '), 'ROLE_', '')}"></td>
+                    <td>
 
                         <div class="row d-flex justify-content-center">
                             <th:block th:if="${#lists.contains(user.authorities, 'ROLE_USER') &&
