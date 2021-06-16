@@ -1754,3 +1754,8 @@ footer {
     color: white;
     background-color: #575757;
 }
+
+.button-column {
+    display: flex;
+    justify-content: space-evenly;
+}
