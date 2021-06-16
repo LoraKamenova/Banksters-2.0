@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
-<th:block th:include="~{fragments/head}" />
+<th:block th:include="~{fragments/head}"/>
 <body class="background" id="data">
 <main class="main">
-    <th:block th:include="~{fragments/navbar-user}" />
+    <th:block th:include="~{fragments/navbar-user}"/>
 
     <div class="all-analyses-container">
         <div class="all-analyses-header">
@@ -30,13 +30,12 @@
                     <td th:text="${user.email}"></td>
                     <td th:text="${#strings.replace(#strings.listJoin(user.authorities, ', '), 'ROLE_', '')}"></td>
                     <td>
-
-                        <div class="row d-flex justify-content-center">
+                        <div class="button-column">
                             <th:block th:if="${#lists.contains(user.authorities, 'ROLE_USER') &&
                             !#lists.contains(user.authorities, 'ROLE_MODERATOR') && !#lists.contains(user.authorities, 'ROLE_ADMIN')
                         }">
                                 <form th:action="@{/users/set-moderator/{id}(id=${user.id})}" method="post">
-                                    <button class="summary-table-button" >change to<br/> MODERATOR</button>
+                                    <button class="summary-table-button">change to<br/> MODERATOR</button>
                                 </form>
                                 <form th:action="@{/users/set-admin/{id}(id=${user.id})}" method="post">
                                     <button class="summary-table-button">change to<br/> ADMIN</button>
@@ -67,28 +66,11 @@
                 </tr>
             </th:block>
 
-<!--            <th:block th:each="analysis, iter : ${analyses}" th:object="${analysis}">-->
-<!--                <tr>-->
-<!--                    <td th:text="${iter.index + 1}"></td>-->
-<!--                    <td th:text="${analysis.company}"></td>-->
-<!--                    <td th:text="${analysis.ticker}"></td>-->
-<!--                    <td>-->
-<!--                        <div>-->
-<!--                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">-->
-<!--                                <a th:href="@{/analysis/edit/{id}(id=${analysis.id})}" class="summary-table-button">Edit</a>-->
-<!--                            </th:block>-->
-<!--                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">-->
-<!--                                <a th:href="@{/analysis/delete/{id}(id=*{id})}" class="summary-table-button">Delete</a>-->
-<!--                            </th:block>-->
-<!--                        </div>-->
-<!--                    </td>-->
-<!--                </tr>-->
-<!--            </th:block>-->
             </tbody>
         </table>
     </div>
 
 </main>
-<th:block th:include="~{fragments/footer}" />
+<th:block th:include="~{fragments/footer}"/>
 </body>
 </html>
