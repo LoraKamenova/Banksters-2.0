@@ -1759,3 +1759,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
 }
+
+.general-form-field.order-type {
+    color: mediumpurple;
+}
