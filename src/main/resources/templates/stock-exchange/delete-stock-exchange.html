@@ -11,12 +11,12 @@
         <h2 class="general-form-heading">Delete Stock Exchange</h2>
 
         <form class="general-form" th:method="post" th:action="@{/stock-exchange/delete/{id}(id=${model.id})}">
-            <div class="form-group">
+            <div class="general-form-group">
                 <label class="general-form-label" for="SEName">Name</label>
                 <input class="general-form-field readonly-field" type="text" name="name" id="SEName"
                        th:value="${model.name}" readonly/>
             </div>
-            <div class="form-group">
+            <div class="general-form-group">
                 <label class="general-form-label" for="SEDescription">Description</label>
                 <textarea class="general-form-field readonly-field" name="description" id="SEDescription"
                           maxlength="1001" rows="6" cols="5" th:text="${model.description}" readonly></textarea>

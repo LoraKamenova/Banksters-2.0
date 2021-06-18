@@ -9,7 +9,7 @@
     <section class="general-form-page">
         <h2 class="general-form-heading">Delete Stock</h2>
 
-        <form id="stockForm" th:method="post" th:action="@{/stock/delete/{id}(id=${model.id})}">
+        <form class="general-form" th:method="post" th:action="@{/stock/delete/{id}(id=${model.id})}">
 
             <div class="general-form-group">
                 <label class="general-form-label" for="SName">Company Name</label>
