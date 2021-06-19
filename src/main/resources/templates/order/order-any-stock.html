@@ -26,7 +26,7 @@
 
             <div class="form-group" th:classappend="${#fields.hasErrors('type')}? 'text-danger'">
                 <label class="general-form-label" for="OType">Transaction Type</label>
-                <select class="general-form-field readonly-field" name="type" id="OType" required>
+                <select class="general-form-field colored-field" name="type" id="OType" required>
                     <option value="Buy">Buy</option>
                     <option value="Sell">Sell</option>
                 </select>
