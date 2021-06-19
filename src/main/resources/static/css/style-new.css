@@ -1760,6 +1760,6 @@ footer {
     justify-content: space-evenly;
 }
 
-.general-form-field.order-type, .colored-field {
+.colored-field {
     color: mediumpurple;
 }
